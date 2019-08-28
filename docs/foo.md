@@ -1,0 +1,3 @@
+# Foo
+
+Content about foos.
