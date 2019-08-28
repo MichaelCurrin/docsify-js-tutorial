@@ -1,5 +1,5 @@
 # Docsify Template
-> Live demo of a light docs site built on _docsify-js_ and running on Github Pages
+> Live demo of a light docs site built on _Docsify-JS_ and running on Github Pages
 
 Convert your docs folder into a pretty docs website using _docsify_ and some minimal setup. This project can be used as a template or reference for your own.
 
