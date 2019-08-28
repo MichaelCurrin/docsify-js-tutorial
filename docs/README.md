@@ -32,9 +32,11 @@ TBC
 
 Note file paths are relative to docs directory.
 
-With sidebar enabled and not sidebar details set, your index page will use its own page outline as the menu but with no access to subpages.
+With sidebar enabled and not sidebar details set, your index page will use its own page outline as the menu but with no access to subpages. You might even want your entire site to be a single page based on _README.md_, with section headings added to your menu automatically (no need to maintain sidebar).
 
-The top of the side bar will point to the site's root - this will take you to the top of the cover page, rather than the _README.md_. You can create a first item in the sidebar which points to the _README.md_ top element, but that will sort of duplicate having the sidebar heading leading to small confusion for a user.
+The top of the side bar will point to the site's root - this will take you to the top of the cover page, rather than the _README.md_. You can create a first item in the sidebar which points to the _README.md_ top element, but that will sort of duplicate having the sidebar heading leading to small confusion for a user. So far attempted with `[Home](README.md#docsify-template)` which gives a funny URL and `[Home](#docsify-template)` which does not load from other pages.
+
+When viewing the site, if you scroll down far enough you will see a hamburger menu which lets you dynamically open or close the sidebar.
 
 ### Configure cover page
 
