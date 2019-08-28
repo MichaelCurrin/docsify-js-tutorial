@@ -5,6 +5,7 @@ Demo site: [link](https://michaelcurrin.github.io/docsify-template/#/).
 
 Convert your docs folder into a pretty docs website using [Docsify-JS](https://docsify.js.org/) and some minimal setup. This project can be used as a template or reference for your own.
 
+My own aim is to turn the docs of many of my existing projects into doc sites with minimal effort to convert them and maintain them.
 
 ## Basics to get a site working
 
@@ -83,12 +84,15 @@ More on Docsify [themes](https://docsify.js.org/#/themes?id=themes) guide.
 View the Docsify [Quickstart](https://docsify.js.org/#/quickstart) guide for instructions on setting up the CLI tool and running a site.
 
 The CLI tool is optional and is useful for the following:
+
 - Setup an initial _README.md_ (duplicated from project root), _index.html_ and _.nojekyll_ in your a target directory such as _docs_. You can do this by hand or using a template if you don't want the CLI to do it for you.
 - Serve the docs site locally, with hot reload.
 
 
 ## Why not a static site generator?
 
-If you were using a static site generator like Jekyll, you might have to add front matter to your docs, in addition to setting Jekyll config for theme and menu layout.
+Jekyll and Hugo are options for static site generators which can use themes suited to documentation and they can build off of a docs directory. If you want to read more about those, see my [resources](https://github.com/MichaelCurrin/static-sites-generator-resources) project.
+
+A static site generator can be heavy - managing dependencies, building HTML, theming. You might have to add front matter to your doc files. You have to set your menu structure in a similar way to _Docsify_.
 
 Also, with a static site generator you would build HTML files to serve, while with Docsify there is a single page application running off of a _index.html_ - on each request, a markdown file is fetched by the client and rendered as HTML with a theme and menu.
