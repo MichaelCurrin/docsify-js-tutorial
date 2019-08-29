@@ -151,9 +151,19 @@ The CLI tool is optional. View the Docsify [Quickstart](https://docsify.js.org/#
 
 ## Why not a static site generator?
 
+These are just tools to build a site. What is appropriate depends on your use case, how much you need to customized the site and how much effort you want to spend on installing/running/maintaining the project. I found a static site generator is not a good fit for when I want to build a light docs site around existing docs directories in my projects.
+
 Jekyll and Hugo are options for static site generators which can use themes suited to documentation and they can build off of a docs directory. If you want to read more about those, see my [resources](https://github.com/MichaelCurrin/static-sites-generator-resources) project.
 
-A static site generator can be heavy. There are dependencies (Ruby gems) to manage, HTML to build and a theme to setup (you may lose or gain functionality when switching between Jekyll themes because they use their own templates and layouts). You probably have to add _frontmatter_ to your doc files so they can inherit from layouts and have the correct metadata like title.
+A static site generator can be heavy...
+
+There are dependencies to manage. Such as plugins and themes for _Jekyll_. And plugins for _Hugo_. Plus one or more external _JavaScript_ or _CSS_ files are probably used in the HTML, such as _JQuery_.
+
+There is HTML to build locally and on the remote. While _Docsify_ needs no dependencies to serve a site, _Jekyll_ sites needs `jekyll` installed and _Hugo_ sites need `hugo` available.
+
+A static site needs to to customize it in depth or setup a theme which also takes effort. You may lose or gain functionality when switching between Jekyll themes because they use their own templates and layouts.
+
+You probably have to add _frontm atter_ to your doc files so they can inherit from layouts and have the correct metadata like title.
 
 As with _Docsify_, you will probably have to create a config file which covers the structure of your project for use in the sidebar.
 
