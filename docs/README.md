@@ -100,7 +100,7 @@ These approaches were attempted but do not work:
 
 Use this project's [coverpage](https://raw.githubusercontent.com/MichaelCurrin/docsify-template/master/docs/_coverpage.md) raw file on Github as a reference to edit your own *_coverpage.md* file.
 
-You could include a logo image above your project title. For example, you could do this if you have a existent media file.
+You could include a logo image above your project title. For example, you could do this if you have a file in a *docs/_media* directory.
 
 ```
 ![icon](_media/logo.svg)
