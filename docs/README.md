@@ -63,10 +63,39 @@ $ cd docs
 ### Create base structure
 
 ```bash
-$ cp index.html README.md <PATH_TO_YOUR_REPO>/docs
+$ cp index.html<PATH_TO_YOUR_REPO>/docs
 $ cd <PATH_TO_YOUR_REPO>/docs
-$ touch .nojekyll _coverpage.md _sidebar_.md
+$ touch README.md .nojekyll _coverpage.md _sidebar_.md
 ```
+
+You can leave the `.nojekyll` untouched as it just helps Github Pages include the underscore files in builds.
+
+### Configure README.md
+
+The `docs/README.md` file is your homepage. It might have a structure like this:
+
+```
+# Project name
+> Project description
+
+## Sample
+
+...
+
+## Installation
+
+...
+
+## Usage
+
+...
+```
+
+You can have no links and very short _README.md_ file and it will work fine. With _Docsify_. we rely on the sidebar menu to provide links to your files in `docs`.
+
+But you can optionally put links in that file to your other docs files, if that makes sense in your _README.md_. (They must be **relative** to docs directory such as `file.md`, **not** absolute URLs such as with `/docs/file.md`)
+
+You may want to copy or move content from your root _README.md_ to the _docs/REAME.md_ file.
 
 ### Configure index page
 
