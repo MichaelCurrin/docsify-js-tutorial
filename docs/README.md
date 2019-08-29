@@ -19,12 +19,13 @@ _Note: The instructions in this repo for for Linux and Mac environments._
 
 Note that this works _without_ editing your existing docs and _without_ building any HTML pages. The rendering is done on the client-side in a single page application, running on _index.html_.
 
-
 ## Quickstart
 
 ### Setup
 
-No installation needed. Just a connection to the internet in order to load the _Docsify_ library in the browser.
+No installation is needed.
+
+You need connection to the internet in order to load the _Docsify_ library in the browser.
 
 ### Run locally
 
@@ -34,7 +35,13 @@ $ git clone git@github.com:MichaelCurrin/docsify-template.git
 $ # Clone with HTTPS
 $ git clone https://github.com/MichaelCurrin/docsify-template.git
 $ cd docsify-template
-$ ./serve.sh
+```
+
+Choose whatever approach you wish to serve the docs folder. There are many listed [here](https://gist.github.com/willurd/5720255). Here are a some examples:
+
+```bash
+$ python3 -m http.server 3000
+$ docsify serve docs
 ```
 
 Then open http://localhost:3000 in the browser.
@@ -42,6 +49,7 @@ Then open http://localhost:3000 in the browser.
 User notes:
 
 - When viewing the site, if you scroll down far enough you will see a hamburger menu which lets you dynamically open or close the sidebar.
+
 
 ## Setup your own docs site
 
@@ -143,10 +151,12 @@ More on Docsify [themes](https://docsify.js.org/#/themes?id=themes) guide.
 
 ## Docsify CLI
 
-The CLI tool is optional. View the Docsify [Quickstart](https://docsify.js.org/#/quickstart) guide to set up the CLI tool and see how to do the following:
+The CLI tool is optional. It can be used to do the following.
 
 - `init`: Setup an initial _README.md_ (duplicated from project root), _index.html_ and _.nojekyll_ in your a target directory such as _docs_. You can do this by hand or using a template if you don't want the CLI to do it for you.
-- `serve`: Serve the docs site locally, with hot reload.
+- `serve`: Serve the docs site locally, with hot reload. For convenience, you can run `./serve.sh` in his project's root to save a few keystrokes when you want to start the server.
+
+View the Docsify [Quickstart](https://docsify.js.org/#/quickstart) guide for how to install the CLI in your global node packages and then to use it.
 
 
 ## Why not a static site generator?
