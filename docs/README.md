@@ -215,13 +215,13 @@ Jekyll and Hugo are options for static site generators which can use themes suit
 
 A static site generator can be heavy...
 
-There are dependencies to manage. Such as plugins and themes for _Jekyll_. And plugins for _Hugo_. Plus one or more external _JavaScript_ or _CSS_ files are probably used in the HTML, such as _JQuery_.
+There are dependencies to manage - they might have to be upgraded if their are security vulnerabilities or they are no longer available. Such as plugins and themes for _Jekyll_. And plugins for _Hugo_. Plus you probably need a couple of _JavaScript_ or _CSS_ files that either you or a theme added. Such as _Query_. This _Docsify_ project only needs exactly one _JavaScript_ and one _CSS_ file.
 
 There is HTML to build locally and on the remote. While _Docsify_ needs no dependencies to serve a site, _Jekyll_ sites needs `jekyll` installed and _Hugo_ sites need `hugo` available.
 
 A static site needs to to customize it in depth or setup a theme which also takes effort. You may lose or gain functionality when switching between Jekyll themes because they use their own templates and layouts.
 
-You probably have to add _frontm atter_ to your doc files so they can inherit from layouts and have the correct metadata like title.
+You probably have to add _front matter_ to your doc files so they can inherit from layouts and have the correct metadata like title.
 
 As with _Docsify_, you will probably have to create a config file which covers the structure of your project for use in the sidebar.
 
