@@ -1,12 +1,12 @@
 # Docsify Template <small>dev</small>
-> Skeleton of a light docs site built on _Docsify-JS_ and running on Github Pages
+> A light docs site with a tutorial for turning your project's docs folder into a docs site
 
-- Serve your project's docs as a website like this one
+- Minimal effort to setup in a few minutes
 - No need to edit your existing doc files
-- The tutorial takes minimal effort and a few minutes
+- No statically built HTML files
 - No CLI tool required
-- No static HTML files to build
-- Serve locally or on Github Pages
+- Uses _Docsify_
+- Serves locally or on Github Pages
 
 [GitHub](https://github.com/michaelcurrin/docsify-template/)
 [Getting Started](#docsify-template)
