@@ -19,30 +19,46 @@ _Note: The instructions in this repo are for Linux and Mac environments._
 
 Note that this works _without_ editing your existing docs and _without_ building any HTML pages. The rendering is done on the client-side in a single page application, running on _index.html_.
 
-## Quickstart
+## How to clone this repo
 
-### Setup
-
-No installation is needed.
-
-You need connection to the internet in order to load the _Docsify_ library in the browser.
-
-### Run locally
-
-```bash
+```
 $ # Clone with SSH
 $ git clone git@github.com:MichaelCurrin/docsify-template.git
 $ # Clone with HTTPS
 $ git clone https://github.com/MichaelCurrin/docsify-template.git
+```
+
+```bash
 $ cd docsify-template
 ```
 
-Choose whatever approach you wish to serve the docs folder. There are many listed [here](https://gist.github.com/willurd/5720255). Here are a some examples:
+## Quickstart to run serve locally
 
-```bash
-$ python3 -m http.server 3000
-$ docsify serve docs
-```
+### 1. Install
+
+Clone this repo to your machine using the [steps](#clone-this-repo) above.
+
+No installation is needed. Just clone the repo using
+
+You need do an internet connection to load the _Docsify_ library in the browser.
+
+### 2. Run
+
+#### 2.1 Serve
+
+Choose any approach you wish to serve the docs folder. There are many listed [here](https://gist.github.com/willurd/5720255) or choose chose of these:
+
+-   From docs directory.
+    ```bash
+    $ cd docs
+    $ python3 -m http.server 3000
+    ```
+-   From project root.
+    ```bash
+    $ docsify serve docs
+    ```
+
+#### 2.2 View
 
 Then open http://localhost:3000 in the browser.
 
@@ -53,30 +69,35 @@ User notes:
 
 ## Setup your own docs site
 
-The idea is to add to an existing project / git repo, so it is not that useful to create your own project from this repo. So rather copy base structure and configs from this project to your own, then customize them for your needs.
+The idea is to add to an existing project / git repo, so it is not that useful to create your own project from this repo.
+
+Follow to steps in this section copy a base structure and configs from this project to your own, then customize them for your needs.
+
+### 1. Get this project locally
+
+Clone this repo to your machine using the [steps](#clone-this-repo) above.
+
+### 2. Create base structure
+
+Add to your project's docs folder.
 
 ```bash
 $ cd <PATH_TO_THIS_REPO>
 $ cd docs
-```
-
-### Create base structure
-
-```bash
-$ cp index.html<PATH_TO_YOUR_REPO>/docs
+$ cp index.html <PATH_TO_YOUR_REPO>/docs
 $ cd <PATH_TO_YOUR_REPO>/docs
 $ touch README.md .nojekyll _coverpage.md _sidebar_.md
 ```
 
-You can leave the `.nojekyll` untouched as it just helps Github Pages include the underscore files in builds.
+You don't need to do anything to `.nojekyll`. Its existence tells Github Pages to include the underscore files in builds.
 
-### Configure README.md
+### 3. Configure README.md
 
-The `docs/README.md` file is your homepage. It might have a structure like this:
+The `docs/README.md` file is your homepage. You can give a structure similar to a repo's top-level _README.md_, such as something like this.
 
-```
-# Project name
-> Project description
+```markdown
+# Project Name
+> My project description
 
 ## Sample
 
@@ -97,13 +118,13 @@ But you can optionally put links in that file to your other docs files, if that 
 
 You may want to copy or move content from your root _README.md_ to the _docs/REAME.md_ file.
 
-### Configure index page
+### 4. Configure index page
 
 You can leave the _index.html_ page as it is.
 
 Optionally you can set coverpage and sidebar options to `false`, or delete those rows.
 
-### Configure sidebar
+### 5. Configure sidebar
 
 The sidebar is the menu page on the left of the docs and shows on all page.
 
@@ -125,7 +146,7 @@ These approaches were attempted but do not work:
 [Home](#docsify-template)
 ```
 
-### Configure cover page
+### 6. Configure cover page
 
 Use this project's [coverpage](https://raw.githubusercontent.com/MichaelCurrin/docsify-template/master/docs/_coverpage.md) raw file on Github as a reference to edit your own *_coverpage.md* file.
 
@@ -135,11 +156,11 @@ You could include a logo image above your project title. For example, you could 
 ![icon](_media/logo.svg)
 ```
 
-### Style
+### 7. Style
 
 How to customize the style of your project.
 
-#### Color
+#### 7.1 Color
 
 Edit _index.html_.
 
@@ -155,7 +176,7 @@ window.$docsify = {
 
 More on Docsify [theme color](https://docsify.js.org/#/configuration?id=themecolor).
 
-#### Themes
+#### 7.2 Themes
 
 Edit _index.html_.
 
