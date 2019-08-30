@@ -38,9 +38,7 @@ $ cd docsify-template
 
 Clone this repo to your machine using the [steps](#clone-this-repo) above.
 
-No installation is needed. Just clone the repo using
-
-You need do an internet connection to load the _Docsify_ library in the browser.
+No installation is needed. The _Docsify_ library is fetched in the browser - it's fetched remotely so internet connection is needed.
 
 ### 2. Run
 
