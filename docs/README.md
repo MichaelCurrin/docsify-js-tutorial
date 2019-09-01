@@ -96,13 +96,13 @@ Create a file for Github Pages use. This can remain empty - its existence just t
 $ touch .nojekyll
 ```
 
-Copy the template files from _this_ project's _quickstart_ directory to your _own_ project.
+Copy the template files from this project's _quickstart_ directory to your _own_ project.
 
 ```bash
 $ cp <PATH_TO_THIS_REPO>/quickstart/* .
 ```
 
-That will work as a basic doc site if you start serving it now, but continue with the steps below so it is customized for your needs.
+That will work as a basic doc site if you start serving it now, but continue with the steps below so it is customized for your needs. See the _Docsify_ [Configuration](https://docsify.now.sh/configuration) page for more detailed customization than covered in this tutorial.
 
 ### 3. Configure homepage
 
