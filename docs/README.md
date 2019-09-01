@@ -132,7 +132,7 @@ Any link references which start as `docs/file.md`  or `/docs/file.md` will cause
 
 The sidebar is the menu page on the left of the docs and shows on all pages.
 
-If you **do not** want to configure a sidebar, delete *_sidebar.md* from your _docs_ directory, set the sidebar option to `false` in _index.html and skip to the next section.
+If you **do not** want to configure a sidebar, delete *_sidebar.md* from your _docs_ directory, set the sidebar option to `false` in _index.html_ and skip to the next section.
 
 If you **do** have files in your _docs_ directory you want to appear in the menu page, then edit the _sidebar.md_ file. The format should be markdown bullet points which can be nested. Include links to you files - note that paths are relative to docs directory.
 
