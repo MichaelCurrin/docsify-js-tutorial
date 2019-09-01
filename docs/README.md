@@ -106,7 +106,7 @@ That will work as a basic doc site if you start serving it now, but continue wit
 
 ### 3. Configure homepage
 
-Edit the homepage (_docs/README.md) and complete the `TODO` items, using the suggestions in this section.
+Edit the homepage (_docs/README.md_) and complete the `TODO` items, using the suggestions in this section.
 
 - Anything outside of your _docs_ directory will **not** be served online. Therefore you might want copy the the content from your project root's _README.md_ to the _docs/README.md_. After that, you might want to make the root _README.md_ very short, if you don't want to worry about keeping two identical files in sync.
 - You might want to opt for short _docs/README.md_ file if you prefer to put more documentation in other _docs_ files.
