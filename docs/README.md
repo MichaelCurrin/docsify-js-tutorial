@@ -161,11 +161,13 @@ These approaches were attempted but do not work:
 
 ### 5. Configure cover page
 
-The cover page can give a clean look with minimal text for someone arriving on your site.
+The cover page is the first page that a visitor sees before scrolling down to the homepage.
 
-If you want to use it, edit your *docs/_coverpage.md* file and complete the `TODO` items. Use this project's [cover page](https://raw.githubusercontent.com/MichaelCurrin/docsify-template/master/docs/_coverpage.md) raw file on Github as a reference.
+If you want to use it, edit your *docs/_coverpage.md* file and complete the `TODO` items. You can also use this project's [cover page](https://raw.githubusercontent.com/MichaelCurrin/docsify-template/master/docs/_coverpage.md) on Github as a reference.
 
-Otherwise you can delete the file and disable it in _index.html_.
+The _Docsify_ site explains how to set a background image or color [here](https://docsify.now.sh/cover?id=custom-background).
+
+You can delete the cover page and disable it in _index.html_.
 
 #### Image
 
