@@ -5,7 +5,7 @@
 - No need to edit your existing doc files
 - No statically built HTML files
 - No CLI tool required
-- Uses _Docsify_
+- Built on [Docsify-JS](https://docsify.js.org/)
 - Serves locally or on Github Pages
 
 [GitHub](https://github.com/michaelcurrin/docsify-template/)
