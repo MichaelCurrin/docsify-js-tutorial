@@ -111,7 +111,7 @@ See the _Docsify_ [Configuration](https://docsify.now.sh/configuration) page for
 
 ### 3. Configure homepage
 
-Edit the homepage (_docs/README.md_) and complete the `TODO` items, using the suggestions in this section.
+Edit the _docs/README.md_ homepage. Complete the `TODO` items, using the suggestions in this section.
 
 - Anything outside of your _docs_ directory will **not** be served online. Therefore you might want copy the the content from your project root's _README.md_ to the _docs/README.md_. After that, you might want to make the root _README.md_ very short, if you don't want to worry about keeping two identical files in sync.
 - You might want to opt for short _docs/README.md_ file if you prefer to put more documentation in other _docs_ files.
@@ -126,7 +126,7 @@ If you have put links from one of your doc files to another, you might have to e
 
 Any references from the project (i.e. start with `docs`  or `/docs` are **not** valid. e.g. `[link](/docs/foobar.md)`.
 
-References should be relative to the docs directory, even if the current file is in a subdirectory. A
+References should be relative to the docs directory, even if the current file is in a subdirectory.
 
 If the link is relative to that file, it is fine. You can go up levels if you need to. e.g. `[link](../foorbar.md)`.
 
