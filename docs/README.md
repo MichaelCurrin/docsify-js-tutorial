@@ -124,11 +124,9 @@ Edit the _docs/README.md_ homepage. Complete the `TODO` items, using the suggest
 
 If you have put links from one of your doc files to another, you might have to edit your existing doc files to avoid the links breaking when viewed as docs site.
 
-Any references from the project (i.e. start with `docs`  or `/docs` are **not** valid. e.g. `[link](/docs/foobar.md)`.
+References should be relative to the _docs_ directory not to the file itself, even if a file is inside a directory within _docs_. This is unlike the expected of markdown.
 
-References should be relative to the docs directory, even if the current file is in a subdirectory.
-
-If the link is relative to that file, it is fine. You can go up levels if you need to. e.g. `[link](../foorbar.md)`.
+Any link references which start as `docs/file.md`  or `/docs/file.md` will cause errors, because the server is only aware of directories within _docs_.
 
 #### Sidebar
 
