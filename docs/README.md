@@ -17,7 +17,7 @@ _Note: The instructions in this repo are for Linux and Mac environments._
 
 Note that this works _without_ editing your existing docs and _without_ building any HTML pages. The rendering is done on the client-side in a single page application, running on _index.html_.
 
-## How to clone this repo
+## Get a local copy of this repo
 
 ```
 $ # Clone with SSH
@@ -30,7 +30,7 @@ $ git clone https://github.com/MichaelCurrin/docsify-template.git
 $ cd docsify-template
 ```
 
-## Quickstart to run serve locally
+## Quickstart to run locally
 
 ### 1. Install
 
@@ -54,6 +54,12 @@ Choose any approach you wish to serve the docs folder. There are many listed [he
     $ docsify serve docs
     ```
 
+Whatever you choose, you might want to add it as a alias in a file like `~/.bashrc` or `~/.alias`.
+
+```bash
+alias docs='docsify serve docs'
+```
+
 #### 2.2 View
 
 Then open http://localhost:3000 in the browser.
@@ -75,62 +81,69 @@ Clone this repo to your machine using the [steps](#clone-this-repo) above.
 
 ### 2. Create base structure
 
-Add to your project's docs folder.
+Navigate to your project's docs directory.
 
 ```bash
-$ cd <PATH_TO_THIS_REPO>
+$ cd <PATH_TO_YOUR_REPO>
 $ cd docs
-$ cp index.html <PATH_TO_YOUR_REPO>/docs
-$ cd <PATH_TO_YOUR_REPO>/docs
-$ touch README.md .nojekyll _coverpage.md _sidebar_.md
 ```
 
-You don't need to do anything to `.nojekyll`. Its existence tells Github Pages to include the underscore files in builds.
+Create a file for Github Pages use. This can remain empty - its existence just tells Github Pages to include the underscore files in builds.
 
-### 3. Configure README.md
-
-The `docs/README.md` file is your homepage. You can give a structure similar to a repo's top-level _README.md_, such as something like this.
-
-```markdown
-# Project Name
-> My project description
-
-## Sample
-
-...
-
-## Installation
-
-...
-
-## Usage
-
-...
+```bash
+$ touch .nojekyll
 ```
 
-You can have no links and very short _README.md_ file and it will work fine. With _Docsify_. we rely on the sidebar menu to provide links to your files in `docs`.
+Copy the template files from _this_ project's _quickstart_ directory to your _own_ project.
 
-But you can optionally put links in that file to your other docs files, if that makes sense in your _README.md_. (They must be **relative** to docs directory such as `file.md`, **not** absolute URLs such as with `/docs/file.md`)
+```bash
+$ cp <PATH_TO_THIS_REPO>/quickstart/* .
+```
 
-You may want to copy or move content from your root _README.md_ to the _docs/REAME.md_ file.
+That will work as a basic doc site if you start serving it now, but continue with the steps below so it is customized for your needs.
 
-### 4. Configure index page
+### 3. Configure homepage
 
-You can leave the _index.html_ page as it is.
+Edit the homepage (_docs/README.md) and complete the `TODO` items, using the suggestions in this section.
 
-Optionally you can set coverpage and sidebar options to `false`, or delete those rows.
+- Anything outside of your _docs_ directory will **not** be served online. Therefore you might want copy the the content from your project root's _README.md_ to the _docs/README.md_. After that, you might want to make the root _README.md_ very short, if you don't want to worry about keeping two identical files in sync.
+- You might want to opt for short _docs/README.md_ file if you prefer to put more documentation in other _docs_ files.
+- Note that you are not required to put in links to other docs file within your _docs/README.md_ file. As that is what the _Docsify_ sidebar. If you do put in any links in _docs/README.md_, they must be **relative** to the _docs_ directory such as `file.md`, as absolute URLs such `/docs/file.md` will not work within the _docs_ site.
 
-### 5. Configure sidebar
 
-The sidebar is the menu page on the left of the docs and shows on all page.
+### 4. Configure menu structure
 
-Use this project's [sidebar](https://raw.githubusercontent.com/MichaelCurrin/docsify-template/master/docs/_sidebar.md) raw file on Github as a reference to edit your own *_sidebar.md* file.
+#### Doc links
 
-The format should be markdown bullet points which can be nested. Include links to you files - note that paths are relative to docs directory.
+If you have put links from one of your doc files to another, you might have to edit your existing doc files to avoid the links breaking when viewed as docs site.
 
-With sidebar enabled and not sidebar details set, your index page will use its own page outline as the menu but with no access to subpages. You might even want your entire site to be a single page based on _README.md_, with section headings added to your menu automatically (no need to maintain sidebar).
+Any references from the project (i.e. start with `docs`  or `/docs` are **not** valid. e.g. `[link](/docs/foobar.md)`.
 
-The top of the side bar will point to the site's root - this will take you to the top of the cover page, rather than the _README.md_. You can create a first item in the sidebar which points to the _README.md_ top element, but that will sort of duplicate having the sidebar heading leading to small confusion for a user.
+References should be relative to the docs directory, even if the current file is in a subdirectory. A
+
+If the link is relative to that file, it is fine. You can go up levels if you need to. e.g. `[link](../foorbar.md)`.
+
+#### Sidebar
+
+The sidebar is the menu page on the left of the docs and shows on all pages.
+
+If you **do not** want to configure a sidebar, delete *_sidebar.md* from your _docs_ directory, set the sidebar option to `false` in _index.html and skip to the next section.
+
+If you **do** have files in your _docs_ directory you want to appear in the menu page, then edit the _sidebar.md_ file. The format should be markdown bullet points which can be nested. Include links to you files - note that paths are relative to docs directory.
+
+You can use this project's [sidebar](https://raw.githubusercontent.com/MichaelCurrin/docsify-template/master/docs/_sidebar.md) raw file on Github as a reference. This project does have a valid sidebar and docs directory structure, the sidebar is just disabled in the _index.html_ for the live site, as covered below.
+
+##### Option for sidebar without config
+
+You can have sidebar enabled in _index.html_, but no sidebar config set (empty file or no file). Then your index page will use its **own** page outline as the menu. But with no access to subpages, as _Docsify_ is not aware of them_.
+
+You may even **want** your entire site to be a single page based on _README.md_ content and no other doc files. As you will get the benefit of the look of a single page site and any section headings added to your menu will be added to your menu pane automatically (no need to maintain a sidebar file).
+
+##### Tangent about the button at the top of the sidebar
+
+This is more a note for myself - you can skip this section.
+
+Note that the button at the top of sidebar will point to the site's root. Using a cover page, this will take you to the top of the cover page, rather than the _README.md_. You can create a first item within the sidebar list which points to the _README.md_ top element, but that will sort of duplicate having the sidebar heading leading to small confusion for a user.
 
 These approaches were attempted but do not work:
 
@@ -142,27 +155,31 @@ These approaches were attempted but do not work:
 [Home](#docsify-template)
 ```
 
-### 6. Configure cover page
+### 5. Configure cover page
 
-Use this project's [coverpage](https://raw.githubusercontent.com/MichaelCurrin/docsify-template/master/docs/_coverpage.md) raw file on Github as a reference to edit your own *_coverpage.md* file.
+The cover page can give a clean look with minimal text for someone arriving on your site.
 
-You could include a logo image above your project title. For example, you could do this if you have a file in a *docs/_media* directory.
+If you want to use it, edit your *docs/_coverpage.md* file and complete the `TODO` items. Use this project's [cover page](https://raw.githubusercontent.com/MichaelCurrin/docsify-template/master/docs/_coverpage.md) raw file on Github as a reference.
+
+Otherwise you can delete the file and disable it in _index.html_.
+
+#### Image
+
+You could include an image (logo, photo) above your project title. For example, you could do this if you have a file in a *docs/_media* directory.
 
 ```
 ![icon](_media/logo.svg)
 ```
 
-### 7. Style
+### 6. Style
 
 How to customize the style of your project.
 
-#### 7.1 Color
-
 Edit _index.html_.
 
-Set a theme color. Defaults to theme's default if not set - green for Vue and blue for Buble.
+#### 6.1 Color
 
-This variable affects how some content looks, such as quoted blocks, underlined text and buttons.
+Optionally set a theme color. This affects how some content looks, such as quoted blocks, underlined text and buttons. This will default to theme's default if not set manually. i.e. green for _Vue_ and blue for _Buble_.
 
 ```js
 window.$docsify = {
@@ -172,9 +189,7 @@ window.$docsify = {
 
 More on Docsify [theme color](https://docsify.js.org/#/configuration?id=themecolor).
 
-#### 7.2 Themes
-
-Edit _index.html_.
+#### 6.2 Themes
 
 Find the style which is set in the `<head>` tag, which looks like this.
 
@@ -189,7 +204,6 @@ Replace the end of URL with one of these four themes.
 - `dark.css`
 - `pure.css`
 
-
 You can optionally remove `/lib` from the theme URL to get the _uncompressed_ CSS file.
 
 More on Docsify [themes](https://docsify.js.org/#/themes?id=themes) guide.
@@ -199,8 +213,8 @@ More on Docsify [themes](https://docsify.js.org/#/themes?id=themes) guide.
 
 The CLI tool is optional. It can be used to do the following.
 
-- `init`: Setup an initial _README.md_ (duplicated from project root), _index.html_ and _.nojekyll_ in your a target directory such as _docs_. You can do this by hand or using a template if you don't want the CLI to do it for you.
-- `serve`: Serve the docs site locally, with hot reload. For convenience, you can run `./serve.sh` in his project's root to save a few keystrokes when you want to start the server.
+- `docsify init docs`: Setup an initial _README.md_ (duplicated from project root), _index.html_ and _.nojekyll_ in your a target directory. If you don't want the CLI to do it for you, you can create the files by hand or use this project's _quickstart_ directory to get you going.
+- `docsify serve docs`: Serve the target directory as docs site locally, with hot reload for if you save any file changes. See [server](#21-serve) options above.
 
 View the Docsify [Quickstart](https://docsify.js.org/#/quickstart) guide for how to install the CLI in your global node packages and then to use it.
 
