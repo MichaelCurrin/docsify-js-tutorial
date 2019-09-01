@@ -138,26 +138,22 @@ If you **do** have files in your _docs_ directory you want to appear in the menu
 
 You can use this project's [sidebar](https://raw.githubusercontent.com/MichaelCurrin/docsify-template/master/docs/_sidebar.md) raw file on Github as a reference. This project does have a valid sidebar and docs directory structure, the sidebar is just disabled in the _index.html_ for the live site, as covered below.
 
-##### Option for sidebar without config
+##### Sidebar without config
 
-You can have sidebar enabled in _index.html_, but no sidebar config set (empty file or no file). Then your index page will use its **own** page outline as the menu. But with no access to subpages, as _Docsify_ is not aware of them_.
+You could have a sidebar enabled in _index.html_, but without sidebar config set (empty file or no file). Then your index page will use its **own** page outline as the menu. But with no access to subpages, as _Docsify_ is not aware of them_.
 
 You may even **want** your entire site to be a single page based on _README.md_ content and no other doc files. As you will get the benefit of the look of a single page site and any section headings added to your menu will be added to your menu pane automatically (no need to maintain a sidebar file).
 
-##### Tangent about the button at the top of the sidebar
+##### Link to homepage
 
-This is more a note for myself - you can skip this section.
+The button at the top of sidebar is a link to site's root path. This will be the cover page, if you have one.
 
-Note that the button at the top of sidebar will point to the site's root. Using a cover page, this will take you to the top of the cover page, rather than the _README.md_. You can create a first item within the sidebar list which points to the _README.md_ top element, but that will sort of duplicate having the sidebar heading leading to small confusion for a user.
+If you a menu button which takes you to the homepage rather, add an item which has a reference to the root path plus with the ID of the heading of _docs/README.md_.
 
-These approaches were attempted but do not work:
+e.g.
 
 ```
-# This README in the URL when you click on it.
-[Home](README.md#docsify-template)
-
-# This is not a valid ID when clicking from a file other than the _docs/README.md_ file.
-[Home](#docsify-template)
+- [Home](/#my-project)
 ```
 
 ### 5. Configure cover page
