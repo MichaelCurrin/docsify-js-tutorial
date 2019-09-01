@@ -9,15 +9,18 @@ _Note: The instructions in this repo are intended for Linux and Mac environments
 
 ![icon](_media/docs_brackets.png)
 
-## How to serve a docs site with Docsify
+## Docsify basics
 
-1. Add a few files to your existing docs folder. You can use this project's files to get you going.
-    - **index page** - Homepage of the your docs site. This will setup the app using the _Docsify_ library, set a theme and apply other configurations.
-    - **sidebar** - Describes your menu layout. As _Docsify_ is not aware of directory structure so it may not function as you hope without this file.
-    - **cover page** - Optional landing page with background image and minimal text.
-2. Update your Github repo's config so that you will get a Github Pages site built from your docs directory. _Docsify_ also works with _Netlify_ as per their docs, but this project just considers the Github Pages case.
+A _Docsify_ doc site works works _without_ the need to edit your existing docs and _without_ building any HTML pages. The rendering is done on the client-side in a single page application, running on _index.html_.
 
-Note that this works _without_ editing your existing docs and _without_ building any HTML pages. The rendering is done on the client-side in a single page application, running on _index.html_.
+Files needed to build a docs site with _Docsify_:
+
+- **cover page** - Optional landing page with background color or image and some minimal text.
+- **homepage** - First page that a user sees, after the cover page.
+- **sidebar** - Describes your menu layout. As _Docsify_ is not aware of directory structure so it may not function as you hope without this file.
+- **index page** - Base of the app. This will setup the app using the _Docsify_ library, set a theme and apply other configurations.
+
+Once you have that setup in _docs_ directory and have pushed to Github, you can setup Github Pages serving the _docs_ directory. Note: _Docsify_ also works with _Netlify_ as per their docs, but this project just considers the Github Pages case.
 
 ## Get a local copy of this repo
 
