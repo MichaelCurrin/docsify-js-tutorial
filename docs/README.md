@@ -102,7 +102,9 @@ Copy the template files from this project's _quickstart_ directory to your _own_
 $ cp <PATH_TO_THIS_REPO>/quickstart/* .
 ```
 
-That will work as a basic doc site if you start serving it now, but continue with the steps below so it is customized for your needs. See the _Docsify_ [Configuration](https://docsify.now.sh/configuration) page for more detailed customization than covered in this tutorial.
+That will work as a basic doc site if you start serving it now, but continue with the steps below so it is customized for your needs.
+
+See the _Docsify_ [Configuration](https://docsify.now.sh/configuration) page for more detailed customization than covered in this tutorial. There are some useful things there in like adjusting the sidebar levels,  putting a logo in the sidebar or setting your root _README.md_ as your homepage.
 
 ### 3. Configure homepage
 
