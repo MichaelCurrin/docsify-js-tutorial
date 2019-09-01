@@ -1,5 +1,5 @@
 # Docsify Template
-> Skeleton of a light docs site built on _Docsify-JS_ and running on Github Pages
+> How to build a docs site with _Docsify-JS_ and Github Pages
 
 This project provides instructions on how to turn the docs directory of your project into a docs site hosted on Github Pages, using this site's configs and structure as a starting point.
 
