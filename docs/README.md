@@ -5,7 +5,9 @@ Convert your docs folder into a pretty docs website using [Docsify-JS](https://d
 
 My own aim is to turn the docs of many of my existing projects into doc sites, with minimal effort to convert them and then maintain them and their dependencies.
 
-_Note: The instructions in this repo are for Linux and Mac environments._
+_Note: The instructions in this repo are intended for Linux and Mac environments._
+
+![icon](_media/docs_brackets.png)
 
 ## How to serve a docs site with Docsify
 

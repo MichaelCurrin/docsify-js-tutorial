@@ -1,3 +1,5 @@
+![icon](_media/docs_face.png)
+
 # Docsify Template <small>dev</small>
 > A light docs site with a tutorial for turning your project's docs folder into a docs site
 
