@@ -1,7 +1,7 @@
 # Docsify Template
 > How to build a docs site with _Docsify-JS_ and Github Pages
 
-Convert your docs folder into a pretty docs website using [Docsify-JS](https://docsify.js.org/) and some minimal setup instructions. This project's site is running on _Docsify_.
+Convert your docs folder into a pretty docs website using [Docsify-JS](https://docsify.js.org/) and some minimal setup instructions. This Docsify Template site is running on _Docsify_.
 
 My own aim is to turn the docs of many of my existing projects into doc sites, with minimal effort to convert them and then maintain them and their dependencies.
 
@@ -47,21 +47,26 @@ No installation is needed. The _Docsify_ library is fetched in the browser - it'
 
 #### 2.1 Serve
 
-Choose any approach you wish to serve the docs folder. There are many listed [here](https://gist.github.com/willurd/5720255) or choose chose of these:
+Start running a local server to preview your site.
+
+Here are some options below, otherwise there is a much longer list [here](https://gist.github.com/willurd/5720255).
 
 -   From docs directory.
     ```bash
     $ cd docs
     $ python3 -m http.server 3000
+    $ python2 -m SimpleHTTPServer 3000
     ```
 -   From project root.
     ```bash
+    $ # Requires Docsify CLI.
     $ docsify serve docs
     ```
 
-Whatever you choose, you might want to add it as a alias in a file like `~/.bashrc` or `~/.alias`.
+You can also add aliases to your `~/.bashrc` or `~/.alias` to make them quick to use across projects.
 
 ```bash
+alias pserve='python3 -m http.server 3000'
 alias docs='docsify serve docs'
 ```
 
@@ -134,9 +139,17 @@ The sidebar is the menu page on the left of the docs and shows on all pages.
 
 If you **do not** want to configure a sidebar, delete *_sidebar.md* from your _docs_ directory, set the sidebar option to `false` in _index.html_ and skip to the next section.
 
-If you **do** have files in your _docs_ directory you want to appear in the menu page, then edit the _sidebar.md_ file. The format should be markdown bullet points which can be nested. Include links to you files - note that paths are relative to docs directory.
+If you **do** have files in your _docs_ directory you want to appear in the menu page, then edit the *_sidebar.md* file. The format should be markdown bullet points which can be nested. Include links to you files - note that paths are relative to docs directory.
 
-You can use this project's [sidebar](https://raw.githubusercontent.com/MichaelCurrin/docsify-template/master/docs/_sidebar.md) raw file on Github as a reference. This project does have a valid sidebar and docs directory structure, the sidebar is just disabled in the _index.html_ for the live site, as covered below.
+Here is an example sidebar config:
+
+```markdown
+- [Foo](foo.md)
+- [Bar](bar.md)
+- Baz
+    * [Fizz](baz/fizz.md)
+    * [Foo Bar](baz/foobar.md)
+```
 
 ##### Sidebar without config
 
