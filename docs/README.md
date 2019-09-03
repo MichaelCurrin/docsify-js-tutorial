@@ -81,7 +81,7 @@ User notes:
 
 ## Setup your own docs site
 
-The idea is to add to an existing project / git repo, so it is not that useful to create your own project from this repo.
+This tutorial is based on the _Docsify_ [Quickstart](https://docsify.js.org/#/quickstart) guide, but rather than giving snippets of file this tutorial lets you copy entire template files to your project, there are `TODO` items in the templates making it clear what to edit. Plus in the template, there are some useful or pretty configurations which have been set after investigating the configurations guide and trying them out on my own project.
 
 Follow to steps in this section copy a base structure and configs from this project to your own, then customize them for your needs.
 
