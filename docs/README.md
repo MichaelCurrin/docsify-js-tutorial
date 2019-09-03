@@ -112,8 +112,6 @@ $ cp <PATH_TO_THIS_REPO>/quickstart/* .
 
 That will work as a basic doc site if you start serving it now, but continue with the steps below so it is customized for your needs.
 
-See the _Docsify_ [Configuration](https://docsify.js.org/#/configuration) page for more detailed customization than covered in this tutorial. There are some useful things there in like adjusting the sidebar levels,  putting a logo in the sidebar or setting your root _README.md_ as your homepage. There is also a search bar you can add to site.
-
 ### 3. Configure homepage
 
 Edit the _docs/README.md_ homepage. Complete the `TODO` items, using the suggestions in this section.
@@ -225,6 +223,16 @@ Replace the end of URL with one of these four themes.
 You can optionally remove `/lib` from the theme URL to get the _uncompressed_ CSS file.
 
 More on Docsify [themes](https://docsify.js.org/#/themes?id=themes) guide.
+
+### 7 Advanced configuration
+
+The configuration steps above already get you a prettier and more usable site in my opinion than the barebones one which the _Docsify_ `init` command or their _Quickstart_ guide gives you.
+
+If you want to do further configuration, I recommend you look at the _Docsify_ [Configuration](https://docsify.js.org/#/configuration) page.
+
+There are some useful things there in like adjusting the sidebar levels,  putting a logo in the sidebar or setting your root _README.md_ as your homepage. There is even a search bar you can add to site.
+
+If you want know a summary view of what the defaults are for the app on `index.html`, see the _Docsify_ [config.js](https://github.com/docsifyjs/docsify/blob/develop/src/core/config.js) script.
 
 
 ## Docsify CLI
