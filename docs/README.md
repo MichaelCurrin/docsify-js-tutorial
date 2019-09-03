@@ -112,7 +112,7 @@ $ cp <PATH_TO_THIS_REPO>/quickstart/* .
 
 That will work as a basic doc site if you start serving it now, but continue with the steps below so it is customized for your needs.
 
-See the _Docsify_ [Configuration](https://docsify.now.sh/configuration) page for more detailed customization than covered in this tutorial. There are some useful things there in like adjusting the sidebar levels,  putting a logo in the sidebar or setting your root _README.md_ as your homepage. There is also a search bar you can add to site.
+See the _Docsify_ [Configuration](https://docsify.js.org/#/configuration) page for more detailed customization than covered in this tutorial. There are some useful things there in like adjusting the sidebar levels,  putting a logo in the sidebar or setting your root _README.md_ as your homepage. There is also a search bar you can add to site.
 
 ### 3. Configure homepage
 
@@ -175,7 +175,9 @@ The cover page is the first page that a visitor sees before scrolling down to th
 
 If you want to use it, edit your *docs/_coverpage.md* file and complete the `TODO` items. You can also use this project's [cover page](https://raw.githubusercontent.com/MichaelCurrin/docsify-template/master/docs/_coverpage.md) on Github as a reference.
 
-The _Docsify_ site explains how to set a background image or color [here](https://docsify.now.sh/cover?id=custom-background).
+You can add additional buttons to the bottom of the homepage, but there should be no gaps between the lines in your file. And the last one will be solid while the others will be transparent.
+
+The _Docsify_ site explains how to set a background image or color [here](https://docsify.js.org/#/cover?id=custom-background). A background image should come _after_ the buttons in your file, as _Docsify_ looks for an image there then uses CSS to place the image behind the content and give it faded grey look.
 
 You can delete the cover page and disable it in _index.html_.
 
