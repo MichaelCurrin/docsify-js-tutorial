@@ -268,3 +268,5 @@ Unlike building static files with HTML, with with Docsify there is a single page
 Also, the _Docsify_ approach will only work if JavaScript is enabled.
 
 The _Docsify_ site says it supports back to Internet Explorer 11, so that at least helps for a wider audience of users.
+
+Although SEO crawlers can do better at sites like single page application, _Docsify_ is still said not to be SEO-friendly, compared with static sites where all HTML is pre-rendered.
