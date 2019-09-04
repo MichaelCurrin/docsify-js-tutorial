@@ -193,9 +193,7 @@ You could include an image (logo, photo) above your project title. For example, 
 ![icon](_media/logo.svg)
 ```
 
-### 6. Style
-
-How to customize the style of your project.
+### 6. Configure Style
 
 Edit _index.html_.
 
@@ -230,7 +228,7 @@ You can optionally remove `/lib` from the theme URL to get the _uncompressed_ CS
 
 More on Docsify [themes](https://docsify.js.org/#/themes?id=themes) guide.
 
-### 7 Advanced configuration
+### 7. Advanced configuration
 
 The configuration steps above already get you a prettier and more usable site in my opinion than the barebones one which the _Docsify_ `init` command or their _Quickstart_ guide gives you.
 
