@@ -22,6 +22,7 @@ Files needed to build a docs site with _Docsify_:
 
 Once you have that setup in _docs_ directory and have pushed to Github, you can setup Github Pages serving the _docs_ directory. Note: _Docsify_ also works with _Netlify_ as per their docs, but this project just considers the Github Pages case.
 
+
 ## Get a local copy of this repo
 
 ```
@@ -35,11 +36,14 @@ $ git clone https://github.com/MichaelCurrin/docsify-template.git
 $ cd docsify-template
 ```
 
-## Quickstart to run locally
+
+## Quickstart local server
+
+Follow these steps to setup and run a Docsify project locally.
 
 ### 1. Install
 
-Clone this repo to your machine using the [steps](#clone-this-repo) above.
+Clone this repo to your machine using the [steps](#get-a-local-copy-of-this-repo) above.
 
 No installation is needed. The _Docsify_ library is fetched in the browser - it's fetched remotely so internet connection is needed.
 
@@ -74,6 +78,7 @@ alias docs='docsify serve docs'
 
 Then open http://localhost:3000 in the browser.
 
+
 User notes:
 
 - When viewing the site, if you scroll down far enough you will see a hamburger menu which lets you dynamically open or close the sidebar.
@@ -87,7 +92,7 @@ Follow to steps in this section copy a base structure and configs from this proj
 
 ### 1. Get this project locally
 
-Clone this repo to your machine using the [steps](#clone-this-repo) above.
+Clone this repo to your machine using the [steps](#get-a-local-copy-of-this-repo) above.
 
 ### 2. Create base structure
 
@@ -110,7 +115,8 @@ Copy the template files from this project's _quickstart_ directory to your _own_
 $ cp <PATH_TO_THIS_REPO>/quickstart/* .
 ```
 
-That will work as a basic doc site if you start serving it now, but continue with the steps below so it is customized for your needs.
+Start serving your docs folder now even though it is unfinished. Then as you follow the customization steps below, you can check to see what changes on the frontend.
+
 
 ### 3. Configure homepage
 
