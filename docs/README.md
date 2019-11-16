@@ -43,9 +43,9 @@ Follow these steps to setup and run a Docsify project locally.
 
 ### 1. Install
 
-Clone this repo to your machine using the [steps](#get-a-local-copy-of-this-repo) above.
+Clone this repo to your machine - see the [steps](#get-a-local-copy-of-this-repo) above.
 
-No installation is needed. The _Docsify_ library is fetched in the browser - it's fetched remotely so internet connection is needed.
+No installation is needed. When the HTML page is opened in the browser, the _Docsify_ library will be fetched from a CDN by the browser.
 
 ### 2. Run
 
