@@ -231,6 +231,8 @@ More on Docsify [themes](https://docsify.js.org/#/themes?id=themes) guide.
 
 ### 7. Advanced configuration
 
+This advanced section is optional, so can be skipped.
+
 The configuration steps above already get you a prettier and more usable site in my opinion than the barebones one which the _Docsify_ `init` command or their _Quickstart_ guide gives you.
 
 If you want to do further configuration, I recommend you look at the _Docsify_ [Configuration](https://docsify.js.org/#/configuration) page.
@@ -239,6 +241,15 @@ There are some useful things there in like adjusting the sidebar levels,  puttin
 
 If you want know a summary view of what the defaults are for the app on `index.html`, see the _Docsify_ [config.js](https://github.com/docsifyjs/docsify/blob/develop/src/core/config.js) script.
 
+## Setup Github Pages site
+
+If you followed the steps above, you'll have a locally running docs site. 
+
+Now, commit and push the files to Github.
+
+Next, edit your repo's setting on Github. Select the option to serve your `master` directory as a Github Pages site. If you refresh the settings page, you will see a link to your site there.
+
+Open the link in the browser.
 
 ## Docsify CLI
 
