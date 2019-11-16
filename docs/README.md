@@ -94,29 +94,29 @@ Follow to steps in this section copy a base structure and configs from this proj
 
 ### 1. Get this project locally
 
-Clone _this_ template repo to your machine using the [steps](#get-a-local-copy-of-this-repo) above.
+Clone this template repo to your machine using the [steps](#get-a-local-copy-of-this-repo) above, so you can use it copy files from later.
 
 ### 2. Create base structure
 
-Navigate to _your_ project's `docs` directory.
+Navigate to your existing project's `docs` directory.
 
 ```bash
 $ cd <PATH_TO_YOUR_REPO>/docs
 ```
 
-Create a file for Github Pages use. This can remain empty - its existence just tells Github Pages to include the underscore files in builds.
+Create a file for Github Pages to use. This can remain empty - its existence just tells Github Pages to include the underscore files in builds.
 
 ```bash
 $ touch .nojekyll
 ```
 
-Copy the template files from this project's _quickstart_ directory to your _own_ project.
+Copy the template files from the template project's _quickstart_ directory to your own project.
 
 ```bash
-$ cp <PATH_TO_THIS_REPO>/quickstart/* .
+$ cp <PATH_TO_TEMPLATE_REPO>/quickstart/* .
 ```
 
-Start serving your docs folder now even though it is unfinished. Then as you follow the customization steps below, you can check to see what changes on the frontend.
+Start serving your docs folder now even though it is incomplete. Then, as you follow the customization steps below, you can check to see what changes on the frontend.
 
 
 ### 3. Configure homepage
