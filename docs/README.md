@@ -67,7 +67,7 @@ Here are some options below, otherwise there is a much longer list [here](https:
     $ docsify serve docs
     ```
 
-You can also add aliases to your `~/.bashrc` or `~/.alias` to make them quick to use across projects.
+You can also add aliases to either your `~/.bashrc` or `~/.aliases` files to make them quick to use across projects.
 
 ```bash
 alias pserve='python3 -m http.server 3000'
