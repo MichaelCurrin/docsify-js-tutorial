@@ -1,9 +1,12 @@
 # Docsify Template
 > How to build a docs site with _Docsify-JS_ and Github Pages
 
-Convert your docs folder into a pretty docs website using [Docsify-JS](https://docsify.js.org/) and some minimal setup instructions. This Docsify Template site is running on _Docsify_.
+Convert your docs folder into a pretty docs website using [Docsify-JS](https://docsify.js.org/) and some minimal setup instructions. This project's doc site itself is also running on _Docsify_.
 
-My own aim is to turn the docs of many of my existing projects into doc sites, with minimal effort to convert them and then maintain them and their dependencies.
+Two main sections of this project:
+
+- [Quickstart local server](#quickstart-local-server) - Get a demo site running.
+- [Setup your own docs site](#setup-your-own-docs-site) - Convert your docs directory into a docs site hosted on Github pages. Uses templates files to get up and running with as little effort as possible.
 
 _Note: The instructions in this repo are intended for Linux and Mac environments._
 
@@ -78,7 +81,6 @@ alias docs='docsify serve docs'
 
 Then open http://localhost:3000 in the browser.
 
-
 User notes:
 
 - When viewing the site, if you scroll down far enough you will see a hamburger menu which lets you dynamically open or close the sidebar.
@@ -92,15 +94,14 @@ Follow to steps in this section copy a base structure and configs from this proj
 
 ### 1. Get this project locally
 
-Clone this repo to your machine using the [steps](#get-a-local-copy-of-this-repo) above.
+Clone _this_ template repo to your machine using the [steps](#get-a-local-copy-of-this-repo) above.
 
 ### 2. Create base structure
 
-Navigate to your project's docs directory.
+Navigate to _your_ project's `docs` directory.
 
 ```bash
-$ cd <PATH_TO_YOUR_REPO>
-$ cd docs
+$ cd <PATH_TO_YOUR_REPO>/docs
 ```
 
 Create a file for Github Pages use. This can remain empty - its existence just tells Github Pages to include the underscore files in builds.
