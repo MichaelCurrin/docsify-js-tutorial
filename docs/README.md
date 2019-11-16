@@ -247,7 +247,7 @@ If you followed the steps above, you'll have a locally running docs site.
 
 Now, commit and push the files to Github.
 
-Next, edit your repo's setting on Github. Select the option to serve your `master` directory as a Github Pages site. If you refresh the settings page, you will see a link to your site there.
+Next, edit your repo's setting on Github. Select the option to serve the `docs` directory of the `master` branch as Github Pages site. When you refresh the settings page, then you will see a link to your site there.
 
 Open the link in the browser.
 
