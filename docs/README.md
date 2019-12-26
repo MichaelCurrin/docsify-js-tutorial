@@ -128,7 +128,7 @@ Clone this template repo to your machine using the [steps](#get-a-local-copy-of-
     ```bash
     $ cp <PATH_TO_TEMPLATE_REPO>/quickstart/. .
     ```
-3. View the contents of the docs directory to see what was added. Note that you do not need an error page  _Docsify_ provides a `404 - Not found` page on a bad URL.
+3. View the contents of the docs directory to see what was added. Note that _Docsify_ provides a `404 - Not found` page for a bad URL so you do not need to.
 4. To see what the base site look like, start a server now using a command from the [serve](#21-serve) section. Open the web page URL and keep it open so you can check on it as you make changes in the following sections. If you use the _Docsify_ server, the page will auto refresh on a file save, otherwise you will have to manually refresh.
 
 
