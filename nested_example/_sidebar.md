@@ -1,3 +1,4 @@
+- [Home](#nested-example)
 - [Foo](foo.md)
 - [Bar](bar.md)
 - Baz
