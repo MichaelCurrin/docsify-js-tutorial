@@ -128,10 +128,8 @@ Clone this template repo to your machine using the [steps](#get-a-local-copy-of-
     ```bash
     $ cp <PATH_TO_TEMPLATE_REPO>/quickstart/. .
     ```
-
-Note that you do not need a page for `404 - Not found` as Docsify renders one for you.
-
-Your existing markdown files in your `docs` directory can now be served as a doc site. You may run a [serve](#21-serve) command now. Then, as you follow the customization steps below, you can check the frontend for incremental changes for areas like styling and fixing links.
+3. View the contents of the docs directory to see what was added. Note that you do not need an error page  _Docsify_ provides a `404 - Not found` page on a bad URL.
+4. To see what the base site look like, start a server now using a command from the [serve](#21-serve) section. Open the web page URL and keep it open so you can check on it as you make changes in the following sections. If you use the _Docsify_ server, the page will auto refresh on a file save, otherwise you will have to manually refresh.
 
 
 ### 3. Configure homepage
@@ -178,7 +176,7 @@ Guidelines for setting up a sidebar file:
 To setup a custom sidebar:
 
 1. Edit the *_sidebar.md* file.
-2. Add items. Example:
+2. Add items using guide above. Example:
     ```markdown
     - [Home](#docsify-template)
     - [Foo](foo.md)
@@ -187,6 +185,7 @@ To setup a custom sidebar:
         * [Fizz](baz/fizz.md)
         * [Foo Bar](baz/foobar.md)
     ```
+
 
 #### Note on homepage link
 
@@ -240,7 +239,7 @@ Find the style which is set in the `<head>` tag, which looks like this.
 <link rel="stylesheet" href="//unpkg.com/docsify/lib/themes/<THEME>">
 ```
 
-Replace the end of URL with one of these four themes.
+Replace the end of URL with one of these four themes:
 
 - `vue.css`
 - `buble.css`
