@@ -264,15 +264,32 @@ More on Docsify [themes](https://docsify.js.org/#/themes?id=themes) guide.
 
 ### 7. Advanced configuration
 
-_This advanced section is optional, so you may skip to [Github Pages](#setup-github-pages-site) section._
+The configuration steps above already get you a prettier and more usable site in my opinion than the barebones one which the _Docsify_ `init` command or their _Quickstart_ guide gives you. This section covers advanced steps - you may skip these and jump straight to the [Github Pages](#setup-github-pages-site) section.
 
-The configuration steps above already get you a prettier and more usable site in my opinion than the barebones one which the _Docsify_ `init` command or their _Quickstart_ guide gives you.
+#### App configuration
 
-For further configuration, look at the _Docsify_ [Configuration](https://docsify.js.org/#/configuration) page.
+You can update the config parameters passed in on the _index.html_ page. There are some useful things there in like adjusting the sidebar levels, putting a logo in the sidebar or setting your root _README.md_ as your homepage. There is even a search bar you can add.
 
-There are some useful things there in like adjusting the sidebar levels, putting a logo in the sidebar or setting your root _README.md_ as your homepage. There is even a search bar you can add.
+For available parameters, these are documented on the _Docsify_ [Configuration](https://docsify.js.org/#/configuration) page.
 
-If you want know a summary view of what the defaults are for the app on _index.html_, see the _Docsify_ [config.js](https://github.com/docsifyjs/docsify/blob/develop/src/core/config.js) script.
+For defaults - see _Docsify_ [config.js](https://github.com/docsifyjs/docsify/blob/develop/src/core/config.js) script.
+
+For some values to look at (provided here with defaults):
+
+```js
+window.$docsify = {
+  // ...
+
+  // Maximum Table of content level.
+  maxLevel: 6,
+  // Add table of contents (TOC) in custom sidebar. Try value of 2.
+  subMaxLevel: 0,
+}
+```
+
+See also the [Google Analytics tracking](https://docsify.js.org/#/plugins?id=google-analytics) section which needs a plugin script to be loaded.
+
+#### Favicon
 
 You can customize _index.html_ with a custom favicon if one exists.
 
