@@ -134,16 +134,16 @@ Clone this template repo to your machine using the [steps](#get-a-local-copy-of-
 
 ### 3. Configure homepage
 
-Edit the _docs/README.md_ homepage. Complete the `TODO` items, using the suggestions in this section.
+Edit your homepage (_docs/README.md_). Complete the `TODO` items, using the suggestions in this section.
 
-- Anything outside of your _docs_ directory will **not** be served online. Therefore you might want copy the the content from your project root's _README.md_ to the _docs/README.md_. After that, you might want to make the root _README.md_ very short, if you don't want to worry about keeping two identical files in sync.
-- You might want to opt for short _docs/README.md_ file if you prefer to put more documentation in other _docs_ files.
-- Note that you are not required to put in links to other docs file within your _docs/README.md_ file. As that is what the _Docsify_ sidebar. If you do put in any links in _docs/README.md_, they must be **relative** to the _docs_ directory such as `file.md`, as absolute URLs such `/docs/file.md` will not work within the _docs_ site.
+- Anything outside of your _docs_ directory will **not** be served. Therefore you might want copy the the content from your project root's _README.md_ to the homepage. After that, you could make the root _README.md_ very short, if you don't want to worry about keeping two identical files in sync.
+- You might want to opt for short homepage file if you prefer to put more documentation in other _docs_ files.
+- Note that you are not required to put in links to other docs file within your homepage file. As that is what the _Docsify_ sidebar. If you do put in any links in your homepage, they must be relative to the _docs_ directory, such as `file.md`. See [Doc links](#doc-links) for more info.
 
 
 ### 4. Configure menu structure
 
-If for some reason you do not want a navigation sidebar on the frontend, then delete *_sidebar.md* from your _docs_ directory, set the sidebar option to `false` in _index.html_ and skip to the next section -  [Configure Cover Page](#5-configure-cover-page)
+If for some reason you do not want a navigation sidebar on the frontend, then you should delete *_sidebar.md* from your _docs_ directory, set the `loadSidebar` option to `false` in _index.html_ and then skip to the next section -  [Configure Cover Page](#5-configure-cover-page)
 
 The sidebar is enabled in _index.html_ of the quickstart. A Docsify site is unaware of project structure, unless you provide it.
 
