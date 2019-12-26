@@ -80,16 +80,18 @@ Start running a local server to preview your site.
 
 Here are some options below, otherwise there is a much longer list [here](https://gist.github.com/willurd/5720255).
 
--   From docs directory.
+-   Serve from docs directory.
     ```bash
     $ cd docs
     $ python3 -m http.server 3000
     $ python2 -m SimpleHTTPServer 3000
     ```
--   From project root.
+-   Serve from project root.
     ```bash
     $ # Requires Docsify CLI.
     $ docsify serve docs
+    $ # Shorter form:
+    $ make serve
     ```
 
 You can also add aliases to either your `~/.bashrc` or `~/.aliases` files to make them quick to use across projects.
