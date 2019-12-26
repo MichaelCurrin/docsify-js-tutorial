@@ -1,0 +1,2 @@
+serve:
+	docsify serve docs
