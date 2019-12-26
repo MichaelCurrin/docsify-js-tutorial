@@ -252,15 +252,21 @@ More on Docsify [themes](https://docsify.js.org/#/themes?id=themes) guide.
 
 ### 7. Advanced configuration
 
-This advanced section is optional, so can be skipped.
+_This advanced section is optional, so you may skip to [Github Pages](#setup-github-pages-site) section._
 
 The configuration steps above already get you a prettier and more usable site in my opinion than the barebones one which the _Docsify_ `init` command or their _Quickstart_ guide gives you.
 
-If you want to do further configuration, I recommend you look at the _Docsify_ [Configuration](https://docsify.js.org/#/configuration) page.
+For further configuration, look at the _Docsify_ [Configuration](https://docsify.js.org/#/configuration) page.
 
-There are some useful things there in like adjusting the sidebar levels,  putting a logo in the sidebar or setting your root _README.md_ as your homepage. There is even a search bar you can add to site.
+There are some useful things there in like adjusting the sidebar levels, putting a logo in the sidebar or setting your root _README.md_ as your homepage. There is even a search bar you can add.
 
-If you want know a summary view of what the defaults are for the app on `index.html`, see the _Docsify_ [config.js](https://github.com/docsifyjs/docsify/blob/develop/src/core/config.js) script.
+If you want know a summary view of what the defaults are for the app on _index.html_, see the _Docsify_ [config.js](https://github.com/docsifyjs/docsify/blob/develop/src/core/config.js) script.
+
+You can customize _index.html_ with a custom favicon if one exists.
+
+```html
+<link rel="icon" href="_media/favicon.ico">
+```
 
 ## Setup Github Pages site
 
