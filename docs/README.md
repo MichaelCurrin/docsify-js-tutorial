@@ -25,7 +25,6 @@ Files needed to build a docs site with _Docsify_:
 
 Once you have that setup in _docs_ directory and have pushed to Github, you can setup Github Pages serving the _docs_ directory. Note: _Docsify_ also works with _Netlify_ as per their docs, but this project just considers the Github Pages case.
 
-
 ## Get a local copy of this repo
 
 ```
@@ -38,6 +37,29 @@ $ git clone https://github.com/MichaelCurrin/docsify-template.git
 ```bash
 $ cd docsify-template
 ```
+
+## Doc links
+
+Instructions for creating valid Docsify links in your markdown files.
+
+The _Docsify_ site is served from the `docs` directory with restrictions on links between files. Therefore you must ensure your markdown files (including the [sidebar](#sidebar)) are valid.
+
+As usual external resource can be linked e.g. `https://example.com`.
+
+## Rules for internal links
+
+Apply these rules to the latter part of markdown URLs such as `[Text](page.md)`.
+
+- Links must always be relative to the `docs` directory and **not** to the file containing the link.
+    - e.g. `foo.md`, which becomes `/#/foo`.
+    - e.g. `baz/fizz.md`, which becomes `/#/baz/fizz`.
+- Links may contain a leading forward slash. This has no effect so can be ignored.
+    - e.g. `/foo.md`, which becomes `/#/foo`.
+- Links may use an ID.
+    - e.g. To link to heading on the homepage, use `#my-project`, which gets converted to `/#/?id=my-project`.
+    - e.g. To link to another page, use `foo.md#my-project`.
+- Do not reference the `docs` directory in the path. e.g. `/docs/foo.md`
+- Do not refer to content outside of the `docs` directory.  e.g. `../README.md`
 
 
 ## Quickstart local server
@@ -98,25 +120,18 @@ Clone this template repo to your machine using the [steps](#get-a-local-copy-of-
 
 ### 2. Create base structure
 
-Navigate to your existing project's `docs` directory.
+1. Navigate to your existing project's `docs` directory.
+    ```bash
+    $ cd <PATH_TO_YOUR_REPO>/docs
+    ```
+2. Copy the copy the contents of the template project's _quickstart_ directory to your own project. Note the trailing dot on the first path in order to include hidden files.
+    ```bash
+    $ cp <PATH_TO_TEMPLATE_REPO>/quickstart/. .
+    ```
 
-```bash
-$ cd <PATH_TO_YOUR_REPO>/docs
-```
+Note that you do not need a page for `404 - Not found` as Docsify renders one for you.
 
-Create a file for Github Pages to use. This can remain empty - its existence just tells Github Pages to include the underscore files in builds.
-
-```bash
-$ touch .nojekyll
-```
-
-Copy the template files from the template project's _quickstart_ directory to your own project.
-
-```bash
-$ cp <PATH_TO_TEMPLATE_REPO>/quickstart/* .
-```
-
-Start serving your docs folder now even though it is incomplete. Then, as you follow the customization steps below, you can check to see what changes on the frontend.
+Your existing markdown files in your `docs` directory can now be served as a doc site. You may run a [serve](#21-serve) command now. Then, as you follow the customization steps below, you can check the frontend for incremental changes for areas like styling and fixing links.
 
 
 ### 3. Configure homepage
@@ -130,49 +145,56 @@ Edit the _docs/README.md_ homepage. Complete the `TODO` items, using the suggest
 
 ### 4. Configure menu structure
 
-#### Doc links
+If for some reason you do not want a navigation sidebar on the frontend, then delete *_sidebar.md* from your _docs_ directory, set the sidebar option to `false` in _index.html_ and skip to the next section -  [Configure Cover Page](#5-configure-cover-page)
 
-If you have put links from one of your doc files to another, you might have to edit your existing doc files to avoid the links breaking when viewed as docs site.
+The sidebar is enabled in _index.html_ of the quickstart. A Docsify site is unaware of project structure, unless you provide it.
 
-References should be relative to the _docs_ directory not to the file itself, even if a file is inside a directory within _docs_. This is unlike the expected of markdown.
+#### Auto sidebar
 
-Any link references which start as `docs/file.md`  or `/docs/file.md` will cause errors, because the server is only aware of directories within _docs_.
+You may choose to display the sidebar, but have it populated automatically from headings on the homepage (_docs/README.md_).
 
-#### Sidebar
+This solution is great if you are happy to move all your doc content into a **single** markdown file, as it means not having to worry about manually updating a navigation bar when you docs change. Especially if you have a many files to manage or they are likely to change in name or structure.
 
-The sidebar is the menu page on the left of the docs and shows on all pages.
+To setup auto sidebar:
 
-If you **do not** want to configure a sidebar, delete *_sidebar.md* from your _docs_ directory, set the sidebar option to `false` in _index.html_ and skip to the next section.
+1. Delete *_sidebar.md*.
+2. Open _index.html_ to edit it.
+3. Set `loadSidebar: false` and save.
 
-If you **do** have files in your _docs_ directory you want to appear in the menu page, then edit the *_sidebar.md* file. The format should be markdown bullet points which can be nested. Include links to you files - note that paths are relative to docs directory.
+Warning: If you go for this option without a configured sidebar, do not leave any links in your _docs/README.md_ which refer to other doc files. Although the link may be valid, once you click on the link, the sidebar on that page will reflect the target page rather than the outline of the _docs/README.md_ page, which is inconsistent and jarring behavior.
 
-Here is an example sidebar config:
+#### Custom sidebar
 
-```markdown
-- [Foo](foo.md)
-- [Bar](bar.md)
-- Baz
-    * [Fizz](baz/fizz.md)
-    * [Foo Bar](baz/foobar.md)
-```
+You can choose to configure a custom sidebar. This is necessary to link to the multiple doc files.
 
-##### Sidebar without config
+Guidelines for setting up a sidebar file:
 
-You could have a sidebar enabled in _index.html_, but without sidebar config set (empty file or no file). Then your index page will use its **own** page outline as the menu. But with no access to subpages, as _Docsify_ is not aware of them_.
+- The format should be bullet points in markdown format.
+- Each menu item should be a markdown link e.g. `[Name](link)`. An item may exist on the menu without a link - this is useful for grouping items together under a menu heading.
+- The links must be follow restrictions noted above in [Doc links](#doc-links). If the doc files change (e.g. are renamed or moved), you need to remember to update the sidebar config.
+- The bullet points may optionally be nested, using indentation. You may create arbitrary indentation in your sidebar, even if all you files are at the same level in the _docs_ directory.
 
-You may even **want** your entire site to be a single page based on _README.md_ content and no other doc files. As you will get the benefit of the look of a single page site and any section headings added to your menu will be added to your menu pane automatically (no need to maintain a sidebar file).
 
-##### Link to homepage
+To setup a custom sidebar:
 
-The button at the top of sidebar is a link to site's root path. This will be the cover page, if you have one.
+1. Edit the *_sidebar.md* file.
+2. Add items. Example:
+    ```markdown
+    - [Home](#docsify-template)
+    - [Foo](foo.md)
+    - [Bar](bar.md)
+    - Baz
+        * [Fizz](baz/fizz.md)
+        * [Foo Bar](baz/foobar.md)
+    ```
 
-If you a menu button which takes you to the homepage rather, add an item which has a reference to the root path plus with the ID of the heading of _docs/README.md_.
+#### Note on homepage link
 
-e.g.
+The clickable text above the standard sidebar takes you to the cover page. You can scroll down to the homepage (_docs/README.md_), but there are no links on the page to the homepage. Therefore a link to the homepage has been included in the example above.
 
-```
-- [Home](/#my-project)
-```
+More specifically, the link is a reference to an anchor tag on the root URL, where anchor tag refers the ID of the homepage heading element.
+
+This ID is created already by _Docsify_. To find it, go to the coverpage, scroll down to the homepage and click on the heading. The URL will be something like `http://localhost:3000/#/?id=docsify-template`. The part we want is the end e.g. `docsify-template`. This is really the text of heading element, which has been made lowercase and hyphenated. Copy this to the sidebar file and prefix it with a hash symbol.
 
 ### 5. Configure cover page
 
@@ -243,7 +265,7 @@ If you want know a summary view of what the defaults are for the app on `index.h
 
 ## Setup Github Pages site
 
-If you followed the steps above, you'll have a locally running docs site. 
+If you followed the steps above, you'll have a locally running docs site.
 
 Now, commit and push the files to Github.
 
