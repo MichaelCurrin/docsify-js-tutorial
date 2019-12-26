@@ -12,7 +12,9 @@ The tutorial is available in two forms:
 - Github Pages: [docs site](https://michaelcurrin.github.io/docsify-template/#/). This also live demo of the kind of site you would have after completing the tutorial.
 - Project docs: View the docs as plain markdown format in the repo, either locally or on Github. See the [docs](/docs) directory.
 
-The tutorial references the [quickstart](/quickstart) at the project root.
+The tutorial references the [quickstart](/quickstart) directory at the project root.
+
+See also the [Nested Example](/nested_example/README.md) section for understanding links in markdown and the sidebar.
 
 ## License
 
