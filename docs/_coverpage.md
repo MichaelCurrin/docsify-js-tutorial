@@ -1,6 +1,6 @@
 ![icon](_media/docs_face.png)
 
-# Docsify Template <small>v1.2.0</small>
+# Docsify Template [![GitHub release](https://img.shields.io/github/tag/MichaelCurrin/docsify-template.svg)](https://GitHub.com/MichaelCurrin/docsify-template/tags/)
 > Tutorial for turning your project's docs folder into a docs site
 
 - :hourglass_flowing_sand: Minimal effort to setup in a few minutes
