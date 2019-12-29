@@ -178,9 +178,9 @@ Guidelines for setting up a sidebar file:
 To setup a custom sidebar:
 
 1. Edit the *_sidebar.md* file.
-2. Add items using guide above. Example:
+2. Add items using guide above. Example below.
     ```markdown
-    - [Home](#docsify-template)
+    - [Home](/#my-app)
     - [Foo](foo.md)
     - [Bar](bar.md)
     - Baz
@@ -191,11 +191,17 @@ To setup a custom sidebar:
 
 #### Note on homepage link
 
-The clickable text above the standard sidebar takes you to the cover page. You can scroll down to the homepage (_docs/README.md_), but there are no links on the page to the homepage. Therefore a link to the homepage has been included in the example above.
+The clickable text above the standard sidebar takes you to the cover page. You can scroll down to the homepage (_docs/README.md_), but there are no links on the page to the homepage. So add a link to the homepage with the first entry above. Note: An alternative is to use the nav bar config for Home button, rather than sidebar config.
 
-More specifically, the link is a reference to an anchor tag on the root URL, where anchor tag refers the ID of the homepage heading element.
+```
+- [Home](/#my-app)
+```
 
-This ID is created already by _Docsify_. To find it, go to the coverpage, scroll down to the homepage and click on the heading. The URL will be something like `http://localhost:3000/#/?id=docsify-template`. The part we want is the end e.g. `docsify-template`. This is really the text of heading element, which has been made lowercase and hyphenated. Copy this to the sidebar file and prefix it with a hash symbol.
+NB. The leading forwardslash is **required** here for correct behavior. As the anchor tag will be invalid on other pages such as `foo.md` which has path `/#/foo/`).
+
+The link is a reference to an anchor tag on the root URL, where anchor tag refers the ID of the homepage heading element. This ID will be created by _Docsify_. To find it, go to the coverpage, scroll down to the homepage and click on the heading. The URL will be something like `http://localhost:3000/#/?id=my-app`. The part we want is the end e.g. `my-app`.
+
+This is really the text of heading element, which has been made lowercase and hyphenated. Copy this to the sidebar file and prefix it with a hash symbol.
 
 ### 5. Configure cover page
 
