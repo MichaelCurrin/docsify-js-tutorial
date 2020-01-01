@@ -1,9 +1,9 @@
 ![icon](_media/docs_face.png)
 
 # Docsify Template
-> Tutorial for turning your project's docs folder into a docs site.
+> Tutorial to turn your docs into a docs site using base files
 
-- :hourglass_flowing_sand: Setup in a few minutes
+- :hourglass_flowing_sand: Setup a basic site in a few minutes
 - :open_file_folder: No need to reformat or restructure existing markdown docs
 - :pushpin: No static site generator needed
 - :hammer: No CLI tool required - library loads in the browser
