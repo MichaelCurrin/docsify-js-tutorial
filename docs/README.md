@@ -195,23 +195,16 @@ You can choose to configure a custom sidebar. This is necessary to link to the m
 
 ##### Guidelines
 
-Guidelines for setting up a sidebar file:
+How to setup a sidebar file:
 
 - The format should be bullet points in markdown format.
 - Each menu item should be a markdown link e.g. `[Name](link)`. An item may exist on the menu without a link - this is useful for grouping items together under a menu heading.
-- The links must be follow restrictions noted above in [Doc links](#doc-links). If the doc files change (e.g. are renamed or moved), you need to remember to update the sidebar config.
+- The links must be follow restrictions noted above in [Linking to pages](#linking-to-pages). If the doc files change (e.g. are renamed or moved), you need to remember to update the sidebar config.
 - The bullet points may optionally be nested, using indentation. You may create arbitrary indentation in your sidebar, even if all you files are at the same level in the _docs_ directory.
 
 Example:
 
-```markdown
-- [Home](/#my-app)
-- [Foo](foo.md)
-- [Bar](bar.md)
-- Baz
-    * [Fizz](baz/fizz.md)
-    * [Foo Bar](baz/foobar.md)
-```
+[_sidebar.md](https://raw.githubusercontent.com/MichaelCurrin/docsify-template/master/nested_example/_sidebar.md ':include :type=code')
 
 ##### Setup custom sidebar
 
