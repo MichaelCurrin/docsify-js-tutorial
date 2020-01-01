@@ -1,8 +1,14 @@
-<!-- TODO: Replace title and description. -->
+<!-- TODO: Update with your values. -->
 # My Project Name
 > My project description
 
-<!-- TODO Replace the body below with your headings and content. -->
+[![Made with Docsify](https://img.shields.io/badge/Made%20with-Docsify-1f425f.svg)](https://docsify.js.org/)
+<!-- TODO: Update repo links.-->
+[![GitHub release](https://img.shields.io/github/tag/<USERNAME>/<REPO-NAME>.svg)](https://GitHub.com/<USERNAME>/<REPO-NAME>/tags/)
+<!-- TODO: Update repo link and change license type if not MIT. -->
+[![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/<USERNAME>/<REPO-NAME>/blob/master/LICENSE)
+
+<!-- TODO: Replace the body below with your headings and content. -->
 
 ## Sample
 
