@@ -14,8 +14,7 @@ If you know what _Docsify_ is and want to start using it immediately, feel free 
 
 _Note: The instructions in this repo are intended for Linux and macOS environments._
 
-
-## Why use Docsify for a docs site?
+## Why use _Docsify_?
 
 My requirement is to build a docs site with minimal setup to use existing docs directories without restructuring or formatting the docs. I found _Docsify_ is ideal for this.
 
@@ -23,33 +22,23 @@ You can use _Docsify_ with its defaults or very simple tweaks, yet get a UI with
 
 ![icon](_media/docs_brackets.png)
 
-## Docsify basics
+## _Docsify_ basics
 
 A _Docsify_ doc site works works _without_ the need to edit your existing docs and _without_ building any HTML pages. The rendering is done on the client-side in a single page application, running on _index.html_.
 
-Files needed to build a docs site with _Docsify_:
+### Structure
 
-- **cover page** - Optional landing page with background color or image and some minimal text.
-- **homepage** - First page that a user sees, after the cover page.
-- **sidebar** - Describes your menu layout. As _Docsify_ is not aware of directory structure so it may not function as you hope without this file.
-- **index page** - Base of the app. This will setup the app using the _Docsify_ library, set a theme and apply other configurations.
+Main components of a _Docsify_ site.
+
+- **cover page** - Optional. Landing page with background color or image and some minimal text.
+- **homepage** - First page that a user sees, after the cover page. This is a content page written in markdown and it could be the only page of your site if you like.
+- **index page** - HTML file base of the app. This includes JS and CSS calls for setting up and styling the _Docsify_ app. Plus JS code which you set to customize the app.
+- **sidebar** - Optional. Describes the menu layout for the left sidebar, using custom ordering and nested structure. _Docsify_ is not aware of directory structure, so this is where you get to define your menu. Alternatively, let _Docsify_ create the menu bar based on the structure of your homepage (_docs/README.md) file - this works best if you only have a single content markdown page or a _navbar_ (top of the screen) to switch between sections.
+- **navbar** - Optional. Describes the menu layout for the top right menu.
 
 Once you have that setup in _docs_ directory and have pushed to Github, you can setup Github Pages serving the _docs_ directory. Note: _Docsify_ also works with _Netlify_ as per their docs, but this project just considers the Github Pages case.
 
-## Get a local copy of this repo
-
-```
-$ # Clone with SSH
-$ git clone git@github.com:MichaelCurrin/docsify-template.git
-$ # Clone with HTTPS
-$ git clone https://github.com/MichaelCurrin/docsify-template.git
-```
-
-```bash
-$ cd docsify-template
-```
-
-## Doc links
+### Linking to pages
 
 Instructions for creating valid Docsify links in your markdown files.
 
@@ -57,7 +46,7 @@ The _Docsify_ site is served from the `docs` directory with restrictions on link
 
 As usual external resource can be linked e.g. `https://example.com`.
 
-## Rules for internal links
+**Rules for internal links**
 
 Apply these rules to the latter part of markdown URLs such as `[Text](page.md)`.
 
@@ -72,14 +61,56 @@ Apply these rules to the latter part of markdown URLs such as `[Text](page.md)`.
 - Do not reference the `docs` directory in the path. e.g. `/docs/foo.md`
 - Do not refer to content outside of the `docs` directory.  e.g. `../README.md`
 
+## Serve a _Docsify_ site locally
+
+Start running a local server to preview a _Docsify_ site. Choose an option below.
+
+-   Run Python web server.
+    ```bash
+    $ cd docs
+    $ python3 -m http.server 3000
+    $ python2 -m SimpleHTTPServer 3000
+    ```
+-   Run [Docsify CLI](#docsify-cli) web server. This must be installed locally.
+    ```bash
+    $ # From project root.
+    $ docsify serve docs
+    $ # Shortcut.
+    $ make docs
+    ```
+- Run using something else. Choose from this list - [link](https://gist.github.com/willurd/5720255).
+
+**Aliases**
+
+Pro-tip! You can also add aliases to either your `~/.bashrc` or `~/.aliases` files to make them quick to use across projects.
+
+- Setup
+    ```bash
+    $ alias pserve='python3 -m http.server 3000'
+    ```
+- Run
+    ```bash
+    $ pserve
+    ```
 
 ## Quickstart local server
 
-Follow these steps to setup and run a Docsify project locally.
+Follow these steps to setup and run an existing _Docsify_ project locally . In this case, we get a local copy of this _Docsify Template_ project and serve it.
 
 ### 1. Install
 
-Clone this repo to your machine - see the [steps](#get-a-local-copy-of-this-repo) above.
+Clone this repo to your machine.
+
+```bash
+$ # Clone with SSH
+$ git clone git@github.com:MichaelCurrin/docsify-template.git
+$ # Clone with HTTPS
+$ git clone https://github.com/MichaelCurrin/docsify-template.git
+```
+
+```bash
+$ cd docsify-template
+```
 
 No installation is needed. When the HTML page is opened in the browser, the _Docsify_ library will be fetched from a CDN by the browser.
 
@@ -87,30 +118,7 @@ No installation is needed. When the HTML page is opened in the browser, the _Doc
 
 #### 2.1 Serve
 
-Start running a local server to preview your site.
-
-Here are some options below, otherwise there is a much longer list [here](https://gist.github.com/willurd/5720255).
-
--   Serve from docs directory.
-    ```bash
-    $ cd docs
-    $ python3 -m http.server 3000
-    $ python2 -m SimpleHTTPServer 3000
-    ```
--   Serve from project root.
-    ```bash
-    $ # Requires Docsify CLI.
-    $ docsify serve docs
-    $ # Shorter form, from root of this project:
-    $ make docs
-    ```
-
-You can also add aliases to either your `~/.bashrc` or `~/.aliases` files to make them quick to use across projects.
-
-```bash
-alias pserve='python3 -m http.server 3000'
-alias docs='docsify serve docs'
-```
+Follow [Serve a Docsify site locally](#serve-a-docsify-site-locally) instructions.
 
 #### 2.2 View
 
@@ -129,7 +137,18 @@ Follow to steps in this section copy a base structure and configs from this proj
 
 ### 1. Get this project locally
 
-Clone this template repo to your machine using the [steps](#get-a-local-copy-of-this-repo) above, so you can use it copy files from later.
+Clone this template repo to your machine using the steps below, so you can use it copy files from later.
+
+```bash
+$ # Clone with SSH
+$ git clone git@github.com:MichaelCurrin/docsify-template.git
+$ # Clone with HTTPS
+$ git clone https://github.com/MichaelCurrin/docsify-template.git
+```
+
+```bash
+$ cd docsify-template
+```
 
 ### 2. Create base structure
 
@@ -155,7 +174,6 @@ Edit your homepage (_docs/README.md_). Complete the `TODO` items, using the sugg
 
 
 ### 4. Configure menu structure
-
 
 #### Auto sidebar
 
@@ -301,7 +319,7 @@ See also the [Google Analytics tracking](https://docsify.js.org/#/plugins?id=goo
 
 #### Favicon
 
-You can customize _index.html_ with a custom favicon if one exists.
+Optionally customize _index.html_ to point to a custom _favicon_, if you added one.
 
 ```html
 <link rel="icon" href="_media/favicon.ico">
@@ -370,7 +388,7 @@ $ docsify serve docs
 
 For Server-Side Rendering. I haven't tried this yet.
 
-## Static site generator vs Single-Page Applicator
+## Static site vs SPA
 
 ### Server side rendering
 
@@ -380,7 +398,7 @@ However, _Docsify_ provides the option of pre-rendering all the views as static 
 
 See [Server-Side Rendering](https://docsify.js.org/#/ssr) section of the _Docsify_ docs.
 
-### Why not use static site generator?
+### Why not use a static site generator?
 
 _Docsify_ is a SPA, not a static-site generator.
 
@@ -390,7 +408,7 @@ These are just tools to build a site. What is appropriate depends on your usecas
 
 I find _Docsify_ light to add to a project and to use for new projects. So it is a great fit for me.
 
-### A static site generator can be heavy
+A static site generator can be heavy to setup and manage.
 
 There are dependencies to manage - they might have to be upgraded if their are security vulnerabilities or they are no longer available. Such as plugins and themes for _Jekyll_. And plugins for _Hugo_. Plus you probably need a couple of _JavaScript_ or _CSS_ files that either you or a theme added. Such as _Query_. This _Docsify_ project only needs exactly one _JavaScript_ and one _CSS_ file.
 
