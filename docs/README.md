@@ -145,13 +145,10 @@ Edit your homepage (_docs/README.md_). Complete the `TODO` items, using the sugg
 
 ### 4. Configure menu structure
 
-If for some reason you do not want a navigation sidebar on the frontend, then you should delete *_sidebar.md* from your _docs_ directory, set the `loadSidebar` option to `false` in _index.html_ and then skip to the next section -  [Configure Cover Page](#5-configure-cover-page)
-
-The sidebar is enabled in _index.html_ of the quickstart. A Docsify site is unaware of project structure, unless you provide it.
 
 #### Auto sidebar
 
-You may choose to display the sidebar, but have it populated automatically from headings on the homepage (_docs/README.md_).
+You may choose to display the sidebar, but have it populated automatically from headings on a single HTML file - the homepage (_docs/README.md_). This is the way that this project's own docs site is setup.
 
 This solution is great if you are happy to move all your doc content into a **single** markdown file, as it means not having to worry about manually updating a navigation bar when you docs change. Especially if you have a many files to manage or they are likely to change in name or structure.
 
@@ -167,6 +164,8 @@ Warning: If you go for this option without a configured sidebar, do not leave an
 
 You can choose to configure a custom sidebar. This is necessary to link to the multiple doc files.
 
+##### Guidelines
+
 Guidelines for setting up a sidebar file:
 
 - The format should be bullet points in markdown format.
@@ -174,22 +173,27 @@ Guidelines for setting up a sidebar file:
 - The links must be follow restrictions noted above in [Doc links](#doc-links). If the doc files change (e.g. are renamed or moved), you need to remember to update the sidebar config.
 - The bullet points may optionally be nested, using indentation. You may create arbitrary indentation in your sidebar, even if all you files are at the same level in the _docs_ directory.
 
+Example:
 
-To setup a custom sidebar:
+```markdown
+- [Home](/#my-app)
+- [Foo](foo.md)
+- [Bar](bar.md)
+- Baz
+    * [Fizz](baz/fizz.md)
+    * [Foo Bar](baz/foobar.md)
+```
 
-1. Edit the *_sidebar.md* file.
-2. Add items using guide above. Example below.
-    ```markdown
-    - [Home](/#my-app)
-    - [Foo](foo.md)
-    - [Bar](bar.md)
-    - Baz
-        * [Fizz](baz/fizz.md)
-        * [Foo Bar](baz/foobar.md)
-    ```
+##### Setup custom sidebar
+
+1. Ensure `loadSidebar: true` is set in the _index.html_ file.
+    - The value of `true` means `*_sidebar.md*` will be referenced by the app.
+    - The sidebar is already enabled in the quicksart [index.html](https://github.com/MichaelCurrin/docsify-template/blob/master/quickstart/index.html).
+2. Edit the *_sidebar.md* file.
+3. Add items using the guidelines above.
 
 
-#### Note on homepage link
+##### Note on Home link
 
 The clickable text above the standard sidebar takes you to the cover page. You can scroll down to the homepage (_docs/README.md_), but there are no links on the page to the homepage. So add a link to the homepage with the first entry above. Note: An alternative is to use the nav bar config for Home button, rather than sidebar config.
 
