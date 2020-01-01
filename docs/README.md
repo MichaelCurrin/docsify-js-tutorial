@@ -90,8 +90,8 @@ Here are some options below, otherwise there is a much longer list [here](https:
     ```bash
     $ # Requires Docsify CLI.
     $ docsify serve docs
-    $ # Shorter form:
-    $ make serve
+    $ # Shorter form, from root of this project:
+    $ make docs
     ```
 
 You can also add aliases to either your `~/.bashrc` or `~/.aliases` files to make them quick to use across projects.
