@@ -283,6 +283,17 @@ You can optionally remove `/lib` from the theme URL to get the _uncompressed_ CS
 
 Read more on the _Docsify_ [themes](https://docsify.js.org/#/themes?id=themes) guide.
 
+Note: The _Buble_ theme has sidebar headings which are not distinguished from the sub items. Therefore you can add this to _index.html_ to get bold headings similar. Based on _vue.css_.
+
+```html
+<style>
+    .sidebar .sidebar-nav>ul>li {
+        font-weight: 700;
+        margin: 0;
+    }
+</style>
+```
+
 ### 7. Advanced configuration
 
 The configuration steps above already get you a prettier and more usable site in my opinion than the barebones one which the _Docsify_ `init` command or their _Quickstart_ guide gives you. This section covers advanced steps - you may skip these and jump straight to the [Github Pages](#setup-github-pages-site) section.
