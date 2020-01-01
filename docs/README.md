@@ -7,12 +7,19 @@
 
 Convert your docs folder into a pretty docs website using [Docsify-JS](https://docsify.js.org/) and some minimal setup instructions. This project's doc site itself is also running on _Docsify_.
 
-Two main sections of this project:
+If you know what _Docsify_ is and want to start using it immediately, feel free to skip to one of these sections:
 
 - [Quickstart local server](#quickstart-local-server) - Get a demo site running.
 - [Setup your own docs site](#setup-your-own-docs-site) - Convert your docs directory into a docs site hosted on Github pages. Uses templates files to get up and running with as little effort as possible.
 
-_Note: The instructions in this repo are intended for Linux and Mac environments._
+_Note: The instructions in this repo are intended for Linux and macOS environments._
+
+
+## Why use Docsify for a docs site?
+
+My requirement is to build a docs site with minimal setup to use existing docs directories without restructuring or formatting the docs. I found _Docsify_ is ideal for this.
+
+You can use _Docsify_ with its defaults or very simple tweaks, yet get a UI with menus, themes, mobile functionality and a cover page. And page loads are seamless in the shell as it is a SPA. These things that take more effort and code changes or additions if you want to do them with static-site generators. _Docsify_ also documentation as its main purpose, unlike some other tools.
 
 ![icon](_media/docs_brackets.png)
 
@@ -196,7 +203,6 @@ Example:
 2. Edit the *_sidebar.md* file.
 3. Add items using the guidelines above.
 
-
 ##### Note on Home link
 
 The clickable text above the standard sidebar takes you to the cover page. You can scroll down to the homepage (_docs/README.md_), but there are no links on the page to the homepage. So add a link to the homepage with the first entry above. Note: An alternative is to use the nav bar config for Home button, rather than sidebar config.
@@ -311,23 +317,80 @@ Next, edit your repo's setting on Github. Select the option to serve the `docs` 
 
 Open the link in the browser.
 
+
+## Write content
+
+This section deals with how to update and add to the content of your doc files.
+
+Embed
+
+[filename](https://docsify.js.org/_media/example.md ':include')
+
+
 ## Docsify CLI
 
-The CLI tool is optional. It can be used to do the following.
+_Docsify_ also provides a convenient but optional CLI. It helps you create and serve a Docsify project. In particular, it provides hot reloading by default when using the server - an open localhost webpage will refresh when project files are saved.
 
-- `docsify init docs`: Setup an initial _README.md_ (duplicated from project root), _index.html_ and _.nojekyll_ in your a target directory. If you don't want the CLI to do it for you, you can create the files by hand or use this project's _quickstart_ directory to get you going.
-- `docsify serve docs`: Serve the target directory as docs site locally, with hot reload for if you save any file changes. See [server](#21-serve) options above.
+### Setup
 
-View the Docsify [Quickstart](https://docsify.js.org/#/quickstart) guide for how to install the CLI in your global node packages and then to use it.
+Links:
 
+- [Docsify Quickstart](https://docsify.js.org/#/quickstart) guide - how to install the CLI in your global node packages and then use it.
+- [CLI documentation](https://docsifyjs.github.io/docsify-cli).
 
-## Why not a static site generator?
+### Commands
 
-These are just tools to build a site. What is appropriate depends on your use case, how much you need to customized the site and how much effort you want to spend on installing/running/maintaining the project. I found a static site generator is not a good fit for when I want to build a light docs site around existing docs directories in my projects.
+#### init
 
-Jekyll and Hugo are options for static site generators which can use themes suited to documentation and they can build off of a docs directory. If you want to read more about those, see my [resources](https://github.com/MichaelCurrin/static-sites-generator-resources) project.
+> Creates new docs
 
-A static site generator can be heavy...
+Setup an initial _README.md_ (duplicated from project root), _index.html_ and _.nojekyll_ in your a target directory. If you don't want the CLI to do it for you, you can create the files by hand or use this project's _quickstart_ directory to get you going.
+
+e.g.
+
+```bash
+$ docsify init docs
+```
+
+#### serve
+
+> Run local server to preview site.
+
+Serve the target directory as docs site locally, with hot reload for if you save any file changes. See [server](#21-serve) options above.
+
+e.g.
+
+```bash
+$ docsify serve docs
+```
+
+#### start
+
+> Server for SSR
+
+For Server-Side Rendering. I haven't tried this yet.
+
+## Static site generator vs Single-Page Applicator
+
+### Server side rendering
+
+Although SEO crawlers can do better at sites like single page application, _Docsify_ is still said not to be SEO-friendly, compared with static sites where all HTML is pre-rendered.
+
+However, _Docsify_ provides the option of pre-rendering all the views as static HTML. This can improve SEO.
+
+See [Server-Side Rendering](https://docsify.js.org/#/ssr) section of the _Docsify_ docs.
+
+### Why not use static site generator?
+
+_Docsify_ is a SPA, not a static-site generator.
+
+_Jekyll_ and _Hugo_ are excellent options for static site generators. They can use themes suited to documentation and they can build off of a _docs_ directory. If you want to read more about those, see my [resources](https://github.com/MichaelCurrin/static-sites-generator-resources) project.
+
+These are just tools to build a site. What is appropriate depends on your usecase, how much you need to customized the site and how much effort you want to spend on installing/running/maintaining the project.
+
+I find _Docsify_ light to add to a project and to use for new projects. So it is a great fit for me.
+
+### A static site generator can be heavy
 
 There are dependencies to manage - they might have to be upgraded if their are security vulnerabilities or they are no longer available. Such as plugins and themes for _Jekyll_. And plugins for _Hugo_. Plus you probably need a couple of _JavaScript_ or _CSS_ files that either you or a theme added. Such as _Query_. This _Docsify_ project only needs exactly one _JavaScript_ and one _CSS_ file.
 
@@ -341,8 +404,6 @@ As with _Docsify_, you will probably have to create a config file which covers t
 
 Unlike building static files with HTML, with with Docsify there is a single page application running off of a _index.html_ - on each request, a markdown file is fetched by the client and rendered as HTML with a theme and menu. The performance will depend more on the server when serving static HTML pages (prebuild and serve page on the client) or on the client when using a single page application (build structure on the client).
 
-Also, the _Docsify_ approach will only work if JavaScript is enabled.
+Also, the _Docsify_ approach will only work if _JavaScript_ is enabled.
 
 The _Docsify_ site says it supports back to Internet Explorer 11, so that at least helps for a wider audience of users.
-
-Although SEO crawlers can do better at sites like single page application, _Docsify_ is still said not to be SEO-friendly, compared with static sites where all HTML is pre-rendered.
