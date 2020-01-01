@@ -1,6 +1,9 @@
 # Docsify Template
 > How to build a docs site with _Docsify-JS_ and Github Pages
 
+[![Made with Docsify](https://img.shields.io/badge/Made%20with-Docsify-1f425f.svg)](https://docsify.js.org/)
+[![GitHub release](https://img.shields.io/github/tag/MichaelCurrin/docsify-template.svg)](https://GitHub.com/MichaelCurrin/docsify-template/tags/)
+
 Convert your docs folder into a pretty docs website using [Docsify-JS](https://docsify.js.org/) and some minimal setup instructions. This project's doc site itself is also running on _Docsify_.
 
 Two main sections of this project:
@@ -188,7 +191,7 @@ Example:
 
 1. Ensure `loadSidebar: true` is set in the _index.html_ file.
     - The value of `true` means `*_sidebar.md*` will be referenced by the app.
-    - The sidebar is already enabled in the quicksart [index.html](https://github.com/MichaelCurrin/docsify-template/blob/master/quickstart/index.html).
+    - The sidebar is already enabled in the quickstart [index.html](https://github.com/MichaelCurrin/docsify-template/blob/master/quickstart/index.html).
 2. Edit the *_sidebar.md* file.
 3. Add items using the guidelines above.
 
@@ -201,7 +204,7 @@ The clickable text above the standard sidebar takes you to the cover page. You c
 - [Home](/#my-app)
 ```
 
-NB. The leading forwardslash is **required** here for correct behavior. As the anchor tag will be invalid on other pages such as `foo.md` which has path `/#/foo/`).
+NB. The leading forward slash is **required** here for correct behavior. As the anchor tag will be invalid on other pages such as `foo.md` which has path `/#/foo/`).
 
 The link is a reference to an anchor tag on the root URL, where anchor tag refers the ID of the homepage heading element. This ID will be created by _Docsify_. To find it, go to the coverpage, scroll down to the homepage and click on the heading. The URL will be something like `http://localhost:3000/#/?id=my-app`. The part we want is the end e.g. `my-app`.
 
@@ -260,7 +263,7 @@ Replace the end of URL with one of these four themes:
 
 You can optionally remove `/lib` from the theme URL to get the _uncompressed_ CSS file.
 
-More on Docsify [themes](https://docsify.js.org/#/themes?id=themes) guide.
+Read more on the _Docsify_ [themes](https://docsify.js.org/#/themes?id=themes) guide.
 
 ### 7. Advanced configuration
 
