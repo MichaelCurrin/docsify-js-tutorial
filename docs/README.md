@@ -340,9 +340,67 @@ Open the link in the browser.
 
 This section deals with how to update and add to the content of your doc files.
 
-Embed
+### Embed
 
-[filename](https://docsify.js.org/_media/example.md ':include')
+You can embed content such as video, audio, iframes (`.html`), code blocks or even Markdown files.
+
+#### Format
+
+Add the `':include'` parameter in a markdown URL reference. Here is the format:
+
+```markdown
+[filename](url ':include')
+```
+
+The URL could be a local file (e.g. `_media/foo.js`) or a remote URL `https://...`.
+
+If you want to embed a code block, you can use the automatic formatting. But markdown and HTML files need to be marked as a code if you want them as code rather than HTML.
+
+```
+':include :type=code'
+```
+
+See the _Docsify_ [Embed](https://docsify.js.org/#/embed-files) help for forcing types and using fragments.
+
+#### Examples
+
+#### Render markdown
+
+Render markdown as HTML.
+
+```markdown
+[example.md](https://docsify.js.org/_media/example.md ':include')
+```
+
+[example.md](https://docsify.js.org/_media/example.md ':include')
+
+Note: The result is _not_ inside a code block expected. It is inside a quote block because the source content starts with `> `.
+
+#### JS snippet
+
+Auto formatted.
+
+```markdown
+[example.js](_media/example.js ':include' )
+```
+
+[example.js](_media/example.js ':include' )
+
+#### Markdown snippet
+
+Force to code snippet.
+
+```markdown
+[_sidebar.md](_coverpage.md ':include :type=code')
+```
+
+[_sidebar.md](_coverpage.md ':include :type=code')
+
+#### Warnings
+
+- Do not put the URL in a bullet point as it will become an ordinary link.
+- Do not put two embed items in a sequence without some characters in between, otherwise you will get a JS error rending the page. Putting an empty line between them is **not** sufficient.
+- If you embed a URL of a Github file, remember to use the _Raw_ URL otherwise you will get an error.
 
 
 ## Docsify CLI
