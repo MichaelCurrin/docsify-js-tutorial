@@ -413,10 +413,14 @@ _Docsify_ also provides a convenient but optional CLI. It helps you create and s
 
 ### Setup
 
-Links:
+```bash
+$ npm i docsify-cli -g
+```
 
-- [Docsify Quickstart](https://docsify.js.org/#/quickstart) guide - how to install the CLI in your global node packages and then use it.
-- [CLI documentation](https://docsifyjs.github.io/docsify-cli).
+Links for installing and using the CLI.
+
+- [Docsify Quickstart](https://docsify.js.org/#/quickstart) on _Docsify_ homepage.
+- [Docsify CLI](https://docsifyjs.github.io/docsify-cli) project's docs.
 
 ### Commands
 
@@ -436,7 +440,7 @@ $ docsify init docs
 
 > Run local server to preview site.
 
-Serve the target directory as docs site locally, with hot reload for if you save any file changes. See [server](#21-serve) options above.
+Serve the target directory as a docs site locally. This includes hot reload, to refresh the page on file changes. See [serve](#21-serve) options above.
 
 e.g.
 
@@ -444,11 +448,13 @@ e.g.
 $ docsify serve docs
 ```
 
+Serves as [localhost:3000/](http://localhost:3000/), or a different port if there is already a _Docsify_ server running.
+
 #### start
 
 > Server for SSR
 
-For Server-Side Rendering. I haven't tried this yet.
+This command is for Server-Side Rendering. I haven't tried this yet.
 
 ## Static site vs SPA
 
