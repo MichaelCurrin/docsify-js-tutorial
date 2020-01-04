@@ -2,7 +2,7 @@
 # My Project Name
 > My project description
 
-[![Made with Docsify](https://img.shields.io/badge/Made%20with-Docsify-1f425f.svg)](https://docsify.js.org/)
+[![Made with Docsify](https://img.shields.io/badge/Made%20with-Docsify-blue.svg)](https://docsify.js.org/)
 [![GitHub tag](https://img.shields.io/github/tag/<USERNAME>/<REPO-NAME>.svg)](https://GitHub.com/<USERNAME>/<REPO-NAME>/tags/) <!-- TODO: Update repo links.-->
 [![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/<USERNAME>/<REPO-NAME>/blob/master/LICENSE) <!-- TODO: Update repo link and change license type if not MIT. -->
 
