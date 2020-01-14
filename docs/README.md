@@ -306,18 +306,34 @@ For available parameters, these are documented on the _Docsify_ [Configuration](
 
 For defaults - see _Docsify_ [config.js](https://github.com/docsifyjs/docsify/blob/develop/src/core/config.js) script.
 
-For some values to look at (provided here with defaults):
+See some values below which are worth considering for the siderbar.
 
 ```js
 window.$docsify = {
-  // ...
-
-  // Maximum Table of content level.
+  // Maximum Table of Contents (TOC) level. Default value shown here.
   maxLevel: 6,
-  // Add table of contents (TOC) in custom sidebar. Try value of 2.
+  
+  // Add table of contents (TOC) in custom sidebar. Default value shown here. Try a value of 2.
   subMaxLevel: 0,
+  
+  logo: '/_media/icon.svg',
+  
+  name: 'docsify'
 }
 ```
+
+Change the homepage. These recommendations come from the docs.
+
+```js
+window.$docsify = {
+  // Change to /home.md
+  homepage: 'home.md',
+
+  // Or use the readme in your repo
+  homepage: 'https://raw.githubusercontent.com/docsifyjs/docsify/master/README.md'
+};
+```
+
 
 See also the [Google Analytics tracking](https://docsify.js.org/#/plugins?id=google-analytics) section which needs a plugin script to be loaded.
 
