@@ -1,7 +1,7 @@
 # Docsify Template
 > How to build a docs site with _Docsify-JS_ and Github Pages
 
-[![Made with Docsify](https://img.shields.io/badge/Made%20with-Docsify-1f425f.svg)](https://docsify.js.org/)
+[![Made with Docsify](https://img.shields.io/badge/Made%20with-Docsify-blue.svg)](https://docsify.js.org/)
 [![GitHub tag](https://img.shields.io/github/tag/MichaelCurrin/docsify-template.svg)](https://GitHub.com/MichaelCurrin/docsify-template/tags/)
 [![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/MichaelCurrin/docsify-template/blob/master/LICENSE)
 
