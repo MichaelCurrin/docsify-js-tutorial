@@ -63,35 +63,21 @@ Apply these rules to the latter part of markdown URLs such as `[Text](page.md)`.
 
 ## Serve a _Docsify_ site locally
 
-Start running a local server to preview a _Docsify_ site. Choose an option below.
+Start running a local server to preview a _Docsify_ site. Choose an option below depending on whether you want to install and run Docsify locally or use something you already have installed.
 
--   Run Python web server.
-    ```bash
-    $ cd docs
-    $ python3 -m http.server 3000
-    $ python2 -m SimpleHTTPServer 3000
-    ```
--   Run [Docsify CLI](#docsify-cli) web server. This must be installed locally.
+-   Run [Docsify CLI](#docsify-cli) web server.
     ```bash
     $ # From project root.
     $ docsify serve docs
     $ # Shortcut.
     $ make docs
     ```
-- Run using something else. Choose from this list - [link](https://gist.github.com/willurd/5720255).
-
-**Aliases**
-
-Pro-tip! You can also add aliases to either your `~/.bashrc` or `~/.aliases` files to make them quick to use across projects.
-
-- Setup
+-   Run a Python web server.
     ```bash
-    $ alias pserve='python3 -m http.server 3000'
+    $ cd docs
+    $ python3 -m http.server 3000
     ```
-- Run
-    ```bash
-    $ pserve
-    ```
+- Choose something else from this big list - [link](https://gist.github.com/willurd/5720255).
 
 ## Quickstart local server
 
@@ -99,7 +85,7 @@ Follow these steps to setup and run an existing _Docsify_ project locally . In t
 
 ### 1. Install
 
-Clone this repo to your machine.
+Clone this repo to your machine with one of these commands:
 
 ```bash
 $ # Clone with SSH
@@ -122,7 +108,7 @@ Follow [Serve a Docsify site locally](#serve-a-docsify-site-locally) instruction
 
 #### 2.2 View
 
-Then open http://localhost:3000 in the browser.
+Open http://localhost:3000 in the browser.
 
 User notes:
 
@@ -137,7 +123,7 @@ Follow to steps in this section copy a base structure and configs from this proj
 
 ### 1. Get this project locally
 
-Clone this template repo to your machine using the steps below, so you can use it copy files from later.
+Clone this template repo to your machine using one of the steps below, so you can use it copy files from later.
 
 ```bash
 $ # Clone with SSH
