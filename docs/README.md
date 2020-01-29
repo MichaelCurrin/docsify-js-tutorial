@@ -320,8 +320,17 @@ window.$docsify = {
 };
 ```
 
+#### Plugins
 
-See also the [Google Analytics tracking](https://docsify.js.org/#/plugins?id=google-analytics) section which needs a plugin script to be loaded.
+Highlights from the [List of Plugins](https://docsify.js.org/#/plugins?id=list-of-plugins) on the _Docsify_ site.
+- [External script](https://docsify.js.org/#/plugins?id=external-script) - If the script on the page is an external one (imports a js file via src attribute), you'll need this plugin to make it work.
+- [Google Analytics](https://docsify.js.org/#/plugins?id=google-analytics) - Add tracking.
+- [Tabs](https://docsify.js.org/#/plugins?id=tabs) - A docsify.js plugin for displaying tabbed content from markdown.
+
+Also of interest:
+- For pulling in JSON data and not just markdown files:
+    - [bandorko/docsify-variables](https://github.com/bandorko/docsify-variables)
+    - [kissybnts/docsify-json-variables](https://github.com/kissybnts/docsify-json-variables) or on [npm](https://www.npmjs.com/package/docsify-json-variables)
 
 #### Favicon
 
