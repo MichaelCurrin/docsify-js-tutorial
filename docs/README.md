@@ -1,7 +1,7 @@
 # Docsify Template
 > How to build a docs site with _Docsify-JS_ and Github Pages
 
-[![Made with Docsify](https://img.shields.io/badge/Made%20with-Docsify-blue.svg)](https://docsify.js.org/)
+[![Made with latest Docsify](https://img.shields.io/npm/v/docsify?label=docsify)](https://docsify.js.org/)
 [![GitHub tag](https://img.shields.io/github/tag/MichaelCurrin/docsify-template.svg)](https://GitHub.com/MichaelCurrin/docsify-template/tags/)
 [![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/MichaelCurrin/docsify-template/blob/master/LICENSE)
 
@@ -298,12 +298,12 @@ See some values below which are worth considering for the siderbar.
 window.$docsify = {
   // Maximum Table of Contents (TOC) level. Default value shown here.
   maxLevel: 6,
-  
+
   // Add table of contents (TOC) in custom sidebar. Default value shown here. Try a value of 2.
   subMaxLevel: 0,
-  
+
   logo: '/_media/icon.svg',
-  
+
   name: 'docsify'
 }
 ```
