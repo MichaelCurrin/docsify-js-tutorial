@@ -5,6 +5,8 @@
 [![GitHub tag](https://img.shields.io/github/tag/MichaelCurrin/docsify-template.svg)](https://GitHub.com/MichaelCurrin/docsify-template/tags/)
 [![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/MichaelCurrin/docsify-template/blob/master/LICENSE)
 
+- [Docs site](https://michaelcurrin.github.io/docsify-template/#/)
+
 This project will guide you to convert your project's docs folder into a pretty docs website. This project's own docs site is built on _Docsify-JS_ so serves as a good example.
 
 ## Project aims
