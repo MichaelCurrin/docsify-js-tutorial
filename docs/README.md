@@ -1,4 +1,4 @@
-# Docsify Template
+# Docsify JS Tutorial
 > How to build a docs site with _Docsify-JS_ and Github Pages
 
 [![Made with latest Docsify](https://img.shields.io/npm/v/docsify?label=docsify)](https://docsify.js.org/)
@@ -81,7 +81,7 @@ Start running a local server to preview a _Docsify_ site. Choose an option below
 
 ## Quickstart local server
 
-Follow these steps to setup and run an existing _Docsify_ project locally . In this case, we get a local copy of this _Docsify Template_ project and serve it.
+Follow these steps to setup and run an existing _Docsify_ project locally . In this case, we get a local copy of this _Docsify JS Tutorial_ project and serve it.
 
 ### 1. Install
 

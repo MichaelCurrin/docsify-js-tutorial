@@ -1,6 +1,6 @@
 ![icon](_media/docs_face.png)
 
-# Docsify Template
+# Docsify JS Tutorial
 > Tutorial to turn your docs into a docs site using base files
 
 - :hourglass_flowing_sand: Setup a basic site in a few minutes
