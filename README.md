@@ -3,12 +3,12 @@
 
 [![Made with latest Docsify](https://img.shields.io/npm/v/docsify?label=docsify)](https://docsify.js.org/)
 [![GitHub tag](https://img.shields.io/github/tag/MichaelCurrin/docsify-js-tutorial.svg)](https://GitHub.com/MichaelCurrin/docsify-js-tutorial/tags/)
-[![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/MichaelCurrin/docsify-js-tutorial/blob/master/LICENSE)
+[![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](#license)
 
-Links:
+**Links:**
 
-- [Docsify JS Tutorial](https://michaelcurrin.github.io/docsify-js-tutorial/#/) docs site for this repo.
-- [Docsify JS Template](https://github.com/MichaelCurrin/docsify-js-template) - a separate repo which accompanies this tutorial and can be reused easily through _Use this template_ button.
+- [Docsify JS Tutorial](https://michaelcurrin.github.io/docsify-js-tutorial/#/) site - docs for this repo.
+- [Docsify JS Template](https://github.com/MichaelCurrin/docsify-js-template) repo - a separate repo which accompanies this tutorial and can be reused easily through _Use this template_ button.
 
 This project will guide you on how to convert your project's docs folder into a pretty and elegant docs website. This project's own docs site is built on _Docsify-JS_ so serves as a good example.
 
@@ -49,3 +49,9 @@ See also the [Nested Example](/nested_example/README.md) section for understandi
 ## Contributing
 
 The repo is open for accepting contributions through a Pull Request.
+
+## License
+
+[MIT license](https://github.com/MichaelCurrin/docsify-js-tutorial/blob/master/LICENSE)
+
+Modify and reuse this project. Please link back to this repo.

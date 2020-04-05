@@ -1,9 +1,9 @@
 # Docsify JS Tutorial
-> How to build a docs site with _Docsify-JS_ and Github Pages
+> How to build a docs site using _Docsify-JS_ and _Github Pages_
 
 [![Made with latest Docsify](https://img.shields.io/npm/v/docsify?label=docsify)](https://docsify.js.org/)
 [![GitHub tag](https://img.shields.io/github/tag/MichaelCurrin/docsify-js-tutorial.svg)](https://GitHub.com/MichaelCurrin/docsify-js-tutorial/tags/)
-[![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/MichaelCurrin/docsify-js-tutorial/blob/master/LICENSE)
+[![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/MichaelCurrin/docsify-js-tutorial/blob/master/README.md#license)
 
 Convert your docs folder into a pretty docs website using [Docsify-JS](https://docsify.js.org/) and some minimal setup instructions. This project's doc site itself is also running on _Docsify_.
 
@@ -40,7 +40,7 @@ Once you have that setup in _docs_ directory and have pushed to Github, you can 
 
 ### Linking to pages
 
-Instructions for creating valid Docsify links in your markdown files.
+Instructions for creating valid _Docsify_ links in your markdown files.
 
 The _Docsify_ site is served from the `docs` directory with restrictions on links between files. Therefore you must ensure your markdown files (including the [sidebar](#sidebar)) are valid.
 
