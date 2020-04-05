@@ -52,6 +52,8 @@ The repo is open for accepting contributions through a Pull Request.
 
 ## License
 
-[MIT license](https://github.com/MichaelCurrin/docsify-js-tutorial/blob/master/LICENSE)
+Licensed under [MIT license](https://github.com/MichaelCurrin/docsify-js-tutorial/blob/master/LICENSE)
 
-Modify and reuse this project. Please link back to this repo.
+- You can modify and reuse this project.
+- A copy of the license and copyright notice must be included with the software. [source](https://choosealicense.com/licenses/#mit).
+- Please link back to this repo somewhere in your project.

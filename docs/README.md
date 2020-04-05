@@ -5,18 +5,25 @@
 [![GitHub tag](https://img.shields.io/github/tag/MichaelCurrin/docsify-js-tutorial.svg)](https://GitHub.com/MichaelCurrin/docsify-js-tutorial/tags/)
 [![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/MichaelCurrin/docsify-js-tutorial/blob/master/README.md#license)
 
-Convert your docs folder into a pretty docs website using [Docsify-JS](https://docsify.js.org/) and some minimal setup instructions. This project's doc site itself is also running on _Docsify_.
+Convert your _docs_ folder into a pretty docs website using [Docsify-JS](https://docsify.js.org/) and some minimal setup instructions. This project's site itself is also running on _Docsify_.
 
-If you know what _Docsify_ is and want to start using it immediately, feel free to skip to one of these sections:
+## Start a Docsify site
 
-- [Quickstart local server](#quickstart-local-server) - Get a demo site running.
-- [Setup your own docs site](#setup-your-own-docs-site) - Convert your docs directory into a docs site hosted on Github pages. Uses templates files to get up and running with as little effort as possible.
+This project provides three options for a choosing a docs site to run:
+
+- [Quickstart local server](#quickstart-local-server)
+    - Clone this repo and start serving the docs repo.
+- [Setup your own docs site](#setup-your-own-docs-site)
+    - Convert your _docs_ directory into a docs site hosted on Github Pages. Copy from some templates files to get up and running with as little effort as possible.
+- [Docsify JS Template](https://github.com/michaelcurrin/docsify-js-template/) repo
+    - A minimal template which was moved out of this project into a separate repo.
+    - Click _Use this template_ there and you'll be able to starting serving a site on Github Pages or locally.
 
 _Note: The instructions in this repo are intended for Linux and macOS environments._
 
 ## Why use _Docsify_?
 
-My requirement is to build a docs site with minimal setup to use existing docs directories without restructuring or formatting the docs. I found _Docsify_ is ideal for this.
+My requirement was to build a docs site with minimal setup to use existing docs directories without restructuring or formatting the docs. I found _Docsify_ is ideal for this.
 
 You can use _Docsify_ with its defaults or very simple tweaks, yet get a UI with menus, themes, mobile functionality and a cover page. And page loads are seamless in the shell as it is a SPA. These things that take more effort and code changes or additions if you want to do them with static-site generators. _Docsify_ also documentation as its main purpose, unlike some other tools.
 
@@ -28,7 +35,7 @@ A _Docsify_ doc site works works _without_ the need to edit your existing docs a
 
 ### Structure
 
-Main components of a _Docsify_ site.
+Main components of a _Docsify_ site:
 
 - **cover page** - Optional. Landing page with background color or image and some minimal text.
 - **homepage** - First page that a user sees, after the cover page. This is a content page written in markdown and it could be the only page of your site if you like.
@@ -67,9 +74,9 @@ Start running a local server to preview a _Docsify_ site. Choose an option below
 
 -   Run [Docsify CLI](#docsify-cli) web server.
     ```bash
-    $ # From project root.
+    $ # From project root, serve docs directory.
     $ docsify serve docs
-    $ # Shortcut.
+    $ # Shortcut provided by Makefile.
     $ make docs
     ```
 -   Run a Python web server.
@@ -77,7 +84,7 @@ Start running a local server to preview a _Docsify_ site. Choose an option below
     $ cd docs
     $ python3 -m http.server 3000
     ```
-- Choose something else from this big list - [link](https://gist.github.com/willurd/5720255).
+- Choose another server option from this large list - [link](https://gist.github.com/willurd/5720255).
 
 ## Quickstart local server
 
