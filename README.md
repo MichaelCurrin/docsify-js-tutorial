@@ -1,20 +1,23 @@
-# Docsify Template
-> Tutorial on how to build a docs site with _Docsify-JS_ and _Github Pages_, including an easy quickstart template
+# Docsify JS Tutorial
+> Tutorial on how to build a docs site with _Docsify-JS_ and _Github Pages_
 
 [![Made with latest Docsify](https://img.shields.io/npm/v/docsify?label=docsify)](https://docsify.js.org/)
 [![GitHub tag](https://img.shields.io/github/tag/MichaelCurrin/docsify-js-tutorial.svg)](https://GitHub.com/MichaelCurrin/docsify-js-tutorial/tags/)
 [![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/MichaelCurrin/docsify-js-tutorial/blob/master/LICENSE)
 
-Docs site:
+Links:
 
-- https://michaelcurrin.github.io/docsify-js-tutorial/#/
+- [Docsify JS Tutorial](https://michaelcurrin.github.io/docsify-js-tutorial/#/) docs site for this repo.
+- [Docsify JS Template](https://github.com/MichaelCurrin/docsify-js-template) - a separate repo which accompanies this tutorial and can be reused easily through _Use this template_ button.
 
 This project will guide you on how to convert your project's docs folder into a pretty and elegant docs website. This project's own docs site is built on _Docsify-JS_ so serves as a good example.
 
 
+<!-- TODO move content to docs -->
+
 ## 🎯 Project aims
 
-The idea is to:
+My aims for building a docs site are:
 
 - add as little code and configuration as possible
 - make it easy to maintain
@@ -38,7 +41,7 @@ The tutorial is available in two forms:
 - Github Pages: [docs site](https://michaelcurrin.github.io/docsify-js-tutorial/#/). This also live demo of the kind of site you would have after completing the tutorial.
 - Project docs: View the docs as plain markdown format in the repo, either locally or on Github. See the [docs](/docs) directory.
 
-The tutorial references the `docs` directory of my [Docsify JS Template](https://github.com/MichaelCurrin/docsify-js-template if you want to jump that.
+The tutorial references the `docs` directory of my [Docsify JS Template](https://github.com/MichaelCurrin/docsify-js-template) if you want to jump that.
 
 See also the [Nested Example](/nested_example/README.md) section for understanding links in markdown and the sidebar.
 
