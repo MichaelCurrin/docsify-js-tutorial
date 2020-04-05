@@ -38,7 +38,7 @@ The tutorial is available in two forms:
 - Github Pages: [docs site](https://michaelcurrin.github.io/docsify-js-tutorial/#/). This also live demo of the kind of site you would have after completing the tutorial.
 - Project docs: View the docs as plain markdown format in the repo, either locally or on Github. See the [docs](/docs) directory.
 
-The tutorial references the [quickstart](/quickstart) directory at the project root, in case you want to see that.
+The tutorial references the `docs` directory of my [Docsify JS Template](https://github.com/MichaelCurrin/docsify-js-template if you want to jump that.
 
 See also the [Nested Example](/nested_example/README.md) section for understanding links in markdown and the sidebar.
 
