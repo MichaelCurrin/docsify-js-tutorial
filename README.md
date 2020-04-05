@@ -2,12 +2,12 @@
 > Tutorial on how to build a docs site with _Docsify-JS_ and _Github Pages_, including an easy quickstart template
 
 [![Made with latest Docsify](https://img.shields.io/npm/v/docsify?label=docsify)](https://docsify.js.org/)
-[![GitHub tag](https://img.shields.io/github/tag/MichaelCurrin/docsify-template.svg)](https://GitHub.com/MichaelCurrin/docsify-template/tags/)
-[![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/MichaelCurrin/docsify-template/blob/master/LICENSE)
+[![GitHub tag](https://img.shields.io/github/tag/MichaelCurrin/docsify-js-tutorial.svg)](https://GitHub.com/MichaelCurrin/docsify-js-tutorial/tags/)
+[![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/MichaelCurrin/docsify-js-tutorial/blob/master/LICENSE)
 
 Docs site:
 
-- https://michaelcurrin.github.io/docsify-template/#/
+- https://michaelcurrin.github.io/docsify-js-tutorial/#/
 
 This project will guide you on how to convert your project's docs folder into a pretty and elegant docs website. This project's own docs site is built on _Docsify-JS_ so serves as a good example.
 
@@ -17,7 +17,7 @@ This project will guide you on how to convert your project's docs folder into a 
 The idea is to:
 
 - add as little code and configuration as possible
-- make it easy to maintain 
+- make it easy to maintain
 - quick to get setup on existing projects
 - have no layout files
 - reduce dependencies
@@ -35,7 +35,7 @@ _Docsify_ works as a single-page application on this one page - data from your m
 
 The tutorial is available in two forms:
 
-- Github Pages: [docs site](https://michaelcurrin.github.io/docsify-template/#/). This also live demo of the kind of site you would have after completing the tutorial.
+- Github Pages: [docs site](https://michaelcurrin.github.io/docsify-js-tutorial/#/). This also live demo of the kind of site you would have after completing the tutorial.
 - Project docs: View the docs as plain markdown format in the repo, either locally or on Github. See the [docs](/docs) directory.
 
 The tutorial references the [quickstart](/quickstart) directory at the project root, in case you want to see that.

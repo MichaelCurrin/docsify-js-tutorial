@@ -10,5 +10,5 @@
 - :nut_and_bolt: Built on [Docsify-JS](https://docsify.js.org/)
 - :pizza: Serve locally or on Github Pages
 
-[GitHub](https://github.com/michaelcurrin/docsify-template/)
-[Getting Started](#docsify-template)
+[GitHub](https://github.com/michaelcurrin/docsify-js-tutorial/)
+[Getting Started](#docsify-js-tutorial)

@@ -2,8 +2,8 @@
 > How to build a docs site with _Docsify-JS_ and Github Pages
 
 [![Made with latest Docsify](https://img.shields.io/npm/v/docsify?label=docsify)](https://docsify.js.org/)
-[![GitHub tag](https://img.shields.io/github/tag/MichaelCurrin/docsify-template.svg)](https://GitHub.com/MichaelCurrin/docsify-template/tags/)
-[![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/MichaelCurrin/docsify-template/blob/master/LICENSE)
+[![GitHub tag](https://img.shields.io/github/tag/MichaelCurrin/docsify-js-tutorial.svg)](https://GitHub.com/MichaelCurrin/docsify-js-tutorial/tags/)
+[![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/MichaelCurrin/docsify-js-tutorial/blob/master/LICENSE)
 
 Convert your docs folder into a pretty docs website using [Docsify-JS](https://docsify.js.org/) and some minimal setup instructions. This project's doc site itself is also running on _Docsify_.
 
@@ -89,13 +89,13 @@ Clone this repo to your machine with one of these commands:
 
 ```bash
 $ # Clone with SSH
-$ git clone git@github.com:MichaelCurrin/docsify-template.git
+$ git clone git@github.com:MichaelCurrin/docsify-js-tutorial.git
 $ # Clone with HTTPS
-$ git clone https://github.com/MichaelCurrin/docsify-template.git
+$ git clone https://github.com/MichaelCurrin/docsify-js-tutorial.git
 ```
 
 ```bash
-$ cd docsify-template
+$ cd docsify-js-tutorial
 ```
 
 No installation is needed. When the HTML page is opened in the browser, the _Docsify_ library will be fetched from a CDN by the browser.
@@ -127,13 +127,13 @@ Clone this template repo to your machine using one of the steps below, so you ca
 
 ```bash
 $ # Clone with SSH
-$ git clone git@github.com:MichaelCurrin/docsify-template.git
+$ git clone git@github.com:MichaelCurrin/docsify-js-tutorial.git
 $ # Clone with HTTPS
-$ git clone https://github.com/MichaelCurrin/docsify-template.git
+$ git clone https://github.com/MichaelCurrin/docsify-js-tutorial.git
 ```
 
 ```bash
-$ cd docsify-template
+$ cd docsify-js-tutorial
 ```
 
 ### 2. Create base structure
@@ -190,13 +190,13 @@ How to setup a sidebar file:
 
 Example:
 
-[_sidebar.md](https://raw.githubusercontent.com/MichaelCurrin/docsify-template/master/nested_example/_sidebar.md ':include :type=code')
+[_sidebar.md](https://raw.githubusercontent.com/MichaelCurrin/docsify-js-tutorial/master/nested_example/_sidebar.md ':include :type=code')
 
 ##### Setup custom sidebar
 
 1. Ensure `loadSidebar: true` is set in the _index.html_ file.
     - The value of `true` means `*_sidebar.md*` will be referenced by the app.
-    - The sidebar is already enabled in the quickstart [index.html](https://github.com/MichaelCurrin/docsify-template/blob/master/quickstart/index.html).
+    - The sidebar is already enabled in the quickstart [index.html](https://github.com/MichaelCurrin/docsify-js-tutorial/blob/master/quickstart/index.html).
 2. Edit the *_sidebar.md* file.
 3. Add items using the guidelines above.
 
@@ -218,7 +218,7 @@ This is really the text of heading element, which has been made lowercase and hy
 
 The cover page is the first page that a visitor sees before scrolling down to the homepage.
 
-If you want to use it, edit your *docs/_coverpage.md* file and complete the `TODO` items. You can also use this project's [cover page](https://raw.githubusercontent.com/MichaelCurrin/docsify-template/master/docs/_coverpage.md) on Github as a reference.
+If you want to use it, edit your *docs/_coverpage.md* file and complete the `TODO` items. You can also use this project's [cover page](https://raw.githubusercontent.com/MichaelCurrin/docsify-js-tutorial/master/docs/_coverpage.md) on Github as a reference.
 
 You can add additional buttons to the bottom of the homepage, but there should be no gaps between the lines in your file. And the last one will be solid while the others will be transparent.
 
