@@ -117,7 +117,9 @@ Follow [Serve a Docsify site locally](#serve-a-docsify-site-locally) instruction
 
 #### 2.2 View
 
-Open http://localhost:3000 in the browser.
+Open in the browser.
+
+- http://localhost:3000
 
 User notes:
 
@@ -126,40 +128,36 @@ User notes:
 
 ## Setup your own docs site
 
-This tutorial is based on the _Docsify_ [Quickstart](https://docsify.js.org/#/quickstart) guide, but rather than giving snippets of file this tutorial lets you copy entire template files to your project, there are `TODO` items in the templates making it clear what to edit. Plus in the template, there are some useful or pretty configurations which have been set after investigating the configurations guide and trying them out on my own project.
+This tutorial is based on the _Docsify_ [Quickstart](https://docsify.js.org/#/quickstart) guide, but rather than giving snippets of file this tutorial lets you copy entire template files to your project, there are `TODO` items in the templates making it clear what to edit.
+
+Plus, in the template, there are some useful or pretty configurations which have been set after investigating the configurations guide and trying them out on my own project.
 
 Follow to steps in this section copy a base structure and configs from this project to your own, then customize them for your needs.
 
-### 1. Get this project locally
+### 1. Create base structure
 
-Clone this template repo to your machine using one of the steps below, so you can use it copy files from later.
 
-```bash
-$ # Clone with SSH
-$ git clone git@github.com:MichaelCurrin/docsify-js-tutorial.git
-$ # Clone with HTTPS
-$ git clone https://github.com/MichaelCurrin/docsify-js-tutorial.git
+Navigate to your own project's _docs_ directory on the command-line.
+
+```sh
+$ cd my-project/docs
 ```
 
-```bash
-$ cd docsify-js-tutorial
+The repo has an accompanying [Docsify JS Template](https://github.com/MichaelCurrin/docsify-js-template) repo. Copy the base files from there into your own project. Note this will **overwrite** any existing files.
+
+```sh
+
 ```
 
-### 2. Create base structure
-
-1. Navigate to your existing project's `docs` directory.
-    ```bash
-    $ cd <PATH_TO_YOUR_REPO>/docs
-    ```
-2. Copy the copy the contents of the template project's _quickstart_ directory to your own project. Note the trailing dot on the first path in order to include hidden files.
-    ```bash
-    $ cp <PATH_TO_TEMPLATE_REPO>/quickstart/. .
-    ```
-3. View the contents of the docs directory to see what was added. Note that _Docsify_ provides a `404 - Not found` page for a bad URL so you do not need to.
-4. To see what the base site look like, start a server now using a command from the [serve](#21-serve) section. Open the web page URL and keep it open so you can check on it as you make changes in the following sections. If you use the _Docsify_ server, the page will auto refresh on a file save, otherwise you will have to manually refresh.
 
 
-### 3. Configure homepage
+Now View the contents of the docs directory to see what was added.
+ Note that _Docsify_ provides a `404 - Not found` page for a bad URL so you do not need to create a 404 page yourself.
+
+To see what the base site look like, start a server now using a command from the [serve](#21-serve) section. Open the web page URL and keep it open so you can check on it as you make changes in the following sections. If you use the _Docsify_ server, the page will auto refresh on a file save, otherwise you will have to manually refresh.
+
+
+### 2. Configure homepage
 
 Edit your homepage (_docs/README.md_). Complete the `TODO` items, using the suggestions in this section.
 
@@ -168,7 +166,7 @@ Edit your homepage (_docs/README.md_). Complete the `TODO` items, using the sugg
 - Note that you are not required to put in links to other docs file within your homepage file. As that is what the _Docsify_ sidebar. If you do put in any links in your homepage, they must be relative to the _docs_ directory, such as `file.md`. See [Doc links](#doc-links) for more info.
 
 
-### 4. Configure menu structure
+### 3. Configure menu structure
 
 #### Auto sidebar
 
