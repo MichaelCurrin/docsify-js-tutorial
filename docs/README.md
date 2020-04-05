@@ -1,4 +1,4 @@
-# Docsify JS Tutorial
+# Docsify JS Tutorial homepage
 > How to build a docs site using _Docsify-JS_ and _Github Pages_
 
 [![Made with latest Docsify](https://img.shields.io/npm/v/docsify?label=docsify)](https://docsify.js.org/)
@@ -31,7 +31,9 @@ You can use _Docsify_ with its defaults or very simple tweaks, yet get a UI with
 
 ## _Docsify_ basics
 
-A _Docsify_ doc site works works _without_ the need to edit your existing docs and _without_ building any HTML pages. The rendering is done on the client-side in a single page application, running on _index.html_.
+An intro to _Docsify_.
+
+A _Docsify_ site works works _without_ the need to edit your existing docs and _without_ building any HTML pages. The rendering is done on the client-side in a single page application, running on _index.html_.
 
 ### Structure
 
