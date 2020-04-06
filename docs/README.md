@@ -218,17 +218,27 @@ Example:
 
 ##### Note on Home link
 
-The clickable text above the standard sidebar takes you to the cover page. You can scroll down to the homepage (_docs/README.md_), but there are no links on the page to the homepage. So add a link to the homepage with the first entry above. Note: An alternative is to use the nav bar config for Home button, rather than sidebar config.
+The clickable text above the standard sidebar takes you to the cover page. You can scroll down to the homepage `(_docs/README.md_)`, but there are no links on the page to the homepage. So add a link to the Homepage with a first entry at the top.
 
-```
+Example of a link to the page page, using root page path and ID of the heading on the hompage.
+
+```markdown
 - [Home](/#my-app)
 ```
 
-NB. The leading forward slash is **required** here for correct behavior. As the anchor tag will be invalid on other pages such as `foo.md` which has path `/#/foo/`).
+Parts:
 
-The link is a reference to an anchor tag on the root URL, where anchor tag refers the ID of the homepage heading element. This ID will be created by _Docsify_. To find it, go to the coverpage, scroll down to the homepage and click on the heading. The URL will be something like `http://localhost:3000/#/?id=my-app`. The part we want is the end e.g. `my-app`.
+- Root path (`/`)
+    - The leading forward slash is **required** here for correct behavior to get to the homepage as root page. As the anchor tag will be invalid on other pages such as `foo.md` which has path `/#/foo/`).
+- Homepage heading ID (e.g. `#my-app`)
+    - This is the ID of the heading on the Homepage (README.md). 
+    - The ID follows the markdown style of headings as slugs (lowercase and hyphens).
+    - You can also find the ID on page directly if you aren't sure.. Go to the coverpage, scroll down to the homepage and click on the heading. The URL will be something like `http://localhost:3000/#/?id=my-app`. The part we want is the end e.g. `my-app`.
 
 This is really the text of heading element, which has been made lowercase and hyphenated. Copy this to the sidebar file and prefix it with a hash symbol.
+
+ Note: An alternative would be use the top right nav bar to point to the Homepage, rather than sidebar as here.
+
 
 ### 5. Configure cover page
 
@@ -254,7 +264,9 @@ You could include an image (logo, photo) above your project title. For example, 
 
 Edit _index.html_.
 
-#### 6.1 Color
+Not covered here - see [jhildenbiddle/docsify-themeable](https://github.com/jhildenbiddle/docsify-themeable) for more control on custom styling and theming.
+
+#### 6.1 Theme color
 
 Optionally set a theme color. This affects how some content looks, such as quoted blocks, underlined text and buttons. This will default to theme's default if not set manually. i.e. green for _Vue_ and blue for _Buble_.
 
@@ -266,7 +278,7 @@ window.$docsify = {
 
 More on Docsify [theme color](https://docsify.js.org/#/configuration?id=themecolor).
 
-#### 6.2 Themes
+#### 6.2 CSS Themes
 
 Find the style which is set in the `<head>` tag, which looks like this.
 
