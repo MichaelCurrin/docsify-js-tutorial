@@ -7,7 +7,7 @@
 
 Convert your _docs_ folder into a pretty docs website using [Docsify-JS](https://docsify.js.org/) and some minimal setup instructions. This project's site itself is also running on _Docsify_.
 
-## Start a Docsify site
+## Where to start a _Docsify_ site
 
 This project provides three options for a choosing a docs site to run:
 
@@ -21,6 +21,14 @@ This project provides three options for a choosing a docs site to run:
 
 _Note: The instructions in this repo are intended for Linux and macOS environments._
 
+## _Docsify_ in action
+
+Some docs site I have built. These give you an idea of content, layout and customization
+
+- [unicron](https://michaelcurrin.github.io/unicron/#/)
+- [twitterverse](https://michaelcurrin.github.io/twitterverse/#/)
+
+
 ## Why use _Docsify_?
 
 My requirement was to build a docs site with minimal setup to use existing docs directories without restructuring or formatting the docs. I found _Docsify_ is ideal for this.
@@ -28,6 +36,7 @@ My requirement was to build a docs site with minimal setup to use existing docs 
 You can use _Docsify_ with its defaults or very simple tweaks, yet get a UI with menus, themes, mobile functionality and a cover page. And page loads are seamless in the shell as it is a SPA. These things that take more effort and code changes or additions if you want to do them with static-site generators. _Docsify_ also documentation as its main purpose, unlike some other tools.
 
 ![icon](_media/docs_brackets.png)
+
 
 ## _Docsify_ basics
 
