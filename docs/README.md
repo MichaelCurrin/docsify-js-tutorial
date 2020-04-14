@@ -53,8 +53,8 @@ Main components of a _Docsify_ site:
 - **cover page** - Optional. Landing page with background color or image and some minimal text.
 - **homepage** - First page that a user sees, after the cover page. This is a content page written in markdown and it could be the only page of your site if you like.
 - **index page** - HTML file base of the app. This includes JS and CSS calls for setting up and styling the _Docsify_ app. Plus JS code which you set to customize the app.
-- **sidebar** - Optional. Describes the menu layout for the left sidebar, using custom ordering and nested structure. _Docsify_ is not aware of directory structure, so this is where you get to define your menu. Alternatively, let _Docsify_ create the menu bar based on the structure of your homepage (`_docs/README.md`) file - this works best if you only have a single content markdown page or a _navbar_ (top of the screen) to switch between sections.
-- **navbar** - Optional. Describes the menu layout for the top right menu.
+- **sidebar config** - Optional. Describes the menu layout for the **left sidebar**, using custom ordering and nested structure. _Docsify_ is not aware of directory structure, so this is where you get to define your menu. Alternatively, let _Docsify_ create the menu bar based on the structure of your homepage (`_docs/README.md`) file - this works best if you only have a single content markdown page or a _navbar_ (top of the screen) to switch between sections.
+- **navbar config** - Optional config. Describes the menu layout for the **top right menu**.
 
 Once you have that setup in _docs_ directory and have pushed to Github, you can setup Github Pages serving the _docs_ directory. Note: _Docsify_ also works with _Netlify_ as per their docs, but this project just considers the Github Pages case.
 
@@ -81,6 +81,7 @@ Apply these rules to the latter part of markdown URLs such as `[Text](page.md)`.
 - Do not reference the `docs` directory in the path. e.g. `/docs/foo.md`
 - Do not refer to content outside of the `docs` directory.  e.g. `../README.md`
 
+
 ## Serve a _Docsify_ site locally
 
 Start running a local server to preview a _Docsify_ site. Choose an option below depending on whether you want to install and run Docsify locally or use something you already have installed.
@@ -98,6 +99,7 @@ Start running a local server to preview a _Docsify_ site. Choose an option below
     $ python3 -m http.server 3000
     ```
 - Choose another server option from this large list - [link](https://gist.github.com/willurd/5720255).
+
 
 ## Quickstart local server
 
@@ -163,13 +165,27 @@ Edit your homepage (_docs/README.md_). Complete the `TODO` items, using the sugg
 - Note that you are not required to put in links to other docs file within your homepage file. As that is what the _Docsify_ sidebar. If you do put in any links in your homepage, they must be relative to the _docs_ directory, such as `file.md`. See [Doc links](#doc-links) for more info.
 
 
-### 3. Configure menu structure
+### 3. Configue navbar
+
+Optionally define a menu for the top right of the page.
+
+See [Custom navbar](https://docsify.js.org/#/custom-navbar) and [loadNavbar](https://docsify.js.org/#/configuration?id=loadnavbar) in the docs.
+
+Note that if you enable a cover page and the navbar, the navbar will appear on the cover page. This makes it difficult to navigate as you have to scroll up all the time to get the navbar.
+
+### 4. Configure sidebar
+
+It's best to include a sidebar. You let it be defined automatically from a file's structure, or you can define a sidebar using an ordered description of pages (which may be nested).
+
+See [loadSidebar](https://docsify.js.org/#/configuration?id=loadsidebar) in the docs.
 
 #### Auto sidebar
 
 You may choose to display the sidebar, but have it populated automatically from headings on a single HTML file - the homepage (_docs/README.md_). This is the way that this project's own docs site is setup.
 
-This solution is great if you are happy to move all your doc content into a **single** markdown file, as it means not having to worry about manually updating a navigation bar when you docs change. Especially if you have a many files to manage or they are likely to change in name or structure.
+This solution is great if you are happy to move all your doc content into a **single** large markdown file, as it means not having to worry about manually updating a navigation bar when you docs change. Especially if you have a many files to manage or they are likely to change in name or structure. 
+
+You can also have multiple markdown files in folders, each group with its own sidebar config. 
 
 To setup auto sidebar:
 
@@ -178,6 +194,7 @@ To setup auto sidebar:
 3. Set `loadSidebar: false` and save.
 
 Warning: If you go for this option without a configured sidebar, do not leave any links in your _docs/README.md_ which refer to other doc files. Although the link may be valid, once you click on the link, the sidebar on that page will reflect the target page rather than the outline of the _docs/README.md_ page, which is inconsistent and jarring behavior.
+
 
 #### Custom sidebar
 
@@ -194,8 +211,7 @@ How to setup a sidebar file:
 
 Example:
 
-[_sidebar.md](https://raw.githubusercontent.com/MichaelCurrin/docsify-js-tutorial/master/nested_example/_sidebar.md ':include :type=code')
-
+[\_sidebar.md](https://raw.githubusercontent.com/MichaelCurrin/docsify-js-tutorial/master/nested_example/_sidebar.md ':include :type=code')
 
 ##### Setup custom sidebar
 
