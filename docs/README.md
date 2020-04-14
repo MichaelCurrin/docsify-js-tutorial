@@ -387,7 +387,7 @@ This section deals with how to update and add to the content of your doc files.
 
 You can embed content such as video, audio, iframes (`.html`), code blocks or even Markdown files.
 
-#### Format
+#### Embed format
 
 Add the `':include'` parameter in a markdown URL reference. Here is the format:
 
@@ -397,7 +397,7 @@ Add the `':include'` parameter in a markdown URL reference. Here is the format:
 
 The URL could be a local file (e.g. `_media/foo.js`) or a remote URL `https://...`.
 
-If you want to embed a code block, you can use the automatic formatting. But markdown and HTML files need to be marked as a code if you want them as code rather than HTML.
+If you want to embed a code block, you can use the automatic formatting. But markdown and HTML files need to be marked as a code using `type` paramter if you want them as code rather than HTML.
 
 ```
 ':include :type=code'
@@ -405,39 +405,57 @@ If you want to embed a code block, you can use the automatic formatting. But mar
 
 See the _Docsify_ [Embed](https://docsify.js.org/#/embed-files) help for forcing types and using fragments.
 
-#### Examples
 
-#### Render markdown
+#### Embed examples
 
-Render markdown as HTML.
 
-```markdown
-[example.md](https://docsify.js.org/_media/example.md ':include')
-```
+##### JS code snippet
 
-[example.md](https://docsify.js.org/_media/example.md ':include')
+Render a code snippet - formatted automatically.
 
-Note: The result is _not_ inside a code block expected. It is inside a quote block because the source content starts with `> `.
-
-#### JS snippet
-
-Auto formatted.
+Code:
 
 ```markdown
 [example.js](_media/example.js ':include' )
 ```
 
+Result:
+
 [example.js](_media/example.js ':include' )
 
-#### Markdown snippet
 
-Force to code snippet.
+##### Markdown as code snippet
+
+Render markdown as code snippet. Use the `type` parameter.
+
+
+Code:
 
 ```markdown
 [_sidebar.md](_coverpage.md ':include :type=code')
 ```
 
+Result:
+
 [_sidebar.md](_coverpage.md ':include :type=code')
+
+
+##### Markdown as rendered HTML
+
+Render target markdown file as HTML. Leave out the `type` parameter.
+
+Code:
+
+```markdown
+[example.md](https://docsify.js.org/_media/example.md ':include')
+```
+
+Result:
+
+[example.md](https://docsify.js.org/_media/example.md ':include')
+
+Note: The result is _not_ inside a codeblock as expect. It is inside a quote block because the source content starts with `> `.
+
 
 #### Warnings
 
