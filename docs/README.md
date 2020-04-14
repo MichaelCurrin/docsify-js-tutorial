@@ -196,6 +196,7 @@ Example:
 
 [_sidebar.md](https://raw.githubusercontent.com/MichaelCurrin/docsify-js-tutorial/master/nested_example/_sidebar.md ':include :type=code')
 
+
 ##### Setup custom sidebar
 
 1. Ensure `loadSidebar: true` is set in the _index.html_ file.
@@ -206,7 +207,7 @@ Example:
 
 ##### Note on Home link
 
-The clickable text above the standard sidebar takes you to the cover page. You can scroll down to the homepage `(_docs/README.md_)`, but there are no links on the page to the homepage. So add a link to the Homepage with a first entry at the top.
+The clickable text above the standard sidebar takes you to the cover page. You can scroll down to the homepage (`docs/README.md`), but there are no links on the page to the homepage. So add a link to the Homepage with a first entry at the top.
 
 Example of a link to the page page, using root page path and ID of the heading on the hompage.
 
