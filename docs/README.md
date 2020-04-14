@@ -7,7 +7,8 @@
 
 Convert your _docs_ folder into a pretty docs website using [Docsify-JS](https://docsify.js.org/) and some minimal setup instructions. This project's site itself is also running on _Docsify_.
 
-## Where to start a _Docsify_ site
+
+## Where to run a _Docsify_ site
 
 This project provides three options for a choosing a docs site to run:
 
@@ -20,6 +21,7 @@ This project provides three options for a choosing a docs site to run:
     - Click _Use this template_ there and you'll be able to starting serving a site on Github Pages or locally.
 
 _Note: The instructions in this repo are intended for Linux and macOS environments._
+
 
 ## _Docsify_ in action
 
@@ -51,7 +53,7 @@ Main components of a _Docsify_ site:
 - **cover page** - Optional. Landing page with background color or image and some minimal text.
 - **homepage** - First page that a user sees, after the cover page. This is a content page written in markdown and it could be the only page of your site if you like.
 - **index page** - HTML file base of the app. This includes JS and CSS calls for setting up and styling the _Docsify_ app. Plus JS code which you set to customize the app.
-- **sidebar** - Optional. Describes the menu layout for the left sidebar, using custom ordering and nested structure. _Docsify_ is not aware of directory structure, so this is where you get to define your menu. Alternatively, let _Docsify_ create the menu bar based on the structure of your homepage (_docs/README.md) file - this works best if you only have a single content markdown page or a _navbar_ (top of the screen) to switch between sections.
+- **sidebar** - Optional. Describes the menu layout for the left sidebar, using custom ordering and nested structure. _Docsify_ is not aware of directory structure, so this is where you get to define your menu. Alternatively, let _Docsify_ create the menu bar based on the structure of your homepage (`_docs/README.md`) file - this works best if you only have a single content markdown page or a _navbar_ (top of the screen) to switch between sections.
 - **navbar** - Optional. Describes the menu layout for the top right menu.
 
 Once you have that setup in _docs_ directory and have pushed to Github, you can setup Github Pages serving the _docs_ directory. Note: _Docsify_ also works with _Netlify_ as per their docs, but this project just considers the Github Pages case.
@@ -145,23 +147,9 @@ Follow to steps in this section copy a base structure and configs from this proj
 
 ### 1. Create base structure
 
+The repo has an accompanying [Docsify JS Template](https://github.com/MichaelCurrin/docsify-js-template) repo. Follow instructions in that project's root README to copy the base project to your own project's docs. Note this will **overwrite** any existing files in docs, so make sure you have them backed up or any version control.
 
-Navigate to your own project's _docs_ directory on the command-line.
-
-```sh
-$ cd my-project/docs
-```
-
-The repo has an accompanying [Docsify JS Template](https://github.com/MichaelCurrin/docsify-js-template) repo. Copy the base files from there into your own project. Note this will **overwrite** any existing files.
-
-```sh
-
-```
-
-
-
-Now View the contents of the docs directory to see what was added.
- Note that _Docsify_ provides a `404 - Not found` page for a bad URL so you do not need to create a 404 page yourself.
+Next, view the contents of the docs directory to see what was added. Note that _Docsify_ provides a `404 - Not found` page for a bad URL so you do not need to create a 404 page yourself.
 
 To see what the base site look like, start a server now using a command from the [serve](#21-serve) section. Open the web page URL and keep it open so you can check on it as you make changes in the following sections. If you use the _Docsify_ server, the page will auto refresh on a file save, otherwise you will have to manually refresh.
 
