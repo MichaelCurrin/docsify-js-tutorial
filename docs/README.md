@@ -8,16 +8,27 @@
 Convert your _docs_ folder into a pretty docs website using [Docsify-JS](https://docsify.js.org/) and some minimal setup instructions. This project's site itself is also running on _Docsify_.
 
 
+## Purpose
+
+This project is for you if you answer yes to any of the following:
+
+- New to making a docs site?
+- Tired of writing HTML/CSS/JS and just want to write docs using plain markdown?
+- Never heard of DocsifyJS?
+- Want to add features and style to your DocsifyJS site? 
+- Looking for a template which is based on real world use?
+
+
 ## Where to run a _Docsify_ site
 
-This project provides three options for a choosing a docs site to run:
+This project provides three approaches for choosing a Docsify site to run:
 
 - [Quickstart local server](#quickstart-local-server)
-    - Clone this repo and start serving the docs repo.
+    - Clone this repo and start serving the docs repo immediately.
 - [Setup your own docs site](#setup-your-own-docs-site)
     - Convert your _docs_ directory into a docs site hosted on Github Pages. Copy from some templates files to get up and running with as little effort as possible.
 - [Docsify JS Template](https://github.com/michaelcurrin/docsify-js-template/) repo
-    - A minimal template which was moved out of this project into a separate repo.
+    - A minimal template which goes with this tutorial.
     - Click _Use this template_ there and you'll be able to starting serving a site on Github Pages or locally.
 
 _Note: The instructions in this repo are intended for Linux and macOS environments._
@@ -29,6 +40,7 @@ Some docs site I have built. These give you an idea of content, layout and custo
 
 - [unicron](https://michaelcurrin.github.io/unicron/#/)
 - [twitterverse](https://michaelcurrin.github.io/twitterverse/#/)
+- [python-twitter-guide](https://michaelcurrin.github.io/python-twitter-guide/#/)
 
 
 ## Why use _Docsify_?
@@ -171,7 +183,8 @@ Optionally define a menu for the top right of the page.
 
 See [Custom navbar](https://docsify.js.org/#/custom-navbar) and [loadNavbar](https://docsify.js.org/#/configuration?id=loadnavbar) in the docs.
 
-Note that if you enable a cover page and the navbar, the navbar will appear on the cover page. This makes it difficult to navigate as you have to scroll up all the time to get the navbar.
+Note that if you enable a cover page and the navbar, the navbar will appear on the cover page. This makes it difficult to navigate as you have to scroll up all the time to get the navbar. Also, if not using a cover page, the navbar will cover the homepage heading but only on a mobile device. Some CSS is needed to fix both of these issues, not covered here.
+
 
 ### 4. Configure sidebar
 
