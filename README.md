@@ -5,17 +5,32 @@
 [![GitHub tag](https://img.shields.io/github/tag/MichaelCurrin/docsify-js-tutorial.svg)](https://GitHub.com/MichaelCurrin/docsify-js-tutorial/tags/)
 [![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](#license)
 
-**Links:**
 
-- [Docsify JS Tutorial](https://michaelcurrin.github.io/docsify-js-tutorial/#/) site - docs for this repo.
-- [Docsify JS Template](https://github.com/MichaelCurrin/docsify-js-template) repo - a separate repo which accompanies this tutorial and can be reused easily through _Use this template_ button.
+## 👩‍🏫 Follow the online tutorial
 
-This project will guide you on how to convert your project's docs folder into a pretty and elegant docs website. This project's own docs site is built on _Docsify-JS_ so serves as a good example.
+The [Docsify](https://docsify.js.org/#/) site does have a great quickstart, but then it lets you figure what to add next.
+
+So this project was created as a more directed guide to take you through site setup and configuration, covering common usecases. It also assumes you already have a docs directory in a project and you want to turn it into a docs site. The tutorial gives you some tips and pitfalls to avoid, based on the author's experience. 
+
+[![Docsify JS Template site](https://img.shields.io/badge/site-Docsify_JS_Tutorial-green?style=for-the-badge)](https://michaelcurrin.github.io/docsify-js-tutorial/#/)
+
+This project's own site is built on _Docsify-JS_ so serves as a good example. That serves from the `docs` directory. There is no main application to separate from `docs` directory, so serving from that directory is just convenient.
+
+See also the [Nested Example](/nested_example/README.md) section on the repo for understanding links in markdown and the sidebar.
 
 
-<!-- TODO move content to docs -->
+## 🖨️ Use a template
+
+If want to skip the tutorial and want a base project which has some sample data then go here:
+
+[![Docsify JS Template site](https://img.shields.io/badge/site-Docsify_JS_Template-green?style=for-the-badge)](https://michaelcurrin.github.io/docsify-js-template/#/)
+
+That is template repo which accompanies this tutorial repo. Click _Use this template_ button and follow the instructions in the README.md doc.
+
 
 ## 🎯 Project aims
+
+Some background on how I arrived at DocsifyJS as a docs site builder.
 
 My aims for building a docs site are:
 
@@ -34,25 +49,13 @@ Unlike static site builders like Jekyll or Hugo, you do **not** need to install 
 _Docsify_ works as a single-page application on this one page - data from your markdown files is pulled in and displayed within the _Docsify_ UI shell. There are no template layout files to manage and you can choose from some themes easily without things breaking like when you switch themes in other static site generators.
 
 
-## 👩‍🏫 Follow the tutorial
-
-The tutorial is available in two forms:
-
-- Github Pages: [docs site](https://michaelcurrin.github.io/docsify-js-tutorial/#/). This also live demo of the kind of site you would have after completing the tutorial.
-- Project docs: View the docs as plain markdown format in the repo, either locally or on Github. See the [docs](/docs) directory.
-
-The tutorial references the `docs` directory of my [Docsify JS Template](https://github.com/MichaelCurrin/docsify-js-template) if you want to jump that.
-
-See also the [Nested Example](/nested_example/README.md) section for understanding links in markdown and the sidebar.
-
-
 ## Contributing
 
 The repo is open for accepting contributions through a Pull Request.
 
 ## License
 
-Licensed under [MIT license](https://github.com/MichaelCurrin/docsify-js-tutorial/blob/master/LICENSE)
+Licensed under [MIT license](/LICENSE)
 
 - You can modify and reuse this project.
 - A copy of the license and copyright notice must be included with the software. [source](https://choosealicense.com/licenses/#mit).
