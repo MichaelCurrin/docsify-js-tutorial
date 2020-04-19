@@ -8,6 +8,10 @@
 Convert your _docs_ folder into a pretty docs website using [Docsify-JS](https://docsify.js.org/) and some minimal setup instructions. This project's site itself is also running on _Docsify_.
 
 
+- [GitHub](https://github.com/michaelcurrin/docsify-js-tutorial/)
+- [Use a Template](https://github.com/michaelcurrin/docsify-js-template/)
+
+
 ## Purpose
 
 This project is for you if you answer yes to any of the following:
