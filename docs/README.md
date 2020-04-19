@@ -186,7 +186,7 @@ Optionally define a menu for the top right of the page.
 
 See [Custom navbar](https://docsify.js.org/#/custom-navbar) and [loadNavbar](https://docsify.js.org/#/configuration?id=loadnavbar) in the docs.
 
-!> **Note:** If you enable a cover page and the navbar, the navbar will appear on the cover page. This makes it difficult to navigate as you have to scroll up all the time to get the navbar. Also, if not using a cover page, the navbar will cover the homepage heading but only on a mobile device. Some CSS is needed to fix both of these issues, not covered here.
+!> **Note:** If you enable a cover page and the navbar, the navbar will appear on the cover page. This makes it difficult to navigate as you have to scroll up all the time to get the navbar. Also, if not using a cover page, the navbar will cover the homepage heading but only on a mobile device. Some CSS is needed to fix both of these issues, not covered here. Alternatively, use `mergeNavbar: true,` if your app config to move the navbar items to the top of the sidebar on a mobile view. This works great.
 
 
 ### 4. Configure sidebar
