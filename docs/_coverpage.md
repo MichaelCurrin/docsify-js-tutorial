@@ -1,16 +1,17 @@
-![icon](_media/docs_face.png)
+<img src="_media/docs_face.png" height="100px"/>
+
 
 # Docsify JS Tutorial
 > Tutorial to turn your docs into a docs site using base files
 
-- :hourglass_flowing_sand: Setup an elegant, responsive, fast site in a few minutes
-- :open_file_folder: Content is read markdown files in your _docs_ directory
+- :hourglass_flowing_sand: Quickly setup an elegant, responsive, fast site
+- :open_file_folder: Content is read from markdown files in your _docs_ directory
 - :pushpin: No compiling needed and no templating syntax to learn
-- :hammer: Easy to configure navbar and optional menus - Docsify can even create the navbar for you.
+- :hammer: Easy to configure sidebar, even auto generated from headings
 - :nut_and_bolt: Built on [Docsify-JS](https://docsify.js.org/)
 - :pushpin: No local dependencies - library loads in the browser
-- :pizza: Serve locally or on Github Pages / Netlify
+- :pizza: Serve locally and on GitHub Pages / Netlify
 
 [GitHub](https://github.com/michaelcurrin/docsify-js-tutorial/)
-[Use a template](https://github.com/michaelcurrin/docsify-js-template/)
+[Use a Template](https://github.com/michaelcurrin/docsify-js-template/)
 [Getting Started](#docsify-js-tutorial-homepage)
