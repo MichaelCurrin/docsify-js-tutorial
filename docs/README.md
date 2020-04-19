@@ -51,10 +51,11 @@ Some docs site I have built. These give you an idea of content, layout and custo
 
 My requirement was to build a docs site with minimal setup to use existing docs directories without restructuring or formatting the docs. I found _Docsify_ is ideal for this.
 
-You can use _Docsify_ with its defaults or very simple tweaks, yet get a UI with menus, themes, mobile functionality and a cover page. And page loads are seamless in the shell as it is a SPA. These things that take more effort and code changes or additions if you want to do them with static-site generators. _Docsify_ also documentation as its main purpose, unlike some other tools.
+When you use _Docsify_ with its defaults or very simple tweaks, you still get a pretty UI with menus, themes, mobile functionality and a cover page. And page loads are seamless in the shell as it is a SPA. These things that take more effort and code changes or additions if you want to do them with static-site generators. _Docsify_ also documentation as its main purpose, unlike some other tools.
 
 ![icon](_media/docs_brackets.png)
 
+This great [article](https://dev.to/evilmartians/keeping-oss-documentation-with-docsify-lefthook-and-friends-11e5) on dev.to covers a journey from README to Wiki to Jekyll and finally Docsify, if you are interested to compare those.
 
 ## _Docsify_ basics
 
@@ -136,7 +137,7 @@ $ git clone https://github.com/MichaelCurrin/docsify-js-tutorial.git
 $ cd docsify-js-tutorial
 ```
 
-No installation is needed. When the HTML page is opened in the browser, the _Docsify_ library will be fetched from a CDN by the browser.
+?> No installation is needed. When the HTML page is opened in the browser, the _Docsify_ library will be fetched from a CDN by the browser.
 
 ### 2. Run
 
@@ -150,9 +151,7 @@ Open in the browser.
 
 - http://localhost:3000
 
-User notes:
-
-- When viewing the site, if you scroll down far enough you will see a hamburger menu which lets you dynamically open or close the sidebar.
+?> **UI notes:** When viewing the site, if you scroll down far enough you will see a hamburger menu which lets you dynamically open or close the sidebar. This is always visible on mobile view but not so easy to find, while the sidebar starts out closed on mobile.
 
 
 ## Setup your own docs site
@@ -187,7 +186,7 @@ Optionally define a menu for the top right of the page.
 
 See [Custom navbar](https://docsify.js.org/#/custom-navbar) and [loadNavbar](https://docsify.js.org/#/configuration?id=loadnavbar) in the docs.
 
-Note that if you enable a cover page and the navbar, the navbar will appear on the cover page. This makes it difficult to navigate as you have to scroll up all the time to get the navbar. Also, if not using a cover page, the navbar will cover the homepage heading but only on a mobile device. Some CSS is needed to fix both of these issues, not covered here.
+!> **Note:** If you enable a cover page and the navbar, the navbar will appear on the cover page. This makes it difficult to navigate as you have to scroll up all the time to get the navbar. Also, if not using a cover page, the navbar will cover the homepage heading but only on a mobile device. Some CSS is needed to fix both of these issues, not covered here.
 
 
 ### 4. Configure sidebar
@@ -210,7 +209,7 @@ To setup auto sidebar:
 2. Open _index.html_ to edit it.
 3. Set `loadSidebar: false` and save.
 
-Warning: If you go for this option without a configured sidebar, do not leave any links in your _docs/README.md_ which refer to other doc files. Although the link may be valid, once you click on the link, the sidebar on that page will reflect the target page rather than the outline of the _docs/README.md_ page, which is inconsistent and jarring behavior.
+!> **Warning:** If you go for this option without a configured sidebar, do not leave any links in your _docs/README.md_ which refer to other doc files. Although the link may be valid, once you click on the link, the sidebar on that page will reflect the target page rather than the outline of the _docs/README.md_ page, which is inconsistent and jarring behavior.
 
 
 #### Custom sidebar
@@ -259,7 +258,7 @@ Parts:
 
 This is really the text of heading element, which has been made lowercase and hyphenated. Copy this to the sidebar file and prefix it with a hash symbol.
 
- Note: An alternative would be use the top right nav bar to point to the Homepage, rather than sidebar as here.
+!> **Note:** An alternative would be use the top right nav bar to point to the Homepage, rather than sidebar as here.
 
 
 ### 5. Configure cover page
@@ -284,7 +283,7 @@ You could include an image (logo, photo) above your project title. For example, 
 
 ### 6. Configure Style
 
-Edit _index.html_.
+Edit `index.html`.
 
 Not covered here - see [jhildenbiddle/docsify-themeable](https://github.com/jhildenbiddle/docsify-themeable) for more control on custom styling and theming.
 
@@ -299,6 +298,7 @@ window.$docsify = {
 ```
 
 More on Docsify [theme color](https://docsify.js.org/#/configuration?id=themecolor).
+
 
 #### 6.2 CSS Themes
 
@@ -315,7 +315,7 @@ Replace the end of URL with one of these four themes:
 - `dark.css`
 - `pure.css`
 
-You can optionally remove `/lib` from the theme URL to get the _uncompressed_ CSS file.
+?> You can optionally remove `/lib` from the theme URL to get the _uncompressed_ CSS file.
 
 Read more on the _Docsify_ [themes](https://docsify.js.org/#/themes?id=themes) guide.
 
@@ -481,9 +481,9 @@ Note: The result is _not_ inside a codeblock as expect. It is inside a quote blo
 
 #### Warnings
 
-- Do not put the URL in a bullet point as it will become an ordinary link.
-- Do not put two embed items in a sequence without some characters in between, otherwise you will get a JS error rending the page. Putting an empty line between them is **not** sufficient.
-- If you embed a URL of a Github file, remember to use the _Raw_ URL otherwise you will get an error.
+?> - Do not put the URL in a bullet point as it will become an ordinary link.
+?> - Do not put two embed items in a sequence without some characters in between, otherwise you will get a JS error rending the page. Putting an empty line between them is **not** sufficient.
+?> - If you embed a URL of a Github file, remember to use the _Raw_ URL otherwise you will get an error.
 
 
 ## Docsify CLI
@@ -544,6 +544,7 @@ Although SEO crawlers can do better at sites like single page application, _Docs
 However, _Docsify_ provides the option of pre-rendering all the views as static HTML. This can improve SEO.
 
 See [Server-Side Rendering](https://docsify.js.org/#/ssr) section of the _Docsify_ docs.
+
 
 ### Why not use a static site generator?
 
