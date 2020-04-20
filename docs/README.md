@@ -476,7 +476,7 @@ Result:
 
 [example.md](https://docsify.js.org/_media/example.md ':include')
 
-Note: The result is _not_ inside a codeblock as expect. It is inside a quote block because the source content starts with `> `.
+Note: The result is _not_ inside a codeblock. It is inside a quote block, because the source content starts with `> `.
 
 
 #### Warnings
