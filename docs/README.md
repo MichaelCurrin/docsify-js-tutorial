@@ -186,7 +186,7 @@ Optionally define a menu for the top right of the page.
 
 See [Custom navbar](https://docsify.js.org/#/custom-navbar) and [loadNavbar](https://docsify.js.org/#/configuration?id=loadnavbar) in the docs.
 
-!> **Note:** If you enable a cover page and the navbar, the navbar will appear on the cover page. This makes it difficult to navigate as you have to scroll up all the time to get the navbar. Also, if not using a cover page, the navbar will cover the homepage heading but only on a mobile device. Some CSS is needed to fix both of these issues, not covered here. Alternatively, use `mergeNavbar: true,` if your app config to move the navbar items to the top of the sidebar on a mobile view. This works great.
+?> **Note:** If you enable a cover page and the navbar, the navbar will appear on the cover page. This makes it difficult to navigate as you have to scroll up all the time to get the navbar. Also, if not using a cover page, the navbar will cover the homepage heading but only on a mobile device. Some CSS is needed to fix both of these issues, not covered here. Alternatively, use `mergeNavbar: true,` if your app config to move the navbar items to the top of the sidebar on a mobile view. This works great.
 
 
 ### 4. Configure sidebar
@@ -258,7 +258,7 @@ Parts:
 
 This is really the text of heading element, which has been made lowercase and hyphenated. Copy this to the sidebar file and prefix it with a hash symbol.
 
-!> **Note:** An alternative would be use the top right nav bar to point to the Homepage, rather than sidebar as here.
+?> **Note:** An alternative would be use the top right nav bar to point to the Homepage, rather than sidebar as here.
 
 
 ### 5. Configure cover page
@@ -405,6 +405,24 @@ Open the link in the browser.
 
 This section deals with how to update and add to the content of your doc files.
 
+### Note blocks
+
+
+```markdown
+?> Info block.
+```
+
+?> Info block.
+
+
+
+```markdown
+?> Warning block.
+```
+
+?> Warning block.
+
+
 ### Embed
 
 You can embed content such as video, audio, iframes (`.html`), code blocks or even Markdown files.
@@ -429,7 +447,6 @@ See the _Docsify_ [Embed](https://docsify.js.org/#/embed-files) help for forcing
 
 
 #### Embed examples
-
 
 ##### JS code snippet
 
