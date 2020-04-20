@@ -481,9 +481,11 @@ Note: The result is _not_ inside a codeblock. It is inside a quote block, becaus
 
 #### Warnings
 
-?> - Do not put the URL in a bullet point as it will become an ordinary link.
-?> - Do not put two embed items in a sequence without some characters in between, otherwise you will get a JS error rending the page. Putting an empty line between them is **not** sufficient.
-?> - If you embed a URL of a Github file, remember to use the _Raw_ URL otherwise you will get an error.
+!> Do not put the URL in a bullet point as it will become an ordinary link.
+
+!> Do not put two embed items in a sequence without some characters in between, otherwise you will get a JS error rending the page. Putting an empty line between them is **not** sufficient.
+
+!> If you embed a URL of a Github file, remember to use the _Raw_ URL otherwise you will get an error.
 
 
 ## Docsify CLI
