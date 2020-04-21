@@ -1,5 +1,8 @@
 .PHONY: docs
 
+help:
+	@egrep '(^\S)|^$$' Makefile
+
 docs:
 	docsify serve docs
 
