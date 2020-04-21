@@ -19,7 +19,7 @@ This project is for you if you answer yes to any of the following:
 - New to making a docs site?
 - Tired of writing HTML/CSS/JS and just want to write docs using plain markdown?
 - Never heard of DocsifyJS?
-- Want to add features and style to your DocsifyJS site? 
+- Want to add features and style to your DocsifyJS site?
 - Looking for a template which is based on real world use?
 
 
@@ -104,23 +104,28 @@ Apply these rules to the latter part of markdown URLs such as `[Text](page.md)`.
 Start running a local server to preview a _Docsify_ site. Choose an option below depending on whether you want to install and run Docsify locally or use something you already have installed.
 
 -   Run [Docsify CLI](#docsify-cli) web server.
-    ```bash
-    $ # From project root, serve docs directory.
-    $ docsify serve docs
-    $ # Shortcut provided by Makefile.
-    $ make docs
-    ```
+    - Requires DocsifyJS CLI to be installed.
+    - Run from the project root and target a directory.
+    - Command:
+        ```bash
+        $ docsify serve docs
+        ```
 -   Run a Python web server.
-    ```bash
-    $ cd docs
-    $ python3 -m http.server 3000
-    ```
+    - Requires Python 3 to be installed.
+    - Does not include live reload of the browser on file changes, but the site will look the same.
+    - Command:
+        ```bash
+        $ (cd docs && python3 -m http.server 3000)
+        ```
 - Choose another server option from this large list - [link](https://gist.github.com/willurd/5720255).
 
 
 ## Quickstart local server
+> Serve an existing project locally
 
-Follow these steps to setup and run an existing _Docsify_ project locally . In this case, we get a local copy of this _Docsify JS Tutorial_ project and serve it.
+<!-- TODO this could be replaced by following the template instructions or using abstracted instructions -->
+
+Follow these steps to setup and run an existing _Docsify_ project locally. In this case, we get a local copy of this _Docsify JS Tutorial_ project and serve it.
 
 ### 1. Install
 
@@ -151,10 +156,11 @@ Open in the browser.
 
 - http://localhost:3000
 
-?> **UI notes:** When viewing the site, if you scroll down far enough you will see a hamburger menu which lets you dynamically open or close the sidebar. This is always visible on mobile view but not so easy to find, while the sidebar starts out closed on mobile.
+?> **Notes** When viewing the site, if you scroll down far enough you will see a hamburger menu which lets you dynamically open or close the sidebar. This is always visible on mobile view but not so easy to find, while the sidebar starts out closed on mobile.
 
 
 ## Setup your own docs site
+> Convert your docs directory into a docs site
 
 This tutorial is based on the _Docsify_ [Quickstart](https://docsify.js.org/#/quickstart) guide, but rather than giving snippets of file this tutorial lets you copy entire template files to your project, there are `TODO` items in the templates making it clear what to edit.
 
@@ -166,7 +172,11 @@ Follow to steps in this section copy a base structure and configs from this proj
 
 The repo has an accompanying [Docsify JS Template](https://github.com/MichaelCurrin/docsify-js-template) repo. Follow instructions in that project's root README to copy the base project to your own project's docs. Note this will **overwrite** any existing files in docs, so make sure you have them backed up or any version control.
 
-Next, view the contents of the docs directory to see what was added. Note that _Docsify_ provides a `404 - Not found` page for a bad URL so you do not need to create a 404 page yourself.
+Next, view the contents of the docs directory to see what was added.
+
+?> Note that _Docsify_ provides a `404 - Not found` page for a bad URL so you do not need to create a 404 page yourself.
+
+?> The minimum you'll need for your docs site is a `README.md` - either your own or the one copied from above. If you have any other markdown files or folders in your `docs` directory, leave them there are they will also be used for your site.
 
 To see what the base site look like, start a server now using a command from the [serve](#21-serve) section. Open the web page URL and keep it open so you can check on it as you make changes in the following sections. If you use the _Docsify_ server, the page will auto refresh on a file save, otherwise you will have to manually refresh.
 
@@ -180,7 +190,7 @@ Edit your homepage (_docs/README.md_). Complete the `TODO` items, using the sugg
 - Note that you are not required to put in links to other docs file within your homepage file. As that is what the _Docsify_ sidebar. If you do put in any links in your homepage, they must be relative to the _docs_ directory, such as `file.md`. See [Doc links](#doc-links) for more info.
 
 
-### 3. Configue navbar
+### 3. Configure navbar
 
 Optionally define a menu for the top right of the page.
 
@@ -199,9 +209,9 @@ See [loadSidebar](https://docsify.js.org/#/configuration?id=loadsidebar) in the 
 
 You may choose to display the sidebar, but have it populated automatically from headings on a single HTML file - the homepage (_docs/README.md_). This is the way that this project's own docs site is setup.
 
-This solution is great if you are happy to move all your doc content into a **single** large markdown file, as it means not having to worry about manually updating a navigation bar when you docs change. Especially if you have a many files to manage or they are likely to change in name or structure. 
+This solution is great if you are happy to move all your doc content into a **single** large markdown file, as it means not having to worry about manually updating a navigation bar when you docs change. Especially if you have a many files to manage or they are likely to change in name or structure.
 
-You can also have multiple markdown files in folders, each group with its own sidebar config. 
+You can also have multiple markdown files in folders, each group with its own sidebar config.
 
 To setup auto sidebar:
 
@@ -252,7 +262,7 @@ Parts:
 - Root path (`/`)
     - The leading forward slash is **required** here for correct behavior to get to the homepage as root page. As the anchor tag will be invalid on other pages such as `foo.md` which has path `/#/foo/`).
 - Homepage heading ID (e.g. `#my-app`)
-    - This is the ID of the heading on the Homepage (README.md). 
+    - This is the ID of the heading on the Homepage (README.md).
     - The ID follows the markdown style of headings as slugs (lowercase and hyphens).
     - You can also find the ID on page directly if you aren't sure.. Go to the coverpage, scroll down to the homepage and click on the heading. The URL will be something like `http://localhost:3000/#/?id=my-app`. The part we want is the end e.g. `my-app`.
 
@@ -370,9 +380,20 @@ window.$docsify = {
 };
 ```
 
-#### Plugins
+#### Set favicon
 
-Highlights from the [List of Plugins](https://docsify.js.org/#/plugins?id=list-of-plugins) on the _Docsify_ site.
+Optionally customize _index.html_ to point to a custom _favicon_, if you added one.
+
+```html
+<link rel="icon" href="_media/favicon.ico">
+```
+
+#### Add plugins
+
+Optionally add plugins to extend your site. This is typically done by adding a JS link at the bottom of your `index.html` page.
+
+Here is a narrowed down list of plugins I use or plan to use:
+
 - [External script](https://docsify.js.org/#/plugins?id=external-script) - If the script on the page is an external one (imports a js file via src attribute), you'll need this plugin to make it work.
 - [Google Analytics](https://docsify.js.org/#/plugins?id=google-analytics) - Add tracking.
 - [Tabs](https://docsify.js.org/#/plugins?id=tabs) - A docsify.js plugin for displaying tabbed content from markdown.
@@ -382,13 +403,11 @@ Also of interest:
     - [bandorko/docsify-variables](https://github.com/bandorko/docsify-variables)
     - [kissybnts/docsify-json-variables](https://github.com/kissybnts/docsify-json-variables) or on [npm](https://www.npmjs.com/package/docsify-json-variables)
 
-#### Favicon
+The DocsifyJS site covers long lists of plugins and how to use them:
 
-Optionally customize _index.html_ to point to a custom _favicon_, if you added one.
+- [List of Plugins](https://docsify.js.org/#/plugins?id=list-of-plugins)
+- [Awesome plugins](https://docsify.js.org/#/awesome?id=plugins)
 
-```html
-<link rel="icon" href="_media/favicon.ico">
-```
 
 ## Setup Github Pages site
 
@@ -400,27 +419,13 @@ Next, edit your repo's setting on Github. Select the option to serve the `docs` 
 
 Open the link in the browser.
 
+- http://localhost:3000
+
+To make the most of Docsify, update your content using the next section.
+
 
 ## Write content
-
-This section deals with how to update and add to the content of your doc files.
-
-### Note blocks
-
-
-```markdown
-?> Info block.
-```
-
-?> Info block.
-
-
-
-```markdown
-?> Warning block.
-```
-
-?> Warning block.
+> How to update and add to the content of your doc files so that they work well in Docsify.
 
 
 ### Embed
@@ -493,7 +498,9 @@ Result:
 
 [example.md](https://docsify.js.org/_media/example.md ':include')
 
-Note: The result is _not_ inside a codeblock. It is inside a quote block, because the source content starts with `> `.
+Raw markdown:
+
+[example.md](https://docsify.js.org/_media/example.md ':include :type=code')
 
 
 #### Warnings
@@ -503,6 +510,37 @@ Note: The result is _not_ inside a codeblock. It is inside a quote block, becaus
 !> Do not put two embed items in a sequence without some characters in between, otherwise you will get a JS error rending the page. Putting an empty line between them is **not** sufficient.
 
 !> If you embed a URL of a Github file, remember to use the _Raw_ URL otherwise you will get an error.
+
+
+### Use DocsifyJS styling
+
+To break up your doc content and highlight paragraphs, you can now use styling that comes with DocsifyJS.
+
+Here are examples. Note that these will look weird when viewed directly as markdown but DocsifyJS will render them.
+
+#### Info block
+
+Code:
+```markdown
+?> Info content.
+```
+
+Result:
+
+?> Info content.
+
+#### Warning block
+
+Code:
+
+```markdown
+!> Warning content.
+```
+
+Result:
+
+!> Warning content.
+
 
 
 ## Docsify CLI
