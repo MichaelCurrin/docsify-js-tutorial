@@ -104,6 +104,8 @@ Apply these rules to the latter part of markdown URLs such as `[Text](page.md)`.
 
 Follow these steps to setup and run an existing _Docsify_ project locally. In this case, we get a local copy of this _Docsify JS Tutorial_ project and serve it.
 
+
+
 ### 1. Install
 
 Clone this repo to your machine with one of these commands:
@@ -115,12 +117,14 @@ $ # Clone with HTTPS
 $ git clone https://github.com/MichaelCurrin/docsify-js-tutorial.git
 ```
 
-?> No installation is needed. When the HTML page is opened in the browser, the _Docsify_ library will be fetched from a CDN by the browser.
+?> **Note:** No installation is needed. When the HTML page is opened in the browser, the _Docsify_ library will be fetched from a CDN by the browser.
+
 
 [run_docsify_locally.md](//gist.githubusercontent.com/MichaelCurrin/4c8060dcc9d8841f842eeebc7a1436d8/raw/run_docsify_locally.md ':include')
 
 
-?> **Notes** When viewing the site, if you scroll down far enough you will see a hamburger menu which lets you dynamically open or close the sidebar. This is always visible on mobile view but not so easy to find, while the sidebar starts out closed on mobile.
+?> **Note** When viewing the site, if you scroll down far enough you will see a hamburger menu which lets you dynamically open or close the sidebar. This is always visible on mobile view but not so easy to find, while the sidebar starts out closed on mobile.
+
 
 
 ## Setup your own docs site
@@ -519,14 +523,19 @@ Result:
 
 
 ## Docsify CLI
-
-[run_docsify_locally.md](//gist.githubusercontent.com/MichaelCurrin/4c8060dcc9d8841f842eeebc7a1436d8/raw/run_docsify_locally.md ':include')
+> Summary of using Docsify's command-line tool
 
 
 See resources:
 
 - [Docsify Quickstart](https://docsify.js.org/#/quickstart) on _Docsify_ homepage.
 - [Docsify CLI](https://docsifyjs.github.io/docsify-cli) project's docs.
+
+
+### Setup
+
+Follow the instructions in [Quickstart local server](#quickstart-local-server).
+
 
 
 ### Commands
