@@ -99,31 +99,8 @@ Apply these rules to the latter part of markdown URLs such as `[Text](page.md)`.
 - Do not refer to content outside of the `docs` directory.  e.g. `../README.md`
 
 
-## Serve a _Docsify_ site locally
-
-Start running a local server to preview a _Docsify_ site. Choose an option below depending on whether you want to install and run Docsify locally or use something you already have installed.
-
--   Run [Docsify CLI](#docsify-cli) web server.
-    - Requires DocsifyJS CLI to be installed.
-    - Run from the project root and target a directory.
-    - Command:
-        ```bash
-        $ docsify serve docs
-        ```
--   Run a Python web server.
-    - Requires Python 3 to be installed.
-    - Does not include live reload of the browser on file changes, but the site will look the same.
-    - Command:
-        ```bash
-        $ (cd docs && python3 -m http.server 3000)
-        ```
-- Choose another server option from this large list - [link](https://gist.github.com/willurd/5720255).
-
-
 ## Quickstart local server
 > Serve an existing project locally
-
-<!-- TODO this could be replaced by following the template instructions or using abstracted instructions -->
 
 Follow these steps to setup and run an existing _Docsify_ project locally. In this case, we get a local copy of this _Docsify JS Tutorial_ project and serve it.
 
@@ -138,23 +115,10 @@ $ # Clone with HTTPS
 $ git clone https://github.com/MichaelCurrin/docsify-js-tutorial.git
 ```
 
-```bash
-$ cd docsify-js-tutorial
-```
-
 ?> No installation is needed. When the HTML page is opened in the browser, the _Docsify_ library will be fetched from a CDN by the browser.
 
-### 2. Run
+[run_docsify_locally.md](//gist.githubusercontent.com/MichaelCurrin/4c8060dcc9d8841f842eeebc7a1436d8/raw/run_docsify_locally.md ':include')
 
-#### 2.1 Serve
-
-Follow [Serve a Docsify site locally](#serve-a-docsify-site-locally) instructions.
-
-#### 2.2 View
-
-Open in the browser.
-
-- http://localhost:3000
 
 ?> **Notes** When viewing the site, if you scroll down far enough you will see a hamburger menu which lets you dynamically open or close the sidebar. This is always visible on mobile view but not so easy to find, while the sidebar starts out closed on mobile.
 
@@ -442,7 +406,18 @@ Add the `':include'` parameter in a markdown URL reference. Here is the format:
 
 The URL could be a local file (e.g. `_media/foo.js`) or a remote URL `https://...`.
 
-If you want to embed a code block, you can use the automatic formatting. But markdown and HTML files need to be marked as a code using `type` paramter if you want them as code rather than HTML.
+The remote file could be anywhere:
+
+- On a server
+    - e.g. `assets/js/main.js`
+- Repo reference
+    - Use the **raw** URL so you only reference plain text.
+    - Protocol of `//` is recommended, since `https://` is needed for a remote and `http://` for localhost, to avoid a CORS error.
+    - e.g. `https://raw.githubusercontent.com/MichaelCurrin/docsify-js-tutorial/master/nested_example/_sidebar.md`
+- A gist reference
+    - See instructions in this [guide](https://gist.github.com/MichaelCurrin/c2bece08f27c4277001f123898d16a7c).
+
+If you want to embed a code block, you can use the automatic formatting. But markdown and HTML files need to be marked as a code using `type` parameter if you want them as code rather than HTML.
 
 ```
 ':include :type=code'
@@ -521,6 +496,7 @@ Here are examples. Note that these will look weird when viewed directly as markd
 #### Info block
 
 Code:
+
 ```markdown
 ?> Info content.
 ```
@@ -542,25 +518,20 @@ Result:
 !> Warning content.
 
 
-
 ## Docsify CLI
 
-_Docsify_ also provides a convenient but optional CLI. It helps you create and serve a Docsify project. In particular, it provides hot reloading by default when using the server - an open localhost webpage will refresh when project files are saved.
+[run_docsify_locally.md](//gist.githubusercontent.com/MichaelCurrin/4c8060dcc9d8841f842eeebc7a1436d8/raw/run_docsify_locally.md ':include')
 
-### Setup
 
-```bash
-$ npm i docsify-cli -g
-```
-
-Links for installing and using the CLI.
+See resources:
 
 - [Docsify Quickstart](https://docsify.js.org/#/quickstart) on _Docsify_ homepage.
 - [Docsify CLI](https://docsifyjs.github.io/docsify-cli) project's docs.
 
+
 ### Commands
 
-#### init
+#### docsify init
 
 > Creates new docs
 
@@ -572,7 +543,7 @@ e.g.
 $ docsify init docs
 ```
 
-#### serve
+#### docsify serve
 
 > Run local server to preview site.
 
@@ -586,11 +557,12 @@ $ docsify serve docs
 
 Serves as [localhost:3000/](http://localhost:3000/), or a different port if there is already a _Docsify_ server running.
 
-#### start
+#### docsify start
 
 > Server for SSR
 
 This command is for Server-Side Rendering. I haven't tried this yet.
+
 
 ## Static site vs SPA
 
