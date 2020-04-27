@@ -53,10 +53,11 @@ _Docsify_ works as a single-page application on this one page - data from your m
 
 The repo is open for accepting contributions through a Pull Request.
 
+
 ## License
 
-Licensed under [MIT license](/LICENSE)
+Released under [MIT license](/LICENSE)
 
 - You can modify and reuse this project.
-- A copy of the license and copyright notice must be included with the software. [source](https://choosealicense.com/licenses/#mit).
+- A copy of the license and copyright notice must be included with the software, according to this [MIT definition](https://choosealicense.com/licenses/#mit).
 - Please link back to this repo somewhere in your project.
