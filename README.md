@@ -8,9 +8,9 @@
 
 ## 👩‍🏫 Follow the online tutorial
 
-The [Docsify](https://docsify.js.org/#/) site does have a great quickstart, but then it lets you figure what to add next.
+The [Docsify](https://docsify.js.org/#/) site has great quickstart, but I found that it did not guide me through what to do next. And all the config options and plugins were overwhelming. So I created this as a tutorial to guide you through setting up a site, whether new to or experienced with DocsifyJS.
 
-So this project was created as a more directed guide to take you through site setup and configuration, covering common usecases. It also assumes you already have a docs directory in a project and you want to turn it into a docs site. The tutorial gives you some tips and pitfalls to avoid, based on the author's experience.
+This tutorial takes you from basic site setup and content to optional configuration of styling, menus and plugins. It aims to cover common usecases in a logical recipe, rather than covering everything you could do. It also assumes you already have a docs directory in a project and you want to turn it into a docs site. The tutorial gives you some tips and pitfalls to avoid, based on the author's experience.
 
 [![Docsify JS Template site](https://img.shields.io/badge/site-Docsify_JS_Tutorial-green?style=for-the-badge)](https://michaelcurrin.github.io/docsify-js-tutorial/#/)
 
