@@ -6,24 +6,24 @@
 [![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](#license)
 
 
+[![DocsifyJS Tutorial site](https://img.shields.io/badge/site-DocsifyJS_Tutorial-green?style=for-the-badge)](https://michaelcurrin.github.io/docsify-js-tutorial/#/)
+[![DocsifyJS Template site](https://img.shields.io/badge/site-DocsifyJS_Template-blue?style=for-the-badge)](https://michaelcurrin.github.io/docsify-js-template/#/)
+
+
 ## 👩‍🏫 Follow the online tutorial
 
 The [Docsify](https://docsify.js.org/#/) site has great quickstart, but I found that it did not guide me through what to do next. And all the config options and plugins were overwhelming. So I created this as a tutorial to guide you through setting up a site, whether new to or experienced with DocsifyJS.
 
 This tutorial takes you from basic site setup and content to optional configuration of styling, menus and plugins. It aims to cover common usecases in a logical recipe, rather than covering everything you could do. It also assumes you already have a docs directory in a project and you want to turn it into a docs site. The tutorial gives you some tips and pitfalls to avoid, based on the author's experience.
 
-[![Docsify JS Template site](https://img.shields.io/badge/site-Docsify_JS_Tutorial-green?style=for-the-badge)](https://michaelcurrin.github.io/docsify-js-tutorial/#/)
-
-This project's own site is built on _Docsify-JS_ so serves as a good example. That serves from the `docs` directory. There is no main application to separate from `docs` directory, so serving from that directory is just convenient.
+This project's own site is built on _DocsifyJS_ so serves as a good example. It serves from the `docs` directory. There is no main application to separate from `docs` directory, so serving from that directory is just convenient.
 
 See also the [Nested Example](/nested_example/README.md) section on the repo for understanding links in markdown and the sidebar.
 
 
 ## 🖨️ Use a template
 
-If want to skip the tutorial and want a base project which has some sample data then go here:
-
-[![Docsify JS Template site](https://img.shields.io/badge/site-Docsify_JS_Template-green?style=for-the-badge)](https://michaelcurrin.github.io/docsify-js-template/#/)
+If want to skip the tutorial and want a base project which has some sample data then go to the template repo linked at the top.
 
 That is template repo which accompanies this tutorial repo. Click _Use this template_ button and follow the instructions in the README.md doc.
 
