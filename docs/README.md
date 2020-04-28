@@ -329,7 +329,7 @@ For available parameters, these are documented on the _Docsify_ [Configuration](
 
 For defaults - see _Docsify_ [config.js](https://github.com/docsifyjs/docsify/blob/develop/src/core/config.js) script.
 
-See some values below which are worth considering for the siderbar.
+See some values below which are worth considering for the sidebar.
 
 ```js
 window.$docsify = {
