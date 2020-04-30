@@ -5,7 +5,7 @@
 [![GitHub tag](https://img.shields.io/github/tag/MichaelCurrin/docsify-js-tutorial.svg)](https://GitHub.com/MichaelCurrin/docsify-js-tutorial/tags/)
 [![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/MichaelCurrin/docsify-js-tutorial/blob/master/README.md#license)
 
-Convert your _docs_ folder into a pretty docs website using [Docsify-JS](https://docsify.js.org/) and some minimal setup instructions. This project's site itself is also running on _Docsify_.
+Convert your _docs_ folder into a pretty docs website using [DocsifyJS](https://docsify.js.org/) and some minimal setup instructions. This project's site itself is also running on _Docsify_.
 
 
 - [GitHub](https://github.com/michaelcurrin/docsify-js-tutorial/)
