@@ -146,6 +146,7 @@ Plus, in the template, there are some useful or pretty configurations which have
 
 Follow to steps in this section copy a base structure and configs from this project to your own, then customize them for your needs.
 
+
 ### 1. Create base structure
 
 The repo has an accompanying [DocsifyJS Template](https://github.com/MichaelCurrin/docsify-js-template) repo. Follow instructions in that project's root README to copy the base project to your own project's docs. Note this will **overwrite** any existing files in docs, so make sure you have them backed up or any version control.
@@ -330,37 +331,38 @@ For available parameters, these are documented on the _Docsify_ [Configuration](
 
 For defaults - see _Docsify_ [config.js](https://github.com/docsifyjs/docsify/blob/develop/src/core/config.js) script.
 
-See some values below which are worth considering for the sidebar.
+- **Sidebar** - config options relating to the sidebar. Default values are shown here.
+    ```js
+    window.$docsify = {
+    // Maximum Table of Contents (TOC) level.
+    maxLevel: 6,
 
-```js
-window.$docsify = {
-  // Maximum Table of Contents (TOC) level. Default value shown here.
-  maxLevel: 6,
+    // Add table of contents (TOC) in custom sidebar. Try a value of 2.
+    subMaxLevel: 0,
 
-  // Add table of contents (TOC) in custom sidebar. Default value shown here. Try a value of 2.
-  subMaxLevel: 0,
+    // Add your logo to the top of our sidebar menu.
+    logo: '/_media/icon.svg',
 
-  logo: '/_media/icon.svg',
+    // Name which appears at the top of the sidebar.
+    name: 'docsify'
+    }
+    ```
+- **Homepage** - You might not need this, but in case you want to use a different homepage target. These recommendations come from the docs.
+    ```js
+    window.$docsify = {
+    // Change to /home.md rather than /README.md file.
+    homepage: 'home.md',
 
-  name: 'docsify'
-}
-```
-
-Change the homepage. These recommendations come from the docs.
-
-```js
-window.$docsify = {
-  // Change to /home.md
-  homepage: 'home.md',
-
-  // Or use the readme in your repo
-  homepage: 'https://raw.githubusercontent.com/docsifyjs/docsify/master/README.md'
-};
-```
+    // Specify the README.md at the root of your repo, rather than in the docs directory.
+    homepage: 'https://raw.githubusercontent.com/docsifyjs/docsify/master/README.md'
+    };
+    ```
 
 #### Set favicon
 
-Optionally customize _index.html_ to point to a custom _favicon_, if you added one.
+You can use a custom _favicon_, if you added one.
+
+Add this to the `head` tag in `index.html`.
 
 ```html
 <link rel="icon" href="_media/favicon.ico">
