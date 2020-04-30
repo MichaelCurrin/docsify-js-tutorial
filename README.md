@@ -1,20 +1,24 @@
-# Docsify JS Tutorial
-> Tutorial on how to build a docs site with _Docsify-JS_ and _Github Pages_
+# DocsifyJS Tutorial
+> Tutorial on how to build a docs site with _DocsifyJS_ and _Github Pages_
 
 [![Made with latest Docsify](https://img.shields.io/npm/v/docsify?label=docsify)](https://docsify.js.org/)
 [![GitHub tag](https://img.shields.io/github/tag/MichaelCurrin/docsify-js-tutorial.svg)](https://GitHub.com/MichaelCurrin/docsify-js-tutorial/tags/)
 [![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](#license)
 
 
-[![DocsifyJS Tutorial site](https://img.shields.io/badge/site-DocsifyJS_Tutorial-green?style=for-the-badge)](https://michaelcurrin.github.io/docsify-js-tutorial/#/)
-[![DocsifyJS Template site](https://img.shields.io/badge/site-DocsifyJS_Template-blue?style=for-the-badge)](https://michaelcurrin.github.io/docsify-js-template/#/)
+## Links
+
+[![DocsifyJS Tutorial](https://img.shields.io/badge/site-DocsifyJS_Tutorial-green?style=for-the-badge)](https://michaelcurrin.github.io/docsify-js-tutorial/#/)
+[![DocsifyJS Template demo](https://img.shields.io/badge/site-DocsifyJS_Template-blue?style=for-the-badge)](https://michaelcurrin.github.io/docsify-js-template/#/)
 
 
-## 👩‍🏫 Follow the online tutorial
+## 👩‍🏫 About the online tutorial
 
-The [Docsify](https://docsify.js.org/#/) site has great quickstart, but I found that it did not guide me through what to do next. And all the config options and plugins were overwhelming. So I created this as a tutorial to guide you through setting up a site, whether new to or experienced with DocsifyJS.
+The [Docsify](https://docsify.js.org/#/) site has great quickstart, but I found that it did not guide me through what to do next. And all the config options and plugins were overwhelming and I probably won't need most of them, at least for a while. So I created this as a tutorial to guide you through setting up a site, whether new to or experienced with DocsifyJS.
 
-This tutorial takes you from basic site setup and content to optional configuration of styling, menus and plugins. It aims to cover common usecases in a logical recipe, rather than covering everything you could do. It also assumes you already have a docs directory in a project and you want to turn it into a docs site. The tutorial gives you some tips and pitfalls to avoid, based on the author's experience.
+This tutorial takes you from basic site setup and content to optional configuration of styling, menus and plugins. It aims to cover common use-cases in a logical sequence, rather than covering everything you could do. You can also jump to a later step if you want to use that as a reference.
+
+It also assumes you already have a docs directory in a project and you want to turn it into a docs site. The tutorial gives you some tips and pitfalls to avoid, based on the author's experience.
 
 This project's own site is built on _DocsifyJS_ so serves as a good example. It serves from the `docs` directory. There is no main application to separate from `docs` directory, so serving from that directory is just convenient.
 
@@ -25,7 +29,9 @@ See also the [Nested Example](/nested_example/README.md) section on the repo for
 
 If want to skip the tutorial and want a base project which has some sample data then go to the template repo linked at the top.
 
-That is template repo which accompanies this tutorial repo. Click _Use this template_ button and follow the instructions in the README.md doc.
+That is a template repo which was created to accompany this tutorial, so the layout and conventions will mostly be the same. The template only implements the basic steps from the tutorial.
+
+Click _Use this template_ button and follow the instructions in the *README.md* doc.
 
 
 ## 🎯 Project aims
