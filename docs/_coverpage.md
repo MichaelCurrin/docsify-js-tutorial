@@ -7,7 +7,7 @@
 - :hourglass_flowing_sand: Quickly setup an elegant, responsive site
 - :open_file_folder: Use your markdown docs as content
 - :sparkles: No compilation step and no templating syntax to learn
-- :nut_and_bolt: Built on [Docsify-JS](https://docsify.js.org/)
+- :nut_and_bolt: Built on [DocsifyJS](https://docsify.js.org/)
 - :pushpin: The library loads in the browser - so no local dependencies
 - :cloud: Serve locally and on GitHub Pages or Netlify
 
