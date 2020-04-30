@@ -1,5 +1,5 @@
-# Docsify JS Tutorial homepage
-> How to build a docs site using _Docsify-JS_ and _Github Pages_
+# DocsifyJS Tutorial homepage
+> How to build a docs site using _DocsifyJS_ and _Github Pages_
 
 [![Made with latest Docsify](https://img.shields.io/npm/v/docsify?label=docsify)](https://docsify.js.org/)
 [![GitHub tag](https://img.shields.io/github/tag/MichaelCurrin/docsify-js-tutorial.svg)](https://GitHub.com/MichaelCurrin/docsify-js-tutorial/tags/)
@@ -16,7 +16,7 @@ Convert your _docs_ folder into a pretty docs website using [Docsify-JS](https:/
 
 This project is for you if you answer yes to any of the following:
 
-- New to making a docs site?
+- Are you new to making a docs site?
 - Tired of writing HTML/CSS/JS and just want to write docs using plain markdown?
 - Never heard of DocsifyJS?
 - Want to add features and style to your DocsifyJS site?
@@ -31,7 +31,7 @@ This project provides three approaches for choosing a Docsify site to run:
     - Clone this repo and start serving the docs repo immediately.
 - [Setup your own docs site](#setup-your-own-docs-site)
     - Convert your _docs_ directory into a docs site hosted on Github Pages. Copy from some templates files to get up and running with as little effort as possible.
-- [Docsify JS Template](https://github.com/michaelcurrin/docsify-js-template/) repo
+- [DocsifyJS Template](https://github.com/michaelcurrin/docsify-js-template/) repo
     - A minimal template which goes with this tutorial.
     - Click _Use this template_ there and you'll be able to starting serving a site on Github Pages or locally.
 
@@ -57,6 +57,7 @@ When you use _Docsify_ with its defaults or very simple tweaks, you still get a 
 
 This great [article](https://dev.to/evilmartians/keeping-oss-documentation-with-docsify-lefthook-and-friends-11e5) on dev.to covers a journey from README to Wiki to Jekyll and finally Docsify, if you are interested to compare those.
 
+
 ## _Docsify_ basics
 
 An intro to _Docsify_.
@@ -67,19 +68,19 @@ A _Docsify_ site works works _without_ the need to edit your existing docs and _
 
 Main components of a _Docsify_ site:
 
-- **cover page** 
-    - Optional. 
+- **cover page**
+    - Optional.
     - Landing page with background color or image and some minimal text.
-- **homepage** 
+- **homepage**
     - First page that a user sees, after the cover page. This is a content page written in markdown and it could be the only page of your site if you like.
-- **index page** 
-    - HTML file base of the app. 
+- **index page**
+    - HTML file base of the app.
     - This includes JS and CSS calls for setting up and styling the _Docsify_ app. Plus JS code which you set to customize the app.
-- **sidebar config** 
-    - Optional. 
+- **sidebar config**
+    - Optional.
     - Describes the menu layout for the **left sidebar**, using custom ordering and nested structure. _Docsify_ is not aware of directory structure, so this is where you get to define your menu. Alternatively, let _Docsify_ create the menu bar based on the structure of your homepage (`_docs/README.md`) file - this works best if you only have a single content markdown page or a _navbar_ (top of the screen) to switch between sections.
-- **navbar config** 
-    - Optional. 
+- **navbar config**
+    - Optional.
     - Describes the menu layout for the **top right menu**.
 
 Once you have that setup in _docs_ directory and have pushed to Github, you can setup Github Pages serving the _docs_ directory. Note: _Docsify_ also works with _Netlify_ as per their docs, but this project just considers the Github Pages case.
@@ -111,7 +112,7 @@ Apply these rules to the latter part of markdown URLs such as `[Text](page.md)`.
 ## Quickstart local server
 > Serve an existing project locally
 
-Follow these steps to setup and run an existing _Docsify_ project locally. In this case, we get a local copy of this _Docsify JS Tutorial_ project and serve it.
+Follow these steps to setup and run an existing _Docsify_ project locally. In this case, we get a local copy of this _DocsifyJS Tutorial_ project and serve it.
 
 
 
@@ -147,7 +148,7 @@ Follow to steps in this section copy a base structure and configs from this proj
 
 ### 1. Create base structure
 
-The repo has an accompanying [Docsify JS Template](https://github.com/MichaelCurrin/docsify-js-template) repo. Follow instructions in that project's root README to copy the base project to your own project's docs. Note this will **overwrite** any existing files in docs, so make sure you have them backed up or any version control.
+The repo has an accompanying [DocsifyJS Template](https://github.com/MichaelCurrin/docsify-js-template) repo. Follow instructions in that project's root README to copy the base project to your own project's docs. Note this will **overwrite** any existing files in docs, so make sure you have them backed up or any version control.
 
 Next, view the contents of the docs directory to see what was added.
 

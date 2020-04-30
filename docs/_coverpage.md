@@ -1,7 +1,7 @@
 <img src="_media/docs_face.png" height="100px"/>
 
 
-# Docsify JS Tutorial
+# DocsifyJS Tutorial
 > Tutorial to turn your docs into a docs site using base files
 
 - :hourglass_flowing_sand: Quickly setup an elegant, responsive, fast site
