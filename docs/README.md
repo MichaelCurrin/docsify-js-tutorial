@@ -96,7 +96,7 @@ The _Docsify_ site is served from the `docs` directory with restrictions on link
 
 As usual external resource can be linked e.g. `https://example.com`.
 
-**Rules for internal links**
+#### Rules for internal links
 
 DocsifJS will render markdown links in your docs as appropriate paths in the DocsifyJS structure.
 
@@ -114,8 +114,15 @@ Apply these rules to the latter part of markdown URLs such as `[Text](page.md)`.
 - Do not refer to content outside of the `docs` directory.  e.g. `../README.md`.
 - If you use relative links between files in the `docs` directory - make sure to enable this in the app config.
 
+#### HTML links
 
-!> Be careful when using HTML tags that have links or avoid them. <br>HTML tag hyperlinks will be rendered literally and so will break in the Docsify path structure e.g. `foo.md` or `foo.md#my-project`. <br> You can set them up manually, which makes them harder to maintain if your site structure changes. e.g. `href="/#/id=my-project"` or `href="/#/foo.md?id=my-project"`
+!> Be careful when using HTML tags that have links or avoid them.
+
+HTML tag hyperlinks will be rendered literally and so will break in the Docsify path structure e.g. `foo.md` or `foo.md#my-project`.
+
+You can set them up manually, which makes them harder to maintain if your site structure changes. e.g. `href="/#/id=my-project"` or `href="/#/foo.md?id=my-project"`. 
+
+Also note that the root prefix is needed for Docsify paths to work, but you'll also need to hardcode your repo name in which is fragile too. e.g. `href="/my-repo/#/id=my-project"` 
 
 
 ## Quickstart local server
