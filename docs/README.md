@@ -376,17 +376,28 @@ The configuration steps above already get you a prettier and more usable site in
 
 You can update the config parameters passed in on the _index.html_ page. There are some useful things there in like adjusting the sidebar levels, putting a logo in the sidebar or setting your root _README.md_ as your homepage. There is even a search bar you can add.
 
-For available parameters, these are documented on the _Docsify_ [Configuration](https://docsify.js.org/#/configuration) page.
+**Links**
 
-For defaults - see _Docsify_ [config.js](https://github.com/docsifyjs/docsify/blob/develop/src/core/config.js) script.
+- For available parameters, these are documented on the _Docsify_ [Configuration](https://docsify.js.org/#/configuration) page.
+- For defaults - see _Docsify_ [config.js](https://github.com/docsifyjs/docsify/blob/develop/src/core/config.js) script.
+- To see an app config in use, see [index.html](https://gi?id=twitter-policiesthub.com/MichaelCurrin/docsify-js-template/blob/master/docs/index.html) of DocsifyJS Template project.
 
-- **Sidebar** - config options relating to the sidebar. Default values are shown here.
-    ```js
-    window.$docsify = {
+
+**Sidebar**
+
+Config options relating to the sidebar. Default values are shown here.
+
+```js
+window.$docsify = {
+    // Recommended to set this to true - when transitioning between pages,
+    // it can look weird if you don't get to the top of the page.
+    auto2top: false
+
     // Maximum Table of Contents (TOC) level.
     maxLevel: 6,
 
     // Add table of contents (TOC) in custom sidebar. Try a value of 2.
+    // This might only apply when using auto sidebar and not custom one.
     subMaxLevel: 0,
 
     // Add your logo to the top of our sidebar menu.
@@ -394,18 +405,22 @@ For defaults - see _Docsify_ [config.js](https://github.com/docsifyjs/docsify/bl
 
     // Name which appears at the top of the sidebar.
     name: 'docsify'
-    }
-    ```
-- **Homepage** - You might not need this, but in case you want to use a different homepage target. These recommendations come from the docs.
-    ```js
-    window.$docsify = {
+}
+```
+
+**Homepage**
+
+Configure the homepage settings. You might not need this, but in case you want to use a different homepage target. These recommendations come from the docs.
+
+```js
+window.$docsify = {
     // Change to /home.md rather than /README.md file.
     homepage: 'home.md',
 
     // Specify the README.md at the root of your repo, rather than in the docs directory.
     homepage: 'https://raw.githubusercontent.com/docsifyjs/docsify/master/README.md'
-    };
-    ```
+};
+```
 
 #### Set favicon
 
