@@ -291,7 +291,6 @@ window.$docsify = {
 
 More on Docsify [theme color](https://docsify.js.org/#/configuration?id=themecolor).
 
-
 #### 6.2 CSS Themes
 
 Find the style which is set in the `<head>` tag, which looks like this.
@@ -320,6 +319,41 @@ Note: The _Buble_ theme has sidebar headings which are not distinguished from th
         margin: 0;
     }
 </style>
+```
+
+### 6.3 More styling
+
+
+You can easily reuse the theme color set early:
+
+```css
+.myButton {
+    background-color: var(--theme-color);
+}
+```
+
+Here is a some useful button styling I added to a site. The [Bess CSS Button Generator](https://www.bestcssbuttongenerator.com/) site was useful for discovering some attributes.
+
+```css
+.myButton {
+    background-color: var(--theme-color);
+    color: white;
+    /* Slightly larger */
+    font-size: 1.0em;
+    /* Round the edges */
+    border-radius: 8px;
+    padding: 6px 12px;
+    /* Change cursor on hover */
+    cursor: pointer;
+}
+.myButton:hover {
+    filter: brightness(110%)
+}
+/* Shift the button down on click */
+.myButton:active {
+    position:relative;
+    top: 2px;
+}
 ```
 
 ### 7. Advanced configuration
