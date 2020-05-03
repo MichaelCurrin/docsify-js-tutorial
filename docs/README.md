@@ -98,6 +98,8 @@ As usual external resource can be linked e.g. `https://example.com`.
 
 **Rules for internal links**
 
+DocsifJS will render markdown links in your docs as appropriate paths in the DocsifyJS structure.
+
 Apply these rules to the latter part of markdown URLs such as `[Text](page.md)`.
 
 - Links must always be relative to the `docs` directory and **not** to the file containing the link.
@@ -107,9 +109,13 @@ Apply these rules to the latter part of markdown URLs such as `[Text](page.md)`.
     - e.g. `/foo.md`, which becomes `/#/foo`.
 - Links may use an ID.
     - e.g. To link to heading on the homepage, use `#my-project`, which gets converted to `/#/?id=my-project`.
-    - e.g. To link to another page, use `foo.md#my-project`.
+    - e.g. To link to another page, use `foo.md#my-project`, which becomes `/#/foo.md?idmy-project`.
 - Do not reference the `docs` directory in the path. e.g. `/docs/foo.md`
-- Do not refer to content outside of the `docs` directory.  e.g. `../README.md`
+- Do not refer to content outside of the `docs` directory.  e.g. `../README.md`.
+- If you use relative links between files in the `docs` directory - make sure to enable this in the app config.
+
+
+!> Be careful when using HTML tags that have links or avoid them. <br>HTML tag hyperlinks will be rendered literally and so will break in the Docsify path structure e.g. `foo.md` or `foo.md#my-project`. <br> You can set them up manually, which makes them harder to maintain if your site structure changes. e.g. `href="/#/id=my-project"` or `href="/#/foo.md?id=my-project"`
 
 
 ## Quickstart local server
