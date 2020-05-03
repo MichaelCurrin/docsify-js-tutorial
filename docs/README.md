@@ -100,7 +100,7 @@ As usual external resource can be linked e.g. `https://example.com`.
 
 DocsifJS will render markdown links in your docs as appropriate paths in the DocsifyJS structure.
 
-Apply these rules to the latter part of markdown URLs such as `[Text](page.md)`.
+Apply these rules to the target part of markdown URLs `[Text](target.md#some-id)`.
 
 - Links must always be relative to the `docs` directory and **not** to the file containing the link.
     - e.g. `foo.md`, which becomes `/#/foo`.
@@ -109,14 +109,14 @@ Apply these rules to the latter part of markdown URLs such as `[Text](page.md)`.
     - e.g. `/foo.md`, which becomes `/#/foo`.
 - Links may use an ID.
     - e.g. To link to heading on the homepage, use `#my-project`, which gets converted to `/#/?id=my-project`.
-    - e.g. To link to another page, use `foo.md#my-project`, which becomes `/#/foo.md?idmy-project`.
-- Do not reference the `docs` directory in the path. e.g. `/docs/foo.md`
-- Do not refer to content outside of the `docs` directory.  e.g. `../README.md`.
+    - e.g. To link to another page, use `foo.md#my-project`, which becomes `/#/foo?idmy-project` (note no path extension).
+- Do **not** reference the `docs` directory in the path. e.g. `/docs/foo.md`
+- Do **not** refer to content outside of the `docs` directory.  e.g. `../README.md`.
 - If you use relative links between files in the `docs` directory - make sure to enable this in the app config.
 
 #### HTML links
 
-!> Be careful when using HTML tags that have links or avoid them.
+_NB. It's best to avoid using HTML tags with hyperlinks and rather use markdown._
 
 HTML tag hyperlinks will be rendered literally and so will break in the Docsify path structure e.g. `foo.md` or `foo.md#my-project`.
 
@@ -129,7 +129,6 @@ Also note that the root prefix is needed for Docsify paths to work, but you'll a
 > Serve an existing project locally
 
 Follow these steps to setup and run an existing _Docsify_ project locally. In this case, we get a local copy of this _DocsifyJS Tutorial_ project and serve it.
-
 
 
 ### 1. Install
