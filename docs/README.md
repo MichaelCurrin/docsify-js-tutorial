@@ -8,7 +8,7 @@
 Convert your _docs_ folder into a pretty docs website using [DocsifyJS](https://docsify.js.org/) and some minimal setup instructions. This project's site itself is also running on _Docsify_.
 
 
-## Links
+## Resource links
 
 ### My projects
 
@@ -18,7 +18,7 @@ Convert your _docs_ folder into a pretty docs website using [DocsifyJS](https://
 
 ## Docsify repos
 
-- [Docsify](https://github.com/docsifyjs/docsifyjs)
+- [Docsify](https://github.com/docsifyjs/docsify)
 - [Docsify CLI](https://github.com/docsifyjs/docsify-cli) on Github.
 
 
@@ -660,11 +660,13 @@ This command is for Server-Side Rendering. I haven't tried this yet.
 
 ### Server side rendering
 
-Although SEO crawlers can do better at sites like single page application, _Docsify_ is still said not to be SEO-friendly, compared with static sites where all HTML is pre-rendered.
+Although SEO crawlers can do better at sites like single page application, _Docsify_ is still said to **not** be SEO-friendly, compared with static sites where all HTML is pre-rendered. Even though crawlers are getting better at handling JS for SPAs, I've read that this eats up the crawl budget so the crawler doesn't get far in your site.
 
 However, _Docsify_ provides the option of pre-rendering all the views as static HTML. This can improve SEO.
 
 See [Server-Side Rendering](https://docsify.js.org/#/ssr) section of the _Docsify_ docs.
+
+I don't think it'll includes a sitemap file.
 
 
 ### Why not use a static site generator?
@@ -683,7 +685,7 @@ There are dependencies to manage - they might have to be upgraded if their are s
 
 There is HTML to build locally and on the remote. While _Docsify_ needs no dependencies to serve a site, _Jekyll_ sites needs `jekyll` installed and _Hugo_ sites need `hugo` available.
 
-A static site needs to to customize it in depth or setup a theme which also takes effort. You may lose or gain functionality when switching between Jekyll themes because they use their own templates and layouts.
+A static site needs to be customized in depth or needs theme setup which also takes effort. You may lose or gain functionality when switching between Jekyll themes because they use their own templates and layouts. MkDocs is another light alternative but have to install some themes and plugins locally.
 
 You probably have to add _front matter_ to your doc files so they can inherit from layouts and have the correct metadata like title.
 
