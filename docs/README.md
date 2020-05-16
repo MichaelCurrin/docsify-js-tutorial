@@ -5,7 +5,9 @@
 [![GitHub tag](https://img.shields.io/github/tag/MichaelCurrin/docsify-js-tutorial.svg)](https://GitHub.com/MichaelCurrin/docsify-js-tutorial/tags/)
 [![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/MichaelCurrin/docsify-js-tutorial/blob/master/README.md#license)
 
-Convert your _docs_ folder into a pretty docs website using [DocsifyJS](https://docsify.js.org/) and some minimal setup instructions. This project's site itself is also running on _Docsify_.
+Convert your _docs_ folder into a pretty docs website using [DocsifyJS](https://docsify.js.org/) and some minimal setup instructions. This project's site itself is also running on _DocsifyJS_.
+
+?> _DocsifyJS_ is sometimes just called _Docsify_ in this guide. Also known as _Docsify.js_.
 
 
 ## Resource links
@@ -16,10 +18,10 @@ Convert your _docs_ folder into a pretty docs website using [DocsifyJS](https://
 - [DocsifyJS Template](https://michaelcurrin.github.io/docsify-js-template/) project.
 - [MkDocs Quickstart](https://michaelcurrin.github.io/mkdocs-quickstart/) project - as an alternative to Docsify, try this demo / tutorial / template around MkDocs.
 
-## Docsify repos
+## Github repos
 
-- [Docsify](https://github.com/docsifyjs/docsify)
-- [Docsify CLI](https://github.com/docsifyjs/docsify-cli) on Github.
+- Docsify - [docsifyjs/docsify](https://github.com/docsifyjs/docsify)
+- Docsify CLI - [docsifyjs/docsify-cli](https://github.com/docsifyjs/docsify-cli)
 
 
 ## Purpose
