@@ -488,21 +488,22 @@ Arguments:
 - `docBase`
     - Required. 
     - It should be a full path to your doc's site directory on Github.
-    - Here is the general form.
+    - Here is the general form - use your own repo details and typically `BRANCH` is `master` and `DIRECTORY` is `docs`.
         ```
         https://github.com/USERNAME/REPONAME/blob/BRANCH/DIRECTORY/'
         ```
-    - Example based on this repo, where the docs site is in the `docs` directory.
+    - Example based on this repo:
         ```javascript
         var docBase = 'https://github.com/MichaelCurrin/docsify-js-tutorial/blob/master/docs/';
+
         EditOnGithubPlugin.create(docBase);
         ```
 - `docEditBase`
-    - Optional.
-    - It defaults to the first argument if not set.
+    - Optional - defaults to the first argument if not set.
 - `title`
-    - Optional.
-    - Set if you want to override the text. Example:
+    - Optional - defaults to `'Edit on Github`.
+    - Set to override the message. 
+    - Example:
         ```javascript
         EditOnGithubPlugin.create(
            repo,
