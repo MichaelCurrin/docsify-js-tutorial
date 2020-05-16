@@ -477,17 +477,22 @@ Load this plugin near the end of the `head` tag.
 
 !> **Important:** This will not work at the end of the body like most plugins, since the plugin's global variable needs be available when the app is configured.
 
-Configure the plugin. Here is the format.
+Configure the plugin.
+
+
+**Basic usage**
+
+Function call:
 
 ```javascript
-EditOnGithubPlugin.create(docBase, docEditBase, title)
+EditOnGithubPlugin.create(docBase)
 ```
 
 Arguments:
 
 - `docBase`
     - Required. 
-    - It should be a full path to your doc's site directory on Github.
+    - It should be a full URL to the **document folder** of your Github project.
     - Here is the general form - use your own repo details and typically `BRANCH` is `master` and `DIRECTORY` is `docs`.
         ```
         https://github.com/USERNAME/REPONAME/blob/BRANCH/DIRECTORY/'
@@ -497,19 +502,6 @@ Arguments:
         var docBase = 'https://github.com/MichaelCurrin/docsify-js-tutorial/blob/master/docs/';
 
         EditOnGithubPlugin.create(docBase);
-        ```
-- `docEditBase`
-    - Optional - defaults to the first argument if not set.
-- `title`
-    - Optional - defaults to `'Edit on Github`.
-    - Set to override the message. 
-    - Example:
-        ```javascript
-        EditOnGithubPlugin.create(
-           repo,
-           null,
-           'Improve this page'
-        );
         ```
 
 Full example:
@@ -532,6 +524,35 @@ window.$docsify = {
 ?> Note that `repo` is defined first and then used in two places. This makes the code easy to maintain as it avoids duplication.
 
 ?> Note that plugins are generally not defined on app config inside the `plugins` field, but it applies here at least. Docsify handles it [here](https://github.com/docsifyjs/docsify/blob/develop/src/plugins/front-matter/index.js).
+
+Then save and view the site.
+
+**Advanced usage**
+
+Function call:
+
+```javascript
+EditOnGithubPlugin.create(docBase, docEditBase, title)
+```
+
+Arguments:
+
+- `docBase`
+    - As in above section.
+- `docEditBase`
+    - Optional - defaults to the first argument if not set.
+- `title`
+    - Optional - defaults to `'Edit on Github`.
+    - Set to override the message. 
+    - Example:
+        ```javascript
+        EditOnGithubPlugin.create(
+           repo,
+           null,
+           'Improve this page'
+        );
+        ```
+
 
 
 ## Setup Github Pages site
