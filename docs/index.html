@@ -20,22 +20,36 @@
         }
 
     </style>
+    
+    <!-- Plugins needed before app definition. -->
+    <script src="//unpkg.com/docsify-edit-on-github/index.js"></script>
+
 </head>
 
 <body>
     <div id="app"></div>
+    
     <script>
+        var repo = 'https://github.com/MichaelCurrin/python-twitter-guide';
+        
         window.$docsify = {
             name: 'DocsifyJS Tutorial',
-            repo: 'https://github.com/michaelcurrin/docsify-js-tutorial',
+            repo: repo,
             auto2top: true, // This helps a lot when switching between sections by menu.
             coverpage: true,
-            loadSidebar: false
-        }
+            loadSidebar: false,
+            
+            plugins: [
+                EditOnGithubPlugin.create(
+                    repo + '/blob/master/docs/'
+                )
+            ],
+        };
 
     </script>
     
     <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
+
 </body>
 
 </html>
