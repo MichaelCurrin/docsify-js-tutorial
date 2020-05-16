@@ -446,7 +446,7 @@ Optionally add plugins to extend your site. This is typically done by adding a J
 Here is a narrowed down list of plugins I use or plan to use:
 
 - [External script](https://docsify.js.org/#/plugins?id=external-script) - If the script on the page is an external one (imports a js file via src attribute), you'll need this plugin to make it work.
-- [Google Analytics](https://docsify.js.org/#/plugins?id=google-analytics) - Add tracking.
+- [Google Analytics](https://docsify.js.org/#/plugins?id=google-analytics) - Configure the app with your GA ID to add tracking.
 - [Tabs](https://docsify.js.org/#/plugins?id=tabs) - A docsify.js plugin for displaying tabbed content from markdown.
 
 Also of interest:
@@ -458,6 +458,83 @@ The DocsifyJS site covers long lists of plugins and how to use them:
 
 - [List of Plugins](https://docsify.js.org/#/plugins?id=list-of-plugins)
 - [Awesome plugins](https://docsify.js.org/#/awesome?id=plugins)
+
+
+##### Edit on Github
+
+Load and configure this plugin to add the "Edit on Github" button to all your pages.
+
+- [njleonzhang/docsify-edit-on-github](https://github.com/njleonzhang/docsify-edit-on-github)
+
+
+Load this plugin in `head` tag. 
+
+```javascript
+<script src="//unpkg.com/docsify-edit-on-github/index.js"></script>
+```
+
+!> **Important:** This will not work at the end of the body like most plugins, since the plugin's global variable needs be available when the app is configured.
+
+Configure the plugin. Here is the format at the explanation.
+
+```javascript
+EditOnGithubPlugin.create(docBase, docEditBase, title)
+```
+
+Minimum:
+
+```
+EditOnGithubPlugin.create(docBase, docEditBase, title)
+```
+
+
+Arguments:
+
+- `docBase`
+    - Required. 
+    - It should be a full path to your doc's site directory on Github.
+    - Here is the general form.
+        ```
+        https://github.com/USERNAME/REPONAME/blob/BRANCH/DIRECTORY/'
+        ```
+    - Example based on this repo, where the docs site is in the `docs` directory.
+        ```javascript
+        var docBase = 'https://github.com/MichaelCurrin/docsify-js-tutorial/blob/master/docs/'
+        EditOnGithubPlugin.create(docBase)
+        ```
+- `docEditBase`
+    - Optional.
+    - It defaults to the first argument if not set.
+- `title`
+    - Optional.
+    - Set if you want to override the text. Example:
+        ```javascript
+        EditOnGithubPlugin.create(
+           repo,
+           null,
+           'Improve this page',
+        )
+        ```
+
+
+Example:
+
+```javascript
+var repo = 'https://github.com/MichaelCurrin/docsify-js-tutorial';
+
+window.$docsify = {
+    name: 'DocsifyJS Tutorial',
+    repo: repo,
+    plugins: [
+        EditOnGithubPlugin.create(
+            repo + '/blob/master/docs/',
+            null,
+            'Improve this page'
+        )
+    ],
+```
+
+?> Note that `repo` is defined first and then used in two places. This makes the code easy to maintain as it avoids duplication.
 
 
 ## Setup Github Pages site
@@ -533,7 +610,6 @@ Result:
 ##### Markdown as code snippet
 
 Render markdown as code snippet. Use the `type` parameter.
-
 
 Code:
 
@@ -620,10 +696,9 @@ See resources:
 Follow the instructions in [Quickstart local server](#quickstart-local-server).
 
 
-
 ### Commands
 
-#### docsify init
+#### `docsify init`
 
 > Creates new docs
 
@@ -635,7 +710,7 @@ e.g.
 $ docsify init docs
 ```
 
-#### docsify serve
+#### `docsify serve`
 
 > Run local server to preview site.
 
@@ -649,7 +724,7 @@ $ docsify serve docs
 
 Serves as [localhost:3000/](http://localhost:3000/), or a different port if there is already a _Docsify_ server running.
 
-#### docsify start
+#### `docsify start`
 
 > Server for SSR
 
