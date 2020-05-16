@@ -388,7 +388,7 @@ You can update the config parameters passed in on the _index.html_ page. There a
 **Links**
 
 - For available parameters, these are documented on the _Docsify_ [Configuration](https://docsify.js.org/#/configuration) page.
-- For defaults - see _Docsify_ [config.js](https://github.com/docsifyjs/docsify/blob/develop/src/core/config.js) script.
+- For defaults, see the _Docsify_ repo's [src/core/config.js](https://github.com/docsifyjs/docsify/blob/develop/src/core/config.js) script.
 - To see an app config in use, see [index.html](https://gi?id=twitter-policiesthub.com/MichaelCurrin/docsify-js-template/blob/master/docs/index.html) of DocsifyJS Template project.
 
 
@@ -414,7 +414,7 @@ window.$docsify = {
 
     // Name which appears at the top of the sidebar.
     name: 'docsify'
-}
+};
 ```
 
 **Homepage**
@@ -477,18 +477,11 @@ Load this plugin in `head` tag.
 
 !> **Important:** This will not work at the end of the body like most plugins, since the plugin's global variable needs be available when the app is configured.
 
-Configure the plugin. Here is the format at the explanation.
+Configure the plugin. Here is the format:n.
 
 ```javascript
 EditOnGithubPlugin.create(docBase, docEditBase, title)
 ```
-
-Minimum:
-
-```
-EditOnGithubPlugin.create(docBase, docEditBase, title)
-```
-
 
 Arguments:
 
@@ -501,8 +494,8 @@ Arguments:
         ```
     - Example based on this repo, where the docs site is in the `docs` directory.
         ```javascript
-        var docBase = 'https://github.com/MichaelCurrin/docsify-js-tutorial/blob/master/docs/'
-        EditOnGithubPlugin.create(docBase)
+        var docBase = 'https://github.com/MichaelCurrin/docsify-js-tutorial/blob/master/docs/';
+        EditOnGithubPlugin.create(docBase);
         ```
 - `docEditBase`
     - Optional.
@@ -514,12 +507,11 @@ Arguments:
         EditOnGithubPlugin.create(
            repo,
            null,
-           'Improve this page',
-        )
+           'Improve this page'
+        );
         ```
 
-
-Example:
+Full example:
 
 ```javascript
 var repo = 'https://github.com/MichaelCurrin/docsify-js-tutorial';
@@ -527,16 +519,18 @@ var repo = 'https://github.com/MichaelCurrin/docsify-js-tutorial';
 window.$docsify = {
     name: 'DocsifyJS Tutorial',
     repo: repo,
+    
     plugins: [
         EditOnGithubPlugin.create(
-            repo + '/blob/master/docs/',
-            null,
-            'Improve this page'
+            repo + '/blob/master/docs/'
         )
     ],
+};
 ```
 
 ?> Note that `repo` is defined first and then used in two places. This makes the code easy to maintain as it avoids duplication.
+
+?> Note that plugins are generally not defined on app config inside the `plugins` field, but it applies here at least. Docsify handles it [here](https://github.com/docsifyjs/docsify/blob/develop/src/plugins/front-matter/index.js).
 
 
 ## Setup Github Pages site
