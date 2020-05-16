@@ -462,14 +462,14 @@ The DocsifyJS site covers long lists of plugins and how to use them:
 - [Awesome plugins](https://docsify.js.org/#/awesome?id=plugins)
 
 
-##### Edit on Github
+##### Use the Edit on Github plugin
 
-Load and configure this plugin to add the "Edit on Github" button to all your pages.
+Load and configure this plugin to add the `Edit on Github` link in the top right of each page (excluding the cover page).
 
-- [njleonzhang/docsify-edit-on-github](https://github.com/njleonzhang/docsify-edit-on-github)
+- [njleonzhang/docsify-edit-on-github](https://github.com/njleonzhang/docsify-edit-on-github) on Github.
 
 
-Load this plugin in `head` tag. 
+Load this plugin near the end of the `head` tag. 
 
 ```javascript
 <script src="//unpkg.com/docsify-edit-on-github/index.js"></script>
@@ -477,7 +477,7 @@ Load this plugin in `head` tag.
 
 !> **Important:** This will not work at the end of the body like most plugins, since the plugin's global variable needs be available when the app is configured.
 
-Configure the plugin. Here is the format:n.
+Configure the plugin. Here is the format.
 
 ```javascript
 EditOnGithubPlugin.create(docBase, docEditBase, title)
