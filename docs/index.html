@@ -27,11 +27,13 @@
 </head>
 
 <body>
+    <!-- App mount point -->
     <div id="app"></div>
     
     <script>
         var repo = 'https://github.com/MichaelCurrin/docsify-js-tutorial';
         
+        // App config
         window.$docsify = {
             name: 'DocsifyJS Tutorial',
             repo: repo,
@@ -49,8 +51,12 @@
 
     </script>
     
+    <!-- Docsify core -->
     <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
-
+    
+    <!-- Syntax highlighting -->
+    <script src="//cdn.jsdelivr.net/npm/prismjs/components/prism-markdown.min.js"></script>
+    
 </body>
 
 </html>
