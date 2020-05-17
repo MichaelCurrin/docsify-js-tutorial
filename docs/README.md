@@ -739,8 +739,12 @@ e.g.
 ```bash
 $ docsify serve docs
 ```
+```
+Serving .../docsify-js-tutorial/docs now.
+Listening at http://localhost:3000
+```
 
-Serves as [localhost:3000/](http://localhost:3000/), or a different port if there is already a _Docsify_ server running.
+Serves at [localhost:3000/](http://localhost:3000/), or a different port if there is already a _Docsify_ server running.
 
 This uses is the main use for Docsify - an `index.html` page is served, the JS is loaded on the frontend and then markdown pages are requested and converted to HTML as needed. It is a **Single-Page Application**, so will work great from a user perspective but will score low on search engines. Even though the SEO crawlers can handle JavaScript, there is limited "crawl budget" for a JavaScript-based SPA so this means less of your site is crawled or your site is rated poorly. Constrast with the option below.
 
@@ -749,6 +753,18 @@ This uses is the main use for Docsify - an `index.html` page is served, the JS i
 > Server for SSR
 
 This command is for Server-Side Rendering.
+
+e.g.
+
+```bash
+$ docsify start docs
+```
+```
+[SSR] Serving docs now.
+Listening at http://localhost:4000
+```
+
+Serves at [localhost:3000/](http://localhost:3000/)
 
 This runs a Node.js server which pre-renders then serves HTML to the browser. This should make almost no difference to the end-user.
 
