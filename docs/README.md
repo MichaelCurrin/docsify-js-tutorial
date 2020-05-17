@@ -282,7 +282,23 @@ If you want to use it, edit your *docs/_coverpage.md* file and complete the `TOD
 
 You can add additional buttons to the bottom of the homepage, but there should be no gaps between the lines in your file. And the last one will be solid while the others will be transparent.
 
-The _Docsify_ site explains how to set a background image or color [here](https://docsify.js.org/#/cover?id=custom-background). A background image should come _after_ the buttons in your file, as _Docsify_ looks for an image there then uses CSS to place the image behind the content and give it faded grey look.
+The _Docsify_ site explains how to set a background image or color [here](https://docsify.js.org/#/cover?id=custom-background). 
+
+Example:
+
+```markdown
+<!-- background image -->
+
+![](_media/bg.png)
+```
+
+```markdown
+<!-- background color -->
+
+![color](#f0f0f0)
+```
+
+A background image should come _after_ the buttons in your file, as _Docsify_ looks for an image there then uses CSS to place the image behind the content and give it faded grey look.
 
 You can delete the cover page and disable it in _index.html_.
 
@@ -290,7 +306,7 @@ You can delete the cover page and disable it in _index.html_.
 
 You could include an image (logo, photo) above your project title. For example, you could do this if you have a file in a *docs/_media* directory.
 
-```
+```markdown
 ![icon](_media/logo.svg)
 ```
 
