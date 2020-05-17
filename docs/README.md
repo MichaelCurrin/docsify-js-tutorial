@@ -276,37 +276,51 @@ This is really the text of heading element, which has been made lowercase and hy
 
 ### 5. Configure cover page
 
-The cover page is the first page that a visitor sees before scrolling down to the homepage.
+Docsify provides a cover page - a simple page that a visitor sees before scrolling down to the homepage which has centered text, a background and a summary of your application.
 
-If you want to use it, edit your *docs/_coverpage.md* file and complete the `TODO` items. You can also use this project's [cover page](https://raw.githubusercontent.com/MichaelCurrin/docsify-js-tutorial/master/docs/_coverpage.md) on Github as a reference.
+If you want to use it, make sure `coverpage: true` is set in your app config.
 
-You can add additional buttons to the bottom of the homepage, but there should be no gaps between the lines in your file. And the last one will be solid while the others will be transparent.
+Then create and edit a *docs/_coverpage.md* file. You can also use the template project's [cover page](https://raw.githubusercontent.com/MichaelCurrin/docsify-js-template/master/docs/_coverpage.md) on Github as a reference.
 
-The _Docsify_ site explains how to set a background image or color [here](https://docsify.js.org/#/cover?id=custom-background). 
-
-Example:
-
-```markdown
-<!-- background image -->
-
-![](_media/bg.png)
-```
-
-```markdown
-<!-- background color -->
-
-![color](#f0f0f0)
-```
-
-A background image should come _after_ the buttons in your file, as _Docsify_ looks for an image there then uses CSS to place the image behind the content and give it faded grey look.
+You can add additional buttons to the bottom of the homepage, but there should be no gaps between the lines in your file. And the _last_ one will be solid while the others will be transparent.
 
 You can delete the cover page and disable it in _index.html_.
 
-#### Image
+#### Cover background image
+
+If you don't set a cover background, you'll get a different one on every refresh.
+
+The _Docsify_ site explains how to set a background image or color [here](https://docsify.js.org/#/cover?id=custom-background).
+
+A background image should come _after_ the buttons in your file, as _Docsify_ looks for an image there then uses CSS to place the image behind the content and give it faded grey look.
+
+Examples:
+
+- Load an image file
+    ```markdown
+    <!-- background image -->
+
+    ![background image](_media/bg.png)
+    ```
+- Solid color
+    ```markdown
+    <!-- background color -->
+
+    ![color](#f0f0f0)
+    ```
+- Gradient color
+    ```markdown
+    
+    ![gradient](linear-gradient(to left bottom, hsl(202.6, 55.5%, 58.6%) 0%,hsl(0, 0%, 100%) 100%))
+    ```
+
+#### Cover logo
 
 You could include an image (logo, photo) above your project title. For example, you could do this if you have a file in a *docs/_media* directory.
 
 ```markdown
+<!-- background image -->
+
 ![icon](_media/logo.svg)
 ```
 
