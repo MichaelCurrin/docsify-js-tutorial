@@ -160,7 +160,6 @@ $ git clone https://github.com/MichaelCurrin/docsify-js-tutorial.git
 ?> **Note** When viewing the site, if you scroll down far enough you will see a hamburger menu which lets you dynamically open or close the sidebar. This is always visible on mobile view but not so easy to find, while the sidebar starts out closed on mobile.
 
 
-
 ## Setup your own docs site
 > Convert your docs directory into a docs site
 
@@ -296,23 +295,20 @@ A background image should come _after_ the buttons in your file, as _Docsify_ lo
 
 Examples:
 
-- Load an image file
+- Load an image file. The label can be anything.
     ```markdown
     <!-- background image -->
 
-    ![background image](_media/bg.png)
+    ![cover background image](_media/cover-bg.jpg)
     ```
-- Solid color
+- Solid color. The label **must** be `color`.
     ```markdown
     <!-- background color -->
 
     ![color](#f0f0f0)
     ```
-- Gradient color
-    ```markdown
-    
-    ![gradient](linear-gradient(to left bottom, hsl(202.6, 55.5%, 58.6%) 0%,hsl(0, 0%, 100%) 100%))
-    ```
+- Gradient color - this used to be support but does not work anymore.
+
 
 #### Cover logo
 
