@@ -742,11 +742,21 @@ $ docsify serve docs
 
 Serves as [localhost:3000/](http://localhost:3000/), or a different port if there is already a _Docsify_ server running.
 
+This uses is the main use for Docsify - an `index.html` page is served, the JS is loaded on the frontend and then markdown pages are requested and converted to HTML as needed. It is a **Single-Page Application**, so will work great from a user perspective but will score low on search engines. Even though the SEO crawlers can handle JavaScript, there is limited "crawl budget" for a JavaScript-based SPA so this means less of your site is crawled or your site is rated poorly. Constrast with the option below.
+
 #### `docsify start`
 
 > Server for SSR
 
-This command is for Server-Side Rendering. I haven't tried this yet.
+This command is for Server-Side Rendering.
+
+This runs a Node.js server which pre-renders then serves HTML to the browser. This should make almost no difference to the end-user.
+
+This approach is ideal for scoring higher on search engines, as the pre-rendered HTML is easy for a crawler to read and it does not use up the "crawl budget".
+
+This command is easy to run locally.
+
+Unfortunately this solution does **not** work on static site solutions like Github Pages or Netlify. The Docsify docs recommend using the `now` command to publish a Node.js app for free to [vercel.com/](https://vercel.com/) (previously [zeit.co](https://zeit.co/)).
 
 
 ## Static site vs SPA
