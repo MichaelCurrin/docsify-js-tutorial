@@ -428,11 +428,13 @@ window.$docsify = {
     // it can look weird if you don't get to the top of the page.
     auto2top: false
 
-    // Maximum Table of Contents (TOC) level.
+    // Maximum sidebar depth.
     maxLevel: 6,
 
-    // Add table of contents (TOC) in custom sidebar. Try a value of 2.
-    // This might only apply when using auto sidebar and not custom one.
+    // How many sub levels to show in the sidebar.
+    // This is useful for precision for a custom sidebar, but you can leave this out.
+    // Try a value of 2 to add subheadings. This is particularly useful if you have
+    // a lot of headings on a page.
     subMaxLevel: 0,
 
     // Add your logo to the top of our sidebar menu.
@@ -447,7 +449,7 @@ window.$docsify = {
 
 Configure the homepage settings. You might not need this, but in case you want to use a different homepage target. These recommendations come from the docs.
 
-```js
+```javascript
 window.$docsify = {
     // Change to /home.md rather than /README.md file.
     homepage: 'home.md',
