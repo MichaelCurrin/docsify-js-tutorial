@@ -18,7 +18,7 @@ Convert your _docs_ folder into a pretty docs website using [DocsifyJS](https://
 - [DocsifyJS Template](https://michaelcurrin.github.io/docsify-js-template/) project.
 - [MkDocs Quickstart](https://michaelcurrin.github.io/mkdocs-quickstart/) project - as an alternative to Docsify, try this demo / tutorial / template around MkDocs.
 
-## Github repos
+### Github repos
 
 - Docsify - [docsifyjs/docsify](https://github.com/docsifyjs/docsify)
 - Docsify CLI - [docsifyjs/docsify-cli](https://github.com/docsifyjs/docsify-cli)
@@ -370,7 +370,6 @@ Note: The _Buble_ theme has sidebar headings which are not distinguished from th
 
 ### 6.3 More styling
 
-
 You can easily reuse the theme color set early:
 
 ```css
@@ -469,15 +468,51 @@ Add this to the `head` tag in `index.html`.
 <link rel="icon" href="_media/favicon.ico">
 ```
 
+#### Add scripts
+
+To run your own script tags, you must enable it with a parameter. 
+
+- `index.html
+    ```javascript
+    window.$docsify = {
+        executeScript: true,
+    }
+    ```
+- `page.md`
+    ```html
+    <script>
+        console.log('My script');
+    </script>
+    ```
+
+Note that Vue is enabled by default. 
+
+See [executeScript](https://docsify.js.org/#/configuration?id=executescript) in the docs for more info.
+
+If you want to run an external script, using the [External script plugin](#add-plugins).
+
+- `index.html`
+    ```html
+    <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/external-script.min.js"></script>
+    ```
+- `page.md`
+    ```html
+    <script src="main.js"></script>
+    ```
+    
+Note that this does _not_ support embedding gists, even if use `executeScript`. There is a JS error on running `document.write` on an asynchronously loaded script.
+
 #### Add plugins
 
 Optionally add plugins to extend your site. This is typically done by adding a JS link at the bottom of your `index.html` page.
 
-Here is a narrowed down list of plugins I use or plan to use:
+Here is a narrowed down list of plugins of interest:
 
-- [External script](https://docsify.js.org/#/plugins?id=external-script) - If the script on the page is an external one (imports a js file via src attribute), you'll need this plugin to make it work.
-- [Google Analytics](https://docsify.js.org/#/plugins?id=google-analytics) - Configure the app with your GA ID to add tracking.
-- [Tabs](https://docsify.js.org/#/plugins?id=tabs) - A docsify.js plugin for displaying tabbed content from markdown.
+Plugin | Description
+---    | ---
+[External script](https://docsify.js.org/#/plugins?id=external-script)   | You need thus plugin if you want to place a `script` tag on the page that loads a `.js` script.
+[Google Analytics](https://docsify.js.org/#/plugins?id=google-analytics) | Configure the app with your GA ID to add tracking.
+[Tabs](https://docsify.js.org/#/plugins?id=tabs)                         | A Docsify.js plugin for displaying tabbed content from markdown.
 
 Also of interest:
 - For pulling in JSON data and not just markdown files:
