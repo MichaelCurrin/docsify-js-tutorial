@@ -5,26 +5,28 @@
 [![GitHub tag](https://img.shields.io/github/tag/MichaelCurrin/docsify-js-tutorial.svg)](https://GitHub.com/MichaelCurrin/docsify-js-tutorial/tags/)
 [![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/MichaelCurrin/docsify-js-tutorial/blob/master/README.md#license)
 
-Convert your _docs_ folder into a pretty docs website using [DocsifyJS](https://docsify.js.org/) and some minimal setup instructions. This project's site itself is also running on _DocsifyJS_.
+Convert your **docs** folder into a pretty docs website - using [DocsifyJS](https://docsify.js.org/) and some minimal setup instructions. This project's site itself is also running on _DocsifyJS_. :tada:
 
 ?> _DocsifyJS_ is sometimes just called _Docsify_ in this guide. Also known as _Docsify.js_.
 
 
-## Resource links
+## Resources
+> Docs and Docsify-related links
 
 ### My projects
 
 - [DocsifyJS Tutorial](https://github.com/michaelcurrin/docsify-js-tutorial/) repo on Github.
 - [DocsifyJS Template](https://michaelcurrin.github.io/docsify-js-template/) project.
-- [MkDocs Quickstart](https://michaelcurrin.github.io/mkdocs-quickstart/) project - as an alternative to Docsify, try this demo / tutorial / template around MkDocs.
+- [MkDocs Quickstart](https://michaelcurrin.github.io/mkdocs-quickstart/) project
+    - As an alternative to Docsify, try this demo / tutorial / template around MkDocs.
 
-### Github repos
+### Official Docsify repos
 
-- Docsify - [docsifyjs/docsify](https://github.com/docsifyjs/docsify)
-- Docsify CLI - [docsifyjs/docsify-cli](https://github.com/docsifyjs/docsify-cli)
+- Docsify main repo - [docsifyjs/docsify](https://github.com/docsifyjs/docsify)
+- Docsify CLI repo - [docsifyjs/docsify-cli](https://github.com/docsifyjs/docsify-cli)
 
 
-## Purpose
+## Purpose of this tutorial
 
 This project is for you if you answer yes to any of the following:
 
@@ -39,13 +41,13 @@ This project is for you if you answer yes to any of the following:
 
 This project provides three approaches for choosing a Docsify site to run:
 
-- [Quickstart local server](#quickstart-local-server)
+- Use the [Quickstart local server](#quickstart-local-server)
     - Clone this repo and start serving the docs repo immediately.
-- [Setup your own docs site](#setup-your-own-docs-site)
+- [Setup your own docs site](#setup-your-own-docs-site) from scratch
     - Convert your _docs_ directory into a docs site hosted on Github Pages. Copy from some templates files to get up and running with as little effort as possible.
-- [DocsifyJS Template](https://github.com/michaelcurrin/docsify-js-template/) repo
+- Use my [DocsifyJS Template](https://github.com/michaelcurrin/docsify-js-template/) repo
     - A minimal template which goes with this tutorial.
-    - Click _Use this template_ there and you'll be able to starting serving a site on Github Pages or locally.
+    - Click [Use this template](https://img.shields.io/badge/Use_this_template-green.svg?style=for-the-badge) to add a copy to you own repos. you'll be able to starting serving a site on Github Pages or locally.
 
 _Note: The instructions in this repo are intended for Linux and macOS environments._
 
@@ -240,6 +242,8 @@ How to setup a sidebar file:
 Example:
 
 [\_sidebar.md](https://raw.githubusercontent.com/MichaelCurrin/docsify-js-tutorial/master/nested_example/_sidebar.md ':include :type=code')
+
+?> The sidebar is a markdown file, so you can styling as a `**Title**`.
 
 ##### Setup custom sidebar
 
@@ -515,14 +519,13 @@ Plugin | Description
 [Tabs](https://docsify.js.org/#/plugins?id=tabs)                         | A Docsify.js plugin for displaying tabbed content from markdown.
 
 Also of interest:
+
 - For pulling in JSON data and not just markdown files:
     - [bandorko/docsify-variables](https://github.com/bandorko/docsify-variables)
     - [kissybnts/docsify-json-variables](https://github.com/kissybnts/docsify-json-variables) or on [npm](https://www.npmjs.com/package/docsify-json-variables)
-
-The DocsifyJS site covers long lists of plugins and how to use them:
-
-- [List of Plugins](https://docsify.js.org/#/plugins?id=list-of-plugins)
-- [Awesome plugins](https://docsify.js.org/#/awesome?id=plugins)
+- The DocsifyJS site covers long lists of plugins and how to use them:
+    - [List of Plugins](https://docsify.js.org/#/plugins?id=list-of-plugins)
+    - [Awesome plugins](https://docsify.js.org/#/awesome?id=plugins)
 
 
 ##### Use the Edit on Github plugin
@@ -532,15 +535,15 @@ Load and configure this plugin to add the `Edit on Github` link in the top right
 - [njleonzhang/docsify-edit-on-github](https://github.com/njleonzhang/docsify-edit-on-github) on Github.
 
 
-Load this plugin near the end of the `head` tag. 
+Load this plugin near the end of the `head` tag.
+
+!> **Important:** This will **not** work at the end of the body like most plugins, since the plugin's global variable needs be available when the app is configured.
 
 ```javascript
 <script src="//unpkg.com/docsify-edit-on-github/index.js"></script>
 ```
 
-!> **Important:** This will not work at the end of the body like most plugins, since the plugin's global variable needs be available when the app is configured.
-
-Configure the plugin.
+Configure the plugin - see below.
 
 
 **Basic usage**
@@ -617,7 +620,6 @@ Arguments:
         ```
 
 
-
 ## Setup Github Pages site
 
 If you followed the steps above, you'll have a locally running docs site.
@@ -628,7 +630,7 @@ Next, edit your repo's setting on Github. Select the option to serve the `docs` 
 
 Open the link in the browser.
 
-- http://localhost:3000
+- [localhost:3000](http://localhost:3000)
 
 To make the most of Docsify, update your content using the next section.
 
@@ -695,12 +697,12 @@ Render markdown as code snippet. Use the `type` parameter.
 Code:
 
 ```markdown
-[_sidebar.md](_coverpage.md ':include :type=code')
+[\_sidebar.md](_coverpage.md ':include :type=code')
 ```
 
 Result:
 
-[_sidebar.md](_coverpage.md ':include :type=code')
+[\_sidebar.md](_coverpage.md ':include :type=code')
 
 
 ##### Markdown as rendered HTML
