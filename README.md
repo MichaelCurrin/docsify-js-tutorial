@@ -5,11 +5,15 @@
 [![GitHub tag](https://img.shields.io/github/tag/MichaelCurrin/docsify-js-tutorial.svg)](https://GitHub.com/MichaelCurrin/docsify-js-tutorial/tags/)
 [![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](#license)
 
-
 ## Links
 
+### Learn about DocsifyJS
+
 [![DocsifyJS Tutorial](https://img.shields.io/badge/site-DocsifyJS_Tutorial-green?style=for-the-badge)](https://michaelcurrin.github.io/docsify-js-tutorial/#/)
-[![DocsifyJS Template demo](https://img.shields.io/badge/site-DocsifyJS_Template-blue?style=for-the-badge)](https://michaelcurrin.github.io/docsify-js-template/#/)
+
+### Start with a template
+
+[![DocsifyJS Template](https://img.shields.io/badge/site-DocsifyJS_Template-blue?style=for-the-badge)](https://michaelcurrin.github.io/docsify-js-template/#/)
 
 
 ## 👩‍🏫 About the online tutorial
@@ -62,7 +66,7 @@ The repo is open for accepting contributions through a Pull Request.
 
 ## License
 
-Released under [MIT license](/LICENSE)
+Released under [MIT](/LICENSE).
 
 - You can modify and reuse this project.
 - A copy of the license and copyright notice must be included with the software, according to this [MIT definition](https://choosealicense.com/licenses/#mit).
