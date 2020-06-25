@@ -18,6 +18,8 @@
 
 ## 👩‍🏫 About the online tutorial
 
+_This repo is my most starred and most forked repo - thanks for supporting._
+
 The [Docsify](https://docsify.js.org/#/) site has great quickstart, but I found that it did not guide me through what to do next. And all the config options and plugins were overwhelming and I probably won't need most of them, at least for a while. So I created this as a tutorial to guide you through setting up a site, whether new to or experienced with DocsifyJS.
 
 This tutorial takes you from basic site setup and content to optional configuration of styling, menus and plugins. It aims to cover common use-cases in a logical sequence, rather than covering everything you could do. You can also jump to a later step if you want to use that as a reference.
