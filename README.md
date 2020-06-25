@@ -20,7 +20,7 @@
 
 _This repo is my most starred and most forked repo - thanks for supporting._
 
-The [Docsify](https://docsify.js.org/#/) site has great quickstart, but I found that it did not guide me through what to do next. And all the config options and plugins were overwhelming and I probably won't need most of them, at least for a while. So I created this as a tutorial to guide you through setting up a site, whether new to or experienced with DocsifyJS.
+The [Docsify](https://docsify.js.org/#/) site has great quickstart for beginners, but with all the configs and plugin options available if feels more like a dictionary than a recipe for setting up a custom docs site which is not code heavy. So I created this tutorial to take beginners and advanced users through setting up Docsify in ordered steps - noting as well when steps are optional or what the choices are.
 
 This tutorial takes you from basic site setup and content to optional configuration of styling, menus and plugins. It aims to cover common use-cases in a logical sequence, rather than covering everything you could do. You can also jump to a later step if you want to use that as a reference.
 
@@ -46,11 +46,11 @@ Some background on how I arrived at DocsifyJS as a docs site builder.
 
 My aims for building a docs site are:
 
-- add as little code and configuration as possible
-- make it easy to maintain
-- quick to get setup on existing projects
-- have no layout files
-- reduce dependencies
+- Add as little code and configuration as possible
+- Make it easy to maintain
+- Quick to get setup on existing projects
+- Have no layout files
+- Reduce dependencies
 
 The docs site tool used here is [DocsifyJS](https://docsify.js.org/) which is a frontend JS library written in VueJS. But if you have never used before or never coded in JS before, you'll be guided through. The only JS you need to write in your config values. You also need to edit some HTML values and possibly write a YAML file for your navbar, which again is more configuration than code.
 
