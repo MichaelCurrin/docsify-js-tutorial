@@ -554,6 +554,8 @@ Function call:
 EditOnGithubPlugin.create(docBase)
 ```
 
+Here we just use one argument and ignore rest.
+
 Arguments:
 
 - `docBase`
@@ -608,8 +610,8 @@ Arguments:
 - `docEditBase`
     - Optional - defaults to the first argument if not set.
 - `title`
-    - Optional - defaults to `'Edit on Github`.
-    - Set to override the message. 
+    - Optional - defaults to `'Edit on github` (unfortunately lowercase).
+    - Set to override the message. e.g. `'Improve this page'` or `'Edit on GitHub'` or `'📝 Edit this page'`.
     - Example:
         ```javascript
         EditOnGithubPlugin.create(
