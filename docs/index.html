@@ -21,7 +21,7 @@
 
     </style>
     
-    <!-- Plugins needed before app definition. -->
+    <!-- Plugins that are needed before app configuration. -->
     <script src="//unpkg.com/docsify-edit-on-github/index.js"></script>
 
 </head>
@@ -30,6 +30,7 @@
     <!-- App mount point -->
     <div id="app"></div>
     
+    <!-- App configuration -->
     <script>
         var repo = 'https://github.com/MichaelCurrin/docsify-js-tutorial';
         
@@ -44,7 +45,9 @@
             
             plugins: [
                 EditOnGithubPlugin.create(
-                    repo + '/blob/master/docs/'
+                    repo + '/blob/master/docs/',
+                    null,
+                    '📝 Edit on GitHub',
                 )
             ],
         };
