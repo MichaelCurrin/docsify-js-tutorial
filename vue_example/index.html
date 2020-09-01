@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+    <title>DocsifyJS Vue Sample</title>
+    <meta name="description" content="Demo of how to add Vue.js to your DocsifyJS docs site">
+
+    <link rel="stylesheet" href="//unpkg.com/docsify/lib/themes/vue.css">
+    <style>
+        /* Fix issue on mobile devices where a custom cover image goes off the screen. */
+        section.cover.show {
+            height: 100%;
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <div id="app"></div>
+
+    <script>
+        var repo = 'https://github.com/MichaelCurrin/docsify-js-tutorial'; // TODO: Update.
+
+        window.$docsify = {
+            name: 'DocsifyJS Template', // TODO: Update.
+            repo: repo,
+            auto2top: true,
+            coverpage: false,
+            loadSidebar: true,
+            subMaxLevel: 2
+        }
+
+    </script>
+
+    <script src="//cdn.jsdelivr.net/npm/vue/dist/vue.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
+
+    <!-- Syntax highlighting -->
+    <script src="//cdn.jsdelivr.net/npm/prismjs/components/prism-markdown.min.js"></script>
+
+</body>
+
+</html>
