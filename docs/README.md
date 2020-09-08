@@ -109,7 +109,7 @@ As usual external resource can be linked e.g. `https://example.com`.
 
 #### Rules for internal links
 
-DocsifJS will render markdown links in your docs as appropriate paths in the DocsifyJS structure.
+DocsifyJS will render markdown links in your docs as appropriate paths in the DocsifyJS structure.
 
 Apply these rules to the target part of markdown URLs `[Text](target.md#some-id)`.
 
@@ -131,9 +131,9 @@ _NB. It's best to avoid using HTML tags with hyperlinks and rather use markdown.
 
 HTML tag hyperlinks will be rendered literally and so will break in the Docsify path structure e.g. `foo.md` or `foo.md#my-project`.
 
-You can set them up manually, which makes them harder to maintain if your site structure changes. e.g. `href="/#/id=my-project"` or `href="/#/foo.md?id=my-project"`. 
+You can set them up manually, which makes them harder to maintain if your site structure changes. e.g. `href="/#/id=my-project"` or `href="/#/foo.md?id=my-project"`.
 
-Also note that the root prefix is needed for Docsify paths to work, but you'll also need to hardcode your repo name in which is fragile too. e.g. `href="/my-repo/#/id=my-project"` 
+Also note that the root prefix is needed for Docsify paths to work, but you'll also need to hardcode your repo name in which is fragile too. e.g. `href="/my-repo/#/id=my-project"`
 
 
 ## Quickstart local server
@@ -474,7 +474,7 @@ Add this to the `head` tag in `index.html`.
 
 #### Add scripts
 
-To run your own script tags, you must enable it with a parameter. 
+To run your own script tags, you must enable it with a parameter.
 
 - `index.html
     ```javascript
@@ -489,7 +489,7 @@ To run your own script tags, you must enable it with a parameter.
     </script>
     ```
 
-Note that Vue is enabled by default. 
+Note that Vue is enabled by default.
 
 See [executeScript](https://docsify.js.org/#/configuration?id=executescript) in the docs for more info.
 
@@ -503,7 +503,7 @@ If you want to run an external script, using the [External script plugin](#add-p
     ```html
     <script src="main.js"></script>
     ```
-    
+
 Note that this does _not_ support embedding gists, even if use `executeScript`. There is a JS error on running `document.write` on an asynchronously loaded script.
 
 #### Add plugins
@@ -512,11 +512,11 @@ Optionally add plugins to extend your site. This is typically done by adding a J
 
 Here is a narrowed down list of plugins of interest:
 
-Plugin | Description
----    | ---
-[External script](https://docsify.js.org/#/plugins?id=external-script)   | You need thus plugin if you want to place a `script` tag on the page that loads a `.js` script.
-[Google Analytics](https://docsify.js.org/#/plugins?id=google-analytics) | Configure the app with your GA ID to add tracking.
-[Tabs](https://docsify.js.org/#/plugins?id=tabs)                         | A Docsify.js plugin for displaying tabbed content from markdown.
+| Plugin                                                                   | Description                                                                                     |
+| ------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------- |
+| [External script](https://docsify.js.org/#/plugins?id=external-script)   | You need thus plugin if you want to place a `script` tag on the page that loads a `.js` script. |
+| [Google Analytics](https://docsify.js.org/#/plugins?id=google-analytics) | Configure the app with your GA ID to add tracking.                                              |
+| [Tabs](https://docsify.js.org/#/plugins?id=tabs)                         | A Docsify.js plugin for displaying tabbed content from markdown.                                |
 
 Also of interest:
 
@@ -559,7 +559,7 @@ Here we just use one argument and ignore rest.
 Arguments:
 
 - `docBase`
-    - Required. 
+    - Required.
     - It should be a full URL to the **document folder** of your Github project.
     - Here is the general form - use your own repo details and typically `BRANCH` is `master` and `DIRECTORY` is `docs`.
         ```
@@ -580,7 +580,7 @@ var repo = 'https://github.com/MichaelCurrin/docsify-js-tutorial';
 window.$docsify = {
     name: 'DocsifyJS Tutorial',
     repo: repo,
-    
+
     plugins: [
         EditOnGithubPlugin.create(
             repo + '/blob/master/docs/'
@@ -764,6 +764,20 @@ Code:
 Result:
 
 !> Warning content.
+
+
+## Add Vue to Docsify
+
+Docsify is built on Vue.js. So the community has provided a section of the docs for adding Vue to a Docsify page.
+
+I followed that guide to put together a Vue demo and basic Vue-Docsify integration intro.
+
+You still have to add Vue to your external JS assets, but at least the app is initialized for you which saves some code.
+
+<!-- Keep as HTML. Making a markdown link does not work - it turns [](vue-integration/) to [](/#/vue-integration) even with a leading forward slash. -->
+<a href="vue-integration/">Vue Example</a>
+
+That sample has its own files like `_sidebar.yml` and `index.html`, so it is a demo site hosted within this main tutorial site.
 
 
 ## Docsify CLI
