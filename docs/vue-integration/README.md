@@ -5,4 +5,4 @@ Based on tutorial in the DocsifyJS docs - [Compatible with Vue](https://docsify.
 
 See also the [Vue.js homepage](https://vuejs.org/).
 
-This Vue site is a subsection site. You can go back to the <a href="/#/">DocsifyJS Tutorial</a>.
+This Vue section is part of the main tutorial - you can go back to the <a href="/#/">DocsifyJS Tutorial</a>.
