@@ -11,14 +11,16 @@ You don't even need to enable script execution in your config.
 
     Having one code backtick part and one rendered part causes errors, so you have to go for one the other on the page. Putting the code in pre and code tags stops it from executing though (ID is not picked up).
 
-    Below is the result copied from the browser (but with the v tag removed on the outer pre tag).
+    Below is the result copied from the browser result and with some changes.
 
-    Just be careful not to indent with HTML formatter this or it will display weird.
+    Note use of token punctuation to stop variables from evaluating.
+
+    Just be careful to NOT indent manually or with a formatter as then the output displays with weird wrapping.
 -->
 
-<pre data-lang="markdown"><code class="lang-markdown"><span class="token title important"><span class="token punctuation">#</span> Vue demo</span>
+<pre data-lang="markdown"><code class="lang-markdown">
 
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>main<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>hello {{ msg }}<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>main<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Hello <span class="token punctuation">{{</span> msg <span class="token punctuation">}}</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
 
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">&gt;</span></span><span class="token script"><span class="token language-javascript">
   <span class="token keyword">new</span> <span class="token class-name">Vue</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
@@ -30,7 +32,7 @@ You don't even need to enable script execution in your config.
 ## Result
 
 <div id="main">
-    <i>hello {{ msg }}!</i>
+    <i>Hello {{ msg }}!</i>
 </div>
 
 <script>
