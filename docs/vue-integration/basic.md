@@ -1,10 +1,11 @@
 # Basic
 
+
 ## Load Vue on your page
 
 Add the Vue script as a script tag. Here is an example using Vue and then Docsify loaded after `scrip the `window.$docsify` pa
 
-```
+```html
 <script>
 window.$docsify = {
 //    ...
