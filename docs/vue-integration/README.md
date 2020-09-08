@@ -1,8 +1,14 @@
-# Vue Example
-> Demo of how to add Vue.js to your DocsifyJS docs site
+# Vue Integration
+> Basic tutorial and demo of how to add Vue to your Docsify site
 
-Based on tutorial in the DocsifyJS docs - [Compatible with Vue](https://docsify.js.org/#/vue).
+
+## Resources
+
+Based on the tutorial in the DocsifyJS docs - [Compatible with Vue](https://docsify.js.org/#/vue). 
 
 See also the [Vue.js homepage](https://vuejs.org/).
 
-This Vue section is part of the main tutorial - you can go back to the <a href="/#/">DocsifyJS Tutorial</a>.
+
+## Back to main tutorial
+
+Done looking at Vue? Go back to the <a href="/#/">DocsifyJS Tutorial</a>.
