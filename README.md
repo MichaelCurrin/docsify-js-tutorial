@@ -28,7 +28,7 @@ It also assumes you already have a docs directory in a project and you want to t
 
 This project's own site is built on _DocsifyJS_ so serves as a good example. It serves from the `docs` directory. There is no main application to separate from `docs` directory, so serving from that directory is just convenient.
 
-See also the [Nested Example](/nested_example/README.md) section on the repo for understanding links in markdown and the sidebar.
+See also the [Nested Example](/nested-example/README.md) section on the repo for understanding links in markdown and the sidebar.
 
 
 ## 🖨️ Use a template

@@ -241,7 +241,7 @@ How to setup a sidebar file:
 
 Example:
 
-[\_sidebar.md](https://raw.githubusercontent.com/MichaelCurrin/docsify-js-tutorial/master/nested_example/_sidebar.md ':include :type=code')
+[\_sidebar.md](https://raw.githubusercontent.com/MichaelCurrin/docsify-js-tutorial/master/nested-example/_sidebar.md ':include :type=code')
 
 ?> The sidebar is a markdown file, so you can styling as a `**Title**`.
 
@@ -662,7 +662,7 @@ The remote file could be anywhere:
 - Repo reference
     - Use the **raw** URL so you only reference plain text.
     - Protocol of `//` is recommended, since `https://` is needed for a remote and `http://` for localhost, to avoid a CORS error.
-    - e.g. `https://raw.githubusercontent.com/MichaelCurrin/docsify-js-tutorial/master/nested_example/_sidebar.md`
+    - e.g. `https://raw.githubusercontent.com/MichaelCurrin/docsify-js-tutorial/master/nested-example/_sidebar.md`
 - A gist reference
     - See instructions in this [guide](https://gist.github.com/MichaelCurrin/c2bece08f27c4277001f123898d16a7c).
 
