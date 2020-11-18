@@ -10,8 +10,8 @@
 
 <div align="center">
   
-[![DocsifyJS Tutorial](https://img.shields.io/badge/teach-me-DocsifyJS_Tutorial-green?style=for-the-badge)](https://michaelcurrin.github.io/docsify-js-tutorial/#/)
-[![DocsifyJS Template](https://img.shields.io/badge/use-a-template-DocsifyJS_Template-green?style=for-the-badge)](https://michaelcurrin.github.io/docsify-js-template/#/)
+[![DocsifyJS Tutorial](https://img.shields.io/badge/teach_me-DocsifyJS_Tutorial-green?style=for-the-badge)](https://michaelcurrin.github.io/docsify-js-tutorial/#/)
+[![DocsifyJS Template](https://img.shields.io/badge/use_a_template-DocsifyJS_Template-green?style=for-the-badge)](https://michaelcurrin.github.io/docsify-js-template/#/)
 
 </div>
 
