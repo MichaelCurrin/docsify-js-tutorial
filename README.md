@@ -5,15 +5,26 @@
 [![GitHub tag](https://img.shields.io/github/tag/MichaelCurrin/docsify-js-tutorial.svg)](https://GitHub.com/MichaelCurrin/docsify-js-tutorial/tags/)
 [![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](#license)
 
-## Links
 
-### Learn about DocsifyJS
+## How to use Docsify
 
+### Follow this project's online tutorial
+
+<div align="center">
+  
 [![DocsifyJS Tutorial](https://img.shields.io/badge/site-DocsifyJS_Tutorial-green?style=for-the-badge)](https://michaelcurrin.github.io/docsify-js-tutorial/#/)
+
+</div>
 
 ### Start with a template
 
-[![DocsifyJS Template](https://img.shields.io/badge/site-DocsifyJS_Template-blue?style=for-the-badge)](https://michaelcurrin.github.io/docsify-js-template/#/)
+Go to this template project site. If you like it, you can click _Use this template_ to add it to your own project. No forking needed.
+
+<div align="center">
+
+[![DocsifyJS Template](https://img.shields.io/badge/site-DocsifyJS_Template-green?style=for-the-badge)](https://michaelcurrin.github.io/docsify-js-template/#/)
+
+</div>
 
 
 ## 👩‍🏫 About the online tutorial
@@ -37,7 +48,7 @@ If want to skip the tutorial and want a base project which has some sample data 
 
 That is a template repo which was created to accompany this tutorial, so the layout and conventions will mostly be the same. The template only implements the basic steps from the tutorial.
 
-Click _Use this template_ button and follow the instructions in the *README.md* doc.
+Click _Use this template_ button and follow the instructions in the _README.md_ doc.
 
 
 ## 🎯 Project aims
@@ -63,7 +74,7 @@ _Docsify_ works as a single-page application on this one page - data from your m
 
 ## Contributing
 
-The repo is open for accepting contributions through a Pull Request.
+The repo is open for accepting contributions through a Pull Request on a fork.
 
 
 ## License
