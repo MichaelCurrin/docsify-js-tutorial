@@ -6,11 +6,15 @@
 [![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](#license)
 
 
-## Get started with Docsify
+## Getting started
+
+### Learn about Docsify
 
 Follow the online tutorial which is friendly for beginners and contains recommendations.
 
 [![DocsifyJS Tutorial](https://img.shields.io/badge/teach_me-DocsifyJS_Tutorial-green?style=for-the-badge)](https://michaelcurrin.github.io/docsify-js-tutorial/#/)
+
+### Use a starter project
 
 If you want to make a Docsify site, instead of forking rather create a project using the _Use this template_ button on this template project:
 
