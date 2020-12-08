@@ -1,9 +1,9 @@
 # DocsifyJS Tutorial
 > Tutorial on how to build a docs site with _DocsifyJS_ and _Github Pages_
 
-[![Made with latest Docsify](https://img.shields.io/npm/v/docsify?label=docsify)](https://docsify.js.org/)
-[![GitHub tag](https://img.shields.io/github/tag/MichaelCurrin/docsify-js-tutorial.svg)](https://GitHub.com/MichaelCurrin/docsify-js-tutorial/tags/)
-[![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](#license)
+[![Made with Docsify latest](https://img.shields.io/npm/v/docsify?label=docsify)](https://docsify.js.org/)
+[![GitHub tag](https://img.shields.io/github/tag/MichaelCurrin/docsify-js-tutorial)](https://GitHub.com/MichaelCurrin/docsify-js-tutorial/tags/)
+[![MIT license](https://img.shields.io/badge/License-MIT-blue)](#license)
 
 
 ## Getting started
