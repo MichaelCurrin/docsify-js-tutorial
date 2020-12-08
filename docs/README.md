@@ -1,9 +1,9 @@
 # DocsifyJS Tutorial homepage
 > How to build a docs site using _DocsifyJS_ and _Github Pages_
 
-[![Made with latest Docsify](https://img.shields.io/npm/v/docsify?label=docsify)](https://docsify.js.org/)
-[![GitHub tag](https://img.shields.io/github/tag/MichaelCurrin/docsify-js-tutorial.svg)](https://GitHub.com/MichaelCurrin/docsify-js-tutorial/tags/)
-[![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/MichaelCurrin/docsify-js-tutorial/blob/master/README.md#license)
+[![Made with Docsify latest](https://img.shields.io/npm/v/docsify?label=docsify&color=3271a8)](https://docsify.js.org/)
+[![GitHub tag](https://img.shields.io/github/tag/MichaelCurrin/docsify-js-tutorial?color=3271a8)](https://GitHub.com/MichaelCurrin/docsify-js-tutorial/tags/)
+[![MIT license](https://img.shields.io/badge/License-MIT-3271a8)](https://github.com/MichaelCurrin/docsify-js-tutorial/blob/master/README.md#license)
 
 Convert your **docs** folder into a pretty docs website - using [DocsifyJS](https://docsify.js.org/) and some minimal setup instructions. This project's site itself is also running on _DocsifyJS_. :tada:
 
@@ -257,7 +257,7 @@ Example:
 
 The clickable text above the standard sidebar takes you to the cover page. You can scroll down to the homepage (`docs/README.md`), but there are no links on the page to the homepage. So add a link to the Homepage with a first entry at the top.
 
-Example of a link to the page page, using root page path and ID of the heading on the hompage.
+Example of a link to the page page, using root page path and ID of the heading on the homepage.
 
 ```markdown
 - [Home](/#my-app)
@@ -291,28 +291,26 @@ You can delete the cover page and disable it in _index.html_.
 
 #### Cover background image
 
-If you don't set a cover background, you'll get a different one on every refresh.
+You can change the background image for your cover page.
+
+If you don't set a cover background, you'll just get a randomy one on every refresh. It might be a solid color or a gradient.
 
 The _Docsify_ site explains how to set a background image or color [here](https://docsify.js.org/#/cover?id=custom-background).
 
-A background image should come _after_ the buttons in your file, as _Docsify_ looks for an image there then uses CSS to place the image behind the content and give it faded grey look.
+Your background image code should come at the _bottom_ of your cover file's code._Docsify_ looks for an image there then uses CSS to place the image behind the content and give it faded grey look.
 
-Examples:
+See code examples below for adding a custom background image:
 
-- Load an image file. The label can be anything.
+- Solid color. The text label **must** be the word `color`.
     ```markdown
-    <!-- background image -->
-
-    ![cover background image](_media/cover-bg.jpg)
-    ```
-- Solid color. The label **must** be `color`.
-    ```markdown
-    <!-- background color -->
-
     ![color](#f0f0f0)
     ```
-- Gradient color - this used to be support but does not work anymore.
-
+- Gradient color
+    - Choose a gradient used to be supported but does not work anymore, so is not covered here.
+- Load an image file. The text label can be anything.
+    ```markdown
+    ![cover background image](_media/cover-bg.jpg)
+    ```
 
 #### Cover logo
 
