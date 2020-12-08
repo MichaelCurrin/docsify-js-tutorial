@@ -1,6 +1,6 @@
 .PHONY: docs
 
-help:
+h help:
 	@egrep '(^\S)|^$$' Makefile
 
 docs:
