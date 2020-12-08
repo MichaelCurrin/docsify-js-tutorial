@@ -8,12 +8,13 @@
 
 ## Get started with Docsify
 
-<div align="center">
-  
-[![DocsifyJS Tutorial](https://img.shields.io/badge/teach_me-DocsifyJS_Tutorial-green?style=for-the-badge)](https://michaelcurrin.github.io/docsify-js-tutorial/#/)
-[![DocsifyJS Template](https://img.shields.io/badge/use_template-DocsifyJS_Template-green?style=for-the-badge)](https://michaelcurrin.github.io/docsify-js-template/#/)
+Follow the online tutorial which is friendly for beginners and contains recommendations.
 
-</div>
+[![DocsifyJS Tutorial](https://img.shields.io/badge/teach_me-DocsifyJS_Tutorial-green?style=for-the-badge)](https://michaelcurrin.github.io/docsify-js-tutorial/#/)
+
+If you want to make a Docsify site, don't work this repo, rather use this starter project.
+
+[![DocsifyJS Template](https://img.shields.io/badge/use_template-DocsifyJS_Template-green?style=for-the-badge)](https://michaelcurrin.github.io/docsify-js-template/#/)
 
 
 ## 👩‍🏫 About the online tutorial
