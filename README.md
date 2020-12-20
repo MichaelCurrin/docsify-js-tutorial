@@ -12,13 +12,21 @@
 
 Follow the online tutorial which is friendly for beginners and contains recommendations.
 
+<div align="center">
+
 [![DocsifyJS Tutorial](https://img.shields.io/badge/teach_me-DocsifyJS_Tutorial-green?style=for-the-badge)](https://michaelcurrin.github.io/docsify-js-tutorial/#/)
+
+</div>
 
 ### Use a starter project
 
 If you want to make a Docsify site, instead of forking rather create a project using the _Use this template_ button on this template project:
 
+<div align="center">
+
 [![DocsifyJS Template](https://img.shields.io/badge/use_template-DocsifyJS_Template-green?style=for-the-badge)](https://michaelcurrin.github.io/docsify-js-template/#/)
+
+</div>
 
 
 ## 👩‍🏫 About the online tutorial
