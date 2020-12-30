@@ -1,7 +1,7 @@
 .PHONY: docs
 
 h help:
-	@egrep '(^\S)|^$$' Makefile
+	@grep '^[a-z]' Makefile
 
 docs:
 	docsify serve docs
