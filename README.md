@@ -14,7 +14,7 @@ Follow the online tutorial which is friendly for beginners and contains recommen
 
 <div align="center">
 
-[![DocsifyJS Tutorial](https://img.shields.io/badge/teach_me-DocsifyJS_Tutorial-green?style=for-the-badge)](https://michaelcurrin.github.io/docsify-js-tutorial/#/)
+[![DocsifyJS Tutorial](https://img.shields.io/badge/teach_me-DocsifyJS_Tutorial-2ea44f?style=for-the-badge)](https://michaelcurrin.github.io/docsify-js-tutorial/#/)
 
 </div>
 
@@ -24,7 +24,7 @@ If you want to make a Docsify site, instead of forking rather create a project u
 
 <div align="center">
 
-[![DocsifyJS Template](https://img.shields.io/badge/use_template-DocsifyJS_Template-green?style=for-the-badge)](https://michaelcurrin.github.io/docsify-js-template/#/)
+[![DocsifyJS Template](https://img.shields.io/badge/use_template-DocsifyJS_Template-2ea44f?style=for-the-badge)](https://michaelcurrin.github.io/docsify-js-template/#/)
 
 </div>
 
@@ -81,7 +81,7 @@ The repo is open for accepting contributions through a Pull Request on a fork.
 
 ## License
 
-Released under [MIT](/LICENSE).
+Released under [MIT](/LICENSE) by [@MichaelCurrin](https://github.com/MichaelCurrin).
 
 - You can modify and reuse this project.
 - A copy of the license and copyright notice must be included with the software, according to this [MIT definition](https://choosealicense.com/licenses/#mit).
