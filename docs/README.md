@@ -63,9 +63,13 @@ Some docs site I have built. These give you an idea of content, layout and custo
 
 ## Why use _Docsify_?
 
-My requirement was to build a docs site with minimal setup to use existing docs directories without restructuring or formatting the docs. I found _Docsify_ is ideal for this.
+My requirement was to build a docs site with minimal file/dependency setup and to use existing docs directories, without restructuring or formatting the docs. I found _Docsify_ is ideal for this.
 
-When you use _Docsify_ with its defaults or very simple tweaks, you still get a pretty UI with menus, themes, mobile functionality and a cover page. And page loads are seamless in the shell as it is a SPA. These things that take more effort and code changes or additions if you want to do them with static-site generators. _Docsify_ also documentation as its main purpose, unlike some other tools.
+I like that once I have the HTML setup that Incan focus on markdown content and writing a menu using YAML. And there is no build step. Its just a HTML and external JS as static assets. Just deploy to GH Pages or elsewhere.
+
+When you use _Docsify_ with its defaults or very simple tweaks, you get a pretty UI with menus, themes, mobile functionality and a cover page. Page loads are seamless in the app shell, as it is a SPA. These are things that take more effort and code changes or additions, if you want to do them with static-site generators. _Docsify_ also had documentation as its main purpose, unlike some other tools.
+
+There are some downsides like Docsify does not have static site support yet (which makes it weak for SEO rankings) and there are only 4 themes, which are just color scheme changes. And the dark one doesn't have good contrast for certain things.
 
 ![icon](_media/docs_brackets.png)
 
@@ -147,14 +151,14 @@ Follow these steps to setup and run an existing _Docsify_ project locally. In th
 Clone this repo to your machine with one of these commands:
 
 ```bash
-$ # Clone with SSH
+$ # Clone with SSH:
 $ git clone git@github.com:MichaelCurrin/docsify-js-tutorial.git
-$ # Clone with HTTPS
+
+$ # Clone with HTTPS:
 $ git clone https://github.com/MichaelCurrin/docsify-js-tutorial.git
 ```
 
 ?> **Note:** No installation is needed. When the HTML page is opened in the browser, the _Docsify_ library will be fetched from a CDN by the browser.
-
 
 [run_docsify_locally.md](//gist.githubusercontent.com/MichaelCurrin/4c8060dcc9d8841f842eeebc7a1436d8/raw/run_docsify_locally.md ':include')
 
@@ -305,7 +309,7 @@ See code examples below for adding a custom background image:
     ```markdown
     ![color](#f0f0f0)
     ```
-- Gradient color
+- Gradient color.
     - Choose a gradient used to be supported but does not work anymore, so is not covered here.
 - Load an image file. The text label can be anything.
     ```markdown
@@ -348,7 +352,7 @@ Find the style which is set in the `<head>` tag, which looks like this.
 <link rel="stylesheet" href="//unpkg.com/docsify/lib/themes/<THEME>">
 ```
 
-Replace the end of URL with one of these four themes:
+Replace the end of URL with one of these four themes. They have the same layout but different colors.
 
 - `vue.css`
 - `buble.css`
