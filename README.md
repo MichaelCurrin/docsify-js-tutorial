@@ -1,9 +1,9 @@
 # DocsifyJS Tutorial
-> Tutorial on how to build a docs site with _DocsifyJS_ and _Github Pages_
+> How to build a markdown docs site using _DocsifyJS_ and _GH Pages_ 👷‍♀️ 📒 🕸
 
 [![Made with Docsify latest](https://img.shields.io/npm/v/docsify?label=docsify)](https://docsify.js.org/)
 [![GitHub tag](https://img.shields.io/github/tag/MichaelCurrin/docsify-js-tutorial)](https://GitHub.com/MichaelCurrin/docsify-js-tutorial/tags/)
-[![MIT license](https://img.shields.io/badge/License-MIT-blue)](#license)
+[![License](https://img.shields.io/badge/License-MIT-blue)](#license)
 
 
 ## Getting started
@@ -31,7 +31,7 @@ If you want to make a Docsify site, instead of forking rather create a project u
 
 ## 👩‍🏫 About the online tutorial
 
-_This repo is my most starred and most forked repo - thanks for supporting._
+_This repo is one of my most starred and most forked repos - thanks for supporting._
 
 The [Docsify](https://docsify.js.org/#/) site has great quickstart for beginners, but with all the configs and plugin options available if feels more like a dictionary than a recipe for setting up a custom docs site which is not code heavy. So I created this tutorial to take beginners and advanced users through setting up Docsify in ordered steps - noting as well when steps are optional or what the choices are.
 
