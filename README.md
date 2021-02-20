@@ -1,9 +1,10 @@
 # DocsifyJS Tutorial
-> How to build a markdown docs site using _DocsifyJS_ and _GH Pages_ 👷‍♀️ 📒 🕸
+> How to build a markdown-based docs site using _DocsifyJS_ and _GH Pages_ 👷‍♀️ 📒 🕸
 
-[![Made with Docsify latest](https://img.shields.io/npm/v/docsify?label=docsify)](https://docsify.js.org/)
 [![GitHub tag](https://img.shields.io/github/tag/MichaelCurrin/docsify-js-tutorial)](https://GitHub.com/MichaelCurrin/docsify-js-tutorial/tags/)
 [![License](https://img.shields.io/badge/License-MIT-blue)](#license)
+
+[![Made with Docsify latest](https://img.shields.io/npm/v/docsify?label=docsify)](https://docsify.js.org/)
 
 
 ## Getting started
@@ -14,7 +15,7 @@ Follow the online tutorial which is friendly for beginners and contains recommen
 
 <div align="center">
 
-[![DocsifyJS Tutorial](https://img.shields.io/badge/teach_me-DocsifyJS_Tutorial-2ea44f?style=for-the-badge)](https://michaelcurrin.github.io/docsify-js-tutorial/#/)
+[![DocsifyJS Tutorial](https://img.shields.io/badge/Teach_me_how-DocsifyJS_Tutorial-2ea44f?style=for-the-badge)](https://michaelcurrin.github.io/docsify-js-tutorial/#/)
 
 </div>
 
@@ -24,12 +25,12 @@ If you want to make a Docsify site, instead of forking rather create a project u
 
 <div align="center">
 
-[![DocsifyJS Template](https://img.shields.io/badge/use_template-DocsifyJS_Template-2ea44f?style=for-the-badge)](https://michaelcurrin.github.io/docsify-js-template/#/)
+[![DocsifyJS Template](https://img.shields.io/badge/Generate-Use_DocsifyJS_Template-2ea44f?style=for-the-badge)](https://michaelcurrin.github.io/docsify-js-template/#/)
 
 </div>
 
 
-## 👩‍🏫 About the online tutorial
+## About the online tutorial 👩‍🏫
 
 _This repo is one of my most starred and most forked repos - thanks for supporting._
 
@@ -44,7 +45,7 @@ This project's own site is built on _DocsifyJS_ so serves as a good example. It 
 See also the [Nested Example](/nested-example/README.md) section on the repo for understanding links in markdown and the sidebar.
 
 
-## 🖨️ Use a template
+## Use a template 🖨️
 
 If want to skip the tutorial and want a base project which has some sample data then go to the template repo linked at the top.
 
@@ -53,7 +54,7 @@ That is a template repo which was created to accompany this tutorial, so the lay
 Click _Use this template_ button and follow the instructions in the _README.md_ doc.
 
 
-## 🎯 Project aims
+## Project aims 🎯
 
 Some background on how I arrived at DocsifyJS as a docs site builder.
 
