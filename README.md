@@ -59,13 +59,15 @@ Click _Use this template_ button and follow the instructions in the _README.md_ 
 
 Some background on how I arrived at DocsifyJS as a docs site builder.
 
-My aims for building a docs site are:
+My aims for building a docs site were as follows and Docsify meets all of them:
 
-- Add as little code and configuration as possible
-- Make it easy to maintain
-- Quick to get setup on existing projects
-- Have no layout files
-- Reduce dependencies
+- Add as little code and configuration as possible. Focus on the content, with a bit of styling.
+- Be easy to maintain.
+- Quick to get setup on existing projects.
+- It should be easy to repeat across many projects, without having to deal to have headaches with each. (Like a lot of boilerplate code, or installation issues, or drift as layouts/features are added to one and not the others.)
+- Have **no** HTML layout files to maintain.
+- Reduce dependencies and keep installation simple.
+- Little or no build step needed.
 
 The docs site tool used here is [DocsifyJS](https://docsify.js.org/) which is a frontend JS library written in VueJS. But if you have never used before or never coded in JS before, you'll be guided through. The only JS you need to write in your config values. You also need to edit some HTML values and possibly write a YAML file for your navbar, which again is more configuration than code.
 
