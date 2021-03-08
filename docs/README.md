@@ -9,26 +9,12 @@ Convert your **docs** folder into a pretty docs website - using [DocsifyJS](http
 
 ?> _DocsifyJS_ is sometimes just called _Docsify_ in this guide. Also known as _Docsify.js_.
 
-
-## Resources
-> Docs and Docsify-related links
-
-### My projects
-
-- [DocsifyJS Tutorial](https://github.com/michaelcurrin/docsify-js-tutorial/) repo on Github.
-- [DocsifyJS Template](https://michaelcurrin.github.io/docsify-js-template/) project.
-- [MkDocs Quickstart](https://michaelcurrin.github.io/mkdocs-quickstart/) project
-    - As an alternative to Docsify, try this demo / tutorial / template around MkDocs.
-
-### Official Docsify repos
-
-- Docsify main repo - [docsifyjs/docsify](https://github.com/docsifyjs/docsify)
-- Docsify CLI repo - [docsifyjs/docsify-cli](https://github.com/docsifyjs/docsify-cli)
+Start with the basics or get to the menu customization and styling in later sections. Code snippets and recommendations are provided, so you don't have to spend a lot of time on all the possible options and features covered in the docs that you don't need to know.
 
 
 ## Purpose of this tutorial
 
-This project is for you if you answer yes to any of the following:
+This project is for you if you answer _yes_ to any of the following:
 
 - Are you new to making a docs site?
 - Tired of writing HTML/CSS/JS and just want to write docs using plain markdown?
@@ -37,7 +23,7 @@ This project is for you if you answer yes to any of the following:
 - Looking for a template which is based on real world use?
 
 
-## Where to run a _Docsify_ site
+## Setup a _Docsify_ site to run
 
 This project provides three approaches for choosing a Docsify site to run:
 
@@ -76,9 +62,25 @@ There are some downsides like Docsify does not have static site support yet (whi
 This great [article](https://dev.to/evilmartians/keeping-oss-documentation-with-docsify-lefthook-and-friends-11e5) on dev.to covers a journey from README to Wiki to Jekyll and finally Docsify, if you are interested to compare those.
 
 
+## Resources
+> Docs and Docsify-related links
+
+### My projects
+
+- [DocsifyJS Tutorial](https://github.com/michaelcurrin/docsify-js-tutorial/) repo on Github.
+- [DocsifyJS Template](https://michaelcurrin.github.io/docsify-js-template/) project.
+- [MkDocs Quickstart](https://michaelcurrin.github.io/mkdocs-quickstart/) project
+    - As an alternative to Docsify, try this demo / tutorial / template around MkDocs.
+
+### Official Docsify repos
+
+- Docsify main repo - [docsifyjs/docsify](https://github.com/docsifyjs/docsify)
+- Docsify CLI repo - [docsifyjs/docsify-cli](https://github.com/docsifyjs/docsify-cli)
+
+
 ## _Docsify_ basics
 
-An intro to _Docsify_.
+This is where the tutorial starts - with an intro to _Docsify_.
 
 A _Docsify_ site works works _without_ the need to edit your existing docs and _without_ building any HTML pages. The rendering is done on the client-side in a single page application, running on _index.html_.
 
