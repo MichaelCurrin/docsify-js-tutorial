@@ -11,15 +11,15 @@
 
 ### Learn about Docsify
 
-Follow the online tutorial which is friendly for beginners and contains recommendations.
+Follow the online tutorial. Start with the basics or get to the menu customization and styling in later sections. Code snippets and recommendations are provided, so you don't have to spend a lot of time on all the possible options and features covered in the docs that you don't need to know.
 
 <div align="center">
 
-[![DocsifyJS Tutorial](https://img.shields.io/badge/Teach_me_how-DocsifyJS_Tutorial-2ea44f?style=for-the-badge)](https://michaelcurrin.github.io/docsify-js-tutorial/#/)
+[![DocsifyJS Tutorial](https://img.shields.io/badge/Teach_me_how-Go_to_DocsifyJS_Tutorial-2ea44f?style=for-the-badge)](https://michaelcurrin.github.io/docsify-js-tutorial/#/)
 
 </div>
 
-### Use a starter project
+### Use a template project
 
 If you want to make a Docsify site, instead of forking rather create a project using the _Use this template_ button on this template project:
 
