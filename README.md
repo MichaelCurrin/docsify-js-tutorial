@@ -16,7 +16,7 @@ Follow the online tutorial. Start with the basics or get to the menu customizati
 
 <div align="center">
 
-[![DocsifyJS Tutorial](https://img.shields.io/badge/Teach_me_how-Go_to_DocsifyJS_Tutorial-2ea44f?style=for-the-badge)](https://michaelcurrin.github.io/docsify-js-tutorial/#/)
+[![DocsifyJS Tutorial](https://img.shields.io/badge/Teach_me_how-DocsifyJS_Tutorial-2ea44f?style=for-the-badge)](https://michaelcurrin.github.io/docsify-js-tutorial/#/)
 
 </div>
 
@@ -26,7 +26,7 @@ If you want to make a Docsify site, instead of forking rather create a project u
 
 <div align="center">
 
-[![DocsifyJS Template](https://img.shields.io/badge/Generate-Use_DocsifyJS_Template-2ea44f?style=for-the-badge)](https://michaelcurrin.github.io/docsify-js-template/#/)
+[![DocsifyJS Template](https://img.shields.io/badge/Generate-Use_DocsifyJS_Template-blue?style=for-the-badge)](https://michaelcurrin.github.io/docsify-js-template/#/)
 
 </div>
 
