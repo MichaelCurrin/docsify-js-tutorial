@@ -8,6 +8,16 @@
 [![Hosted with GH Pages](https://img.shields.io/badge/Hosted_with-GitHub_Pages-blue?logo=github&logoColor=white)](https://pages.github.com/)
 
 
+
+## Preview
+
+<div align="center">
+  
+[![Sample screenshot](/sample.png "Sample screenshot")](https://michaelcurrin.github.io/docsify-js-tutorial/#/)
+
+</div>
+
+
 ## Getting started
 
 ### Learn about Docsify
