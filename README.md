@@ -8,7 +8,6 @@
 [![Hosted with GH Pages](https://img.shields.io/badge/Hosted_with-GitHub_Pages-blue?logo=github&logoColor=white)](https://pages.github.com/)
 
 
-
 ## Preview
 
 <div align="center">
@@ -30,19 +29,21 @@ Follow the online tutorial. Start with the basics or get to the menu customizati
 
 <div align="center">
 
-[![DocsifyJS Tutorial](https://img.shields.io/badge/Teach_me_how-DocsifyJS_Tutorial-2ea44f?style=for-the-badge)](https://michaelcurrin.github.io/docsify-js-tutorial/#/)
+[![DocsifyJS Tutorial](https://img.shields.io/badge/Go_to-DocsifyJS_Tutorial_site-2ea44f?style=for-the-badge)](https://michaelcurrin.github.io/docsify-js-tutorial/#/)
 
 </div>
 
 ### Use a template project
 
-If you want to make a Docsify site, instead of forking rather create a project using the _Use this template_ button on this template project:
+Want to make a Docsify site? I have a template project you can use. It has enough structure and sample content to get you going.
 
 <div align="center">
 
 [![DocsifyJS Template](https://img.shields.io/badge/Generate-Use_DocsifyJS_Template-blue?style=for-the-badge)](https://michaelcurrin.github.io/docsify-js-template/#/)
 
 </div>
+
+You don't need to fork it - unless you want to contribute changes.
 
 
 ## About the online tutorial 👩‍🏫
