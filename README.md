@@ -29,7 +29,7 @@ Follow the online tutorial. Start with the basics or get to the menu customizati
 
 <div align="center">
 
-[![DocsifyJS Tutorial](https://img.shields.io/badge/Go_to-DocsifyJS_Tutorial_site-2ea44f?style=for-the-badge)](https://michaelcurrin.github.io/docsify-js-tutorial/#/)
+[![DocsifyJS Tutorial](https://img.shields.io/badge/View-DocsifyJS_Tutorial_site-2ea44f?style=for-the-badge)](https://michaelcurrin.github.io/docsify-js-tutorial/#/)
 
 </div>
 
@@ -39,7 +39,7 @@ Want to make a Docsify site? I have a template project you can use. It has enoug
 
 <div align="center">
 
-[![DocsifyJS Template](https://img.shields.io/badge/Generate-Use_DocsifyJS_Template-blue?style=for-the-badge)](https://michaelcurrin.github.io/docsify-js-template/#/)
+[![DocsifyJS Template](https://img.shields.io/badge/Generate_from-DocsifyJS_Template-blue?style=for-the-badge)](https://michaelcurrin.github.io/docsify-js-template/#/)
 
 </div>
 
