@@ -1,9 +1,10 @@
-# DocsifyJS Tutorial homepage
+# DocsifyJS Tutorial
 > How to build a docs site using _DocsifyJS_ and _Github Pages_
 
-[![Made with Docsify latest](https://img.shields.io/npm/v/docsify?label=docsify&color=3271a8)](https://docsify.js.org/)
 [![GitHub tag](https://img.shields.io/github/tag/MichaelCurrin/docsify-js-tutorial?color=3271a8)](https://GitHub.com/MichaelCurrin/docsify-js-tutorial/tags/)
-[![MIT license](https://img.shields.io/badge/License-MIT-3271a8)](https://github.com/MichaelCurrin/docsify-js-tutorial/blob/master/README.md#license)
+[![License](https://img.shields.io/badge/License-MIT-3271a8)](https://github.com/MichaelCurrin/docsify-js-tutorial/blob/master/README.md#license)
+
+[![Made with Docsify latest](https://img.shields.io/npm/v/docsify?label=docsify&color=3271a8)](https://docsify.js.org/)
 
 Convert your **docs** folder into a pretty docs website - using [DocsifyJS](https://docsify.js.org/) and some minimal setup instructions. This project's site itself is also running on _DocsifyJS_. :tada:
 
