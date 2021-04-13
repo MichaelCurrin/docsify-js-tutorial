@@ -40,7 +40,7 @@ Want to make a Docsify site? I have a template project you can use. It has enoug
 
 <div align="center">
 
-[![DocsifyJS Template](https://img.shields.io/badge/Generate_from-DocsifyJS_Template-blue?style=for-the-badge)](https://michaelcurrin.github.io/docsify-js-template/#/)
+[![DocsifyJS Template](https://img.shields.io/badge/Generate-DocsifyJS_Template-blue?style=for-the-badge)](https://michaelcurrin.github.io/docsify-js-template/#/)
 
 </div>
 
