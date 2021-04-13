@@ -1,5 +1,5 @@
 # DocsifyJS Tutorial
-> How to build a markdown-based docs site using _DocsifyJS_ and _GH Pages_ 👷‍♀️ 📒 🕸
+> How to build a markdown-based docs site using _DocsifyJS_ and _GH Pages_ 👩‍🏫 🏗 📒 🕸
 
 [![GitHub tag](https://img.shields.io/github/tag/MichaelCurrin/docsify-js-tutorial)](https://GitHub.com/MichaelCurrin/docsify-js-tutorial/tags/)
 [![License](https://img.shields.io/badge/License-MIT-blue)](#license)
