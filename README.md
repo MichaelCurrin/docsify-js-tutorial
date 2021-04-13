@@ -15,6 +15,7 @@
         <img src="/sample-1.png" alt="Sample screenshot" title="Sample screenshot" width="400" />
     </a>
     <br>
+    <br>
     <a href="https://michaelcurrin.github.io/docsify-js-tutorial/#/">
         <img src="/sample-2.png" alt="Sample screenshot" title="Sample screenshot" width="600" />
     </a>
