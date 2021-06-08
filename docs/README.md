@@ -33,7 +33,7 @@ This project provides three approaches for choosing a Docsify site to run:
 
 - Use the [Quickstart local server](#quickstart-local-server)
     - Clone this repo and start serving the docs repo immediately.
-- [Setup your own docs site](#setup-your-own-docs-site) from scratch
+- [Set up your own docs site](#setup-your-own-docs-site) from scratch.
     - Convert your _docs_ directory into a docs site hosted on GitHub Pages. Copy from some templates files to get up and running with as little effort as possible.
 - Use my [DocsifyJS Template](https://github.com/michaelcurrin/docsify-js-template/) repo
     - A minimal template which goes with this tutorial.
@@ -53,9 +53,9 @@ Some docs site I have built. These give you an idea of content, layout and custo
 
 ## Why use _Docsify_?
 
-My requirement was to build a docs site with minimal file/dependency setup and to use existing docs directories, without restructuring or formatting the docs. I found _Docsify_ is ideal for this.
+My requirement was to build a docs site with minimal file/dependency set up and to use existing docs directories, without restructuring or formatting the docs. I found _Docsify_ is ideal for this.
 
-I like that once I have the HTML setup that Incan focus on markdown content and writing a menu using YAML. And there is no build step. Its just a HTML and external JS as static assets. Just deploy to GH Pages or elsewhere.
+I like that once I have the HTML set up that Incan focus on markdown content and writing a menu using YAML. And there is no build step. Its just a HTML and external JS as static assets. Just deploy to GH Pages or elsewhere.
 
 When you use _Docsify_ with its defaults or very simple tweaks, you get a pretty UI with menus, themes, mobile functionality and a cover page. Page loads are seamless in the app shell, as it is a SPA. These are things that take more effort and code changes or additions, if you want to do them with static-site generators. _Docsify_ also had documentation as its main purpose, unlike some other tools.
 
@@ -107,7 +107,7 @@ Main components of a _Docsify_ site:
     - Optional.
     - Describes the menu layout for the **top right menu**.
 
-Once you have that setup in _docs_ directory and have pushed to GitHub, you can setup GitHub Pages serving the _docs_ directory. Note: _Docsify_ also works with _Netlify_ as per their docs, but this project just considers the GitHub Pages case.
+Once you have that set up in _docs_ directory and have pushed to GitHub, you can set up GitHub Pages serving the _docs_ directory. Note: _Docsify_ also works with _Netlify_ as per their docs, but this project just considers the GitHub Pages case.
 
 ### Linking to pages
 
@@ -149,7 +149,7 @@ Also note that the root prefix is needed for Docsify paths to work, but you'll a
 ## Quickstart local server
 > Serve an existing project locally
 
-Follow these steps to setup and run an existing _Docsify_ project locally. In this case, we get a local copy of this _DocsifyJS Tutorial_ project and serve it.
+Follow these steps to set up and run an existing _Docsify_ project locally. In this case, we get a local copy of this _DocsifyJS Tutorial_ project and serve it.
 
 
 ### 1. Install
@@ -172,7 +172,7 @@ $ git clone https://github.com/MichaelCurrin/docsify-js-tutorial.git
 ?> **Note** When viewing the site, if you scroll down far enough you will see a hamburger menu which lets you dynamically open or close the sidebar. This is always visible on mobile view but not so easy to find, while the sidebar starts out closed on mobile.
 
 
-## Setup your own docs site
+## Set up your own docs site
 > Convert your docs directory into a docs site
 
 This tutorial is based on the _Docsify_ [Quickstart](https://docsify.js.org/#/quickstart) guide, but rather than giving snippets of file this tutorial lets you copy entire template files to your project, there are `TODO` items in the templates making it clear what to edit.
@@ -221,13 +221,13 @@ See [loadSidebar](https://docsify.js.org/#/configuration?id=loadsidebar) in the 
 
 #### Auto sidebar
 
-You may choose to display the sidebar, but have it populated automatically from headings on a single HTML file - the homepage (_docs/README.md_). This is the way that this project's own docs site is setup.
+You may choose to display the sidebar, but have it populated automatically from headings on a single HTML file - the homepage (_docs/README.md_). This is the way that this project's own docs site is set up.
 
 This solution is great if you are happy to move all your doc content into a **single** large markdown file, as it means not having to worry about manually updating a navigation bar when you docs change. Especially if you have a many files to manage or they are likely to change in name or structure.
 
 You can also have multiple markdown files in folders, each group with its own sidebar config.
 
-To setup auto sidebar:
+To set up auto sidebar:
 
 1. Delete *_sidebar.md*.
 2. Open _index.html_ to edit it.
@@ -242,7 +242,7 @@ You can choose to configure a custom sidebar. This is necessary to link to the m
 
 ##### Guidelines
 
-How to setup a sidebar file:
+How to set up a sidebar file:
 
 - The format should be bullet points in markdown format.
 - Each menu item should be a markdown link e.g. `[Name](link)`. An item may exist on the menu without a link - this is useful for grouping items together under a menu heading.
@@ -255,7 +255,7 @@ Example:
 
 ?> The sidebar is a markdown file, so you can styling as a `**Title**`.
 
-##### Setup custom sidebar
+##### Set up custom sidebar
 
 1. Ensure `loadSidebar: true` is set in the _index.html_ file.
     - The value of `true` means `*_sidebar.md*` will be referenced by the app.
@@ -809,7 +809,7 @@ Follow the instructions in [Quickstart local server](#quickstart-local-server).
 
 > Creates new docs
 
-Setup an initial _README.md_ (duplicated from project root), _index.html_ and _.nojekyll_ in your a target directory. If you don't want the CLI to do it for you, you can create the files by hand or use this project's _quickstart_ directory to get you going.
+Set up an initial _README.md_ (duplicated from project root), _index.html_ and _.nojekyll_ in your a target directory. If you don't want the CLI to do it for you, you can create the files by hand or use this project's _quickstart_ directory to get you going.
 
 e.g.
 
@@ -878,21 +878,21 @@ I don't think it'll includes a sitemap file.
 
 ### Why not use a static site generator?
 
-_Docsify_ is a SPA, not a static-site generator. Though this should hopefully change when Docsify version 5 comes out.
+_Docsify_ is a Single-Page Application library. It is **not** a static-site generator (though, hopefully this will change when Docsify version 5 comes out).
 
-_Jekyll_ and _Hugo_ are excellent options for static site generators. They can use themes suited to documentation and they can build off of a _docs_ directory. If you want to read more about those, see my [resources](https://github.com/MichaelCurrin/static-sites-generator-resources) project.
+_Jekyll_ and _Hugo_ are excellent options for static site generators. They can use themes suited to documentation and they can build off of a _docs_ directory. See more info in my [Jekyll Resources](https://michaelcurrin.github.io/dev-resources/resources/jekyll/). If you are interested in a Jekyll template that is built around presenting a docs site, see [jekyll-gh-actions-quickstart](https://github.com/MichaelCurrin/jekyll-gh-actions-quickstart).
 
-These are just tools to build a site. What is appropriate depends on your usecase, how much you need to customized the site and how much effort you want to spend on installing/running/maintaining the project.
+Jekyll and Uho are just tools to build a site. What is appropriate depends on your use-case, how much you need to customized the site and how much effort you want to spend on installing/running/maintaining the project.
 
 I find _Docsify_ light to add to a project and to use for new projects. So it is a great fit for me.
 
-A static site generator can be heavy to setup and manage.
+A static site generator can be heavy to set up and manage.
 
 There are dependencies to manage - they might have to be upgraded if their are security vulnerabilities or they are no longer available. Such as plugins and themes for _Jekyll_. And plugins for _Hugo_. Plus you probably need a couple of _JavaScript_ or _CSS_ files that either you or a theme added. Such as _Query_. This _Docsify_ project only needs exactly one _JavaScript_ and one _CSS_ file.
 
 There is HTML to build locally and on the remote. While _Docsify_ needs no dependencies to serve a site, _Jekyll_ sites needs `jekyll` installed and _Hugo_ sites need `hugo` available.
 
-A static site needs to be customized in depth or needs theme setup which also takes effort. You may lose or gain functionality when switching between Jekyll themes because they use their own templates and layouts. MkDocs is another light alternative but have to install some themes and plugins locally.
+A static site needs to be customized in depth or needs a theme set up which also takes effort. You may lose or gain functionality when switching between Jekyll themes because they use their own templates and layouts. MkDocs is another light alternative but have to install some themes and plugins locally.
 
 You probably have to add _front matter_ to your doc files so they can inherit from layouts and have the correct metadata like title.
 
