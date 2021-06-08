@@ -1,12 +1,16 @@
 # DocsifyJS Tutorial
-> How to build a docs site using _DocsifyJS_ and _Github Pages_
+> How to build a docs site using _DocsifyJS_ and _GitHub Pages_
+
+[![MichaelCurrin - docsify-js-tutorial](https://img.shields.io/static/v1?label=MichaelCurrin&message=docsify-js-tutorial&color=blue&logo=github)](https://github.com/MichaelCurrin/docsify-js-tutorial)
+[![stars - docsify-js-tutorial](https://img.shields.io/github/stars/MichaelCurrin/docsify-js-tutorial?style=social)](https://github.com/MichaelCurrin/docsify-js-tutorial)
+[![forks - docsify-js-tutorial](https://img.shields.io/github/forks/MichaelCurrin/docsify-js-tutorial?style=social)](https://github.com/MichaelCurrin/docsify-js-tutorial)
 
 [![GitHub tag](https://img.shields.io/github/tag/MichaelCurrin/docsify-js-tutorial?color=3271a8)](https://GitHub.com/MichaelCurrin/docsify-js-tutorial/tags/)
 [![License](https://img.shields.io/badge/License-MIT-3271a8)](https://github.com/MichaelCurrin/docsify-js-tutorial/blob/master/README.md#license)
 
 [![Made with Docsify latest](https://img.shields.io/npm/v/docsify?label=docsify&color=3271a8)](https://docsify.js.org/)
 
-Convert your **docs** folder into a pretty docs website - using [DocsifyJS](https://docsify.js.org/) and some minimal setup instructions. This project's site itself is also running on _DocsifyJS_. :tada:
+Convert your **docs** folder into a pretty docs website - using a lightweight JS library called [DocsifyJS](https://docsify.js.org/) and some minimal set up instructions. This project's site itself is also running on _DocsifyJS_. :tada:
 
 ?> _DocsifyJS_ is sometimes just called _Docsify_ in this guide. Also known as _Docsify.js_.
 
@@ -24,17 +28,17 @@ This project is for you if you answer _yes_ to any of the following:
 - Looking for a template which is based on real world use?
 
 
-## Setup a _Docsify_ site to run
+## Set up a _Docsify_ site to run
 
 This project provides three approaches for choosing a Docsify site to run:
 
 - Use the [Quickstart local server](#quickstart-local-server)
     - Clone this repo and start serving the docs repo immediately.
 - [Setup your own docs site](#setup-your-own-docs-site) from scratch
-    - Convert your _docs_ directory into a docs site hosted on Github Pages. Copy from some templates files to get up and running with as little effort as possible.
+    - Convert your _docs_ directory into a docs site hosted on GitHub Pages. Copy from some templates files to get up and running with as little effort as possible.
 - Use my [DocsifyJS Template](https://github.com/michaelcurrin/docsify-js-template/) repo
     - A minimal template which goes with this tutorial.
-    - Click [Use this template](https://img.shields.io/badge/Use_this_template-green.svg?style=for-the-badge) to add a copy to you own repos. you'll be able to starting serving a site on Github Pages or locally.
+    - Click [Use this template](https://img.shields.io/badge/Use_this_template-green.svg?style=for-the-badge) to add a copy to you own repos. you'll be able to starting serving a site on GitHub Pages or locally.
 
 _Note: The instructions in this repo are intended for Linux and macOS environments._
 
@@ -68,7 +72,7 @@ This great [article](https://dev.to/evilmartians/keeping-oss-documentation-with-
 
 ### My projects
 
-- [DocsifyJS Tutorial](https://github.com/michaelcurrin/docsify-js-tutorial/) repo on Github.
+- [DocsifyJS Tutorial](https://github.com/michaelcurrin/docsify-js-tutorial/) repo on GitHub.
 - [DocsifyJS Template](https://michaelcurrin.github.io/docsify-js-template/) project.
 - [MkDocs Quickstart](https://michaelcurrin.github.io/mkdocs-quickstart/) project
     - As an alternative to Docsify, try this demo / tutorial / template around MkDocs.
@@ -104,7 +108,7 @@ Main components of a _Docsify_ site:
     - Optional.
     - Describes the menu layout for the **top right menu**.
 
-Once you have that setup in _docs_ directory and have pushed to Github, you can setup Github Pages serving the _docs_ directory. Note: _Docsify_ also works with _Netlify_ as per their docs, but this project just considers the Github Pages case.
+Once you have that setup in _docs_ directory and have pushed to GitHub, you can setup GitHub Pages serving the _docs_ directory. Note: _Docsify_ also works with _Netlify_ as per their docs, but this project just considers the GitHub Pages case.
 
 ### Linking to pages
 
@@ -290,7 +294,7 @@ Docsify provides a cover page - a simple page that a visitor sees before scrolli
 
 If you want to use it, make sure `coverpage: true` is set in your app config.
 
-Then create and edit a *docs/_coverpage.md* file. You can also use the template project's [cover page](https://raw.githubusercontent.com/MichaelCurrin/docsify-js-template/master/docs/_coverpage.md) on Github as a reference.
+Then create and edit a *docs/_coverpage.md* file. You can also use the template project's [cover page](https://raw.githubusercontent.com/MichaelCurrin/docsify-js-template/master/docs/_coverpage.md) on GitHub as a reference.
 
 You can add additional buttons to the bottom of the homepage, but there should be no gaps between the lines in your file. And the _last_ one will be solid while the others will be transparent.
 
@@ -339,7 +343,7 @@ Not covered here - see [jhildenbiddle/docsify-themeable](https://github.com/jhil
 
 Optionally set a theme color. This affects how some content looks, such as quoted blocks, underlined text and buttons. This will default to theme's default if not set manually. i.e. green for _Vue_ and blue for _Buble_.
 
-```js
+```javascript
 window.$docsify = {
   themeColor: '#3F51B5',
 };
@@ -413,7 +417,7 @@ Here is a some useful button styling I added to a site. The [Bess CSS Button Gen
 
 ### 7. Advanced configuration
 
-The configuration steps above already get you a prettier and more usable site in my opinion than the barebones one which the _Docsify_ `init` command or their _Quickstart_ guide gives you. This section covers advanced steps - you may skip these and jump straight to the [Github Pages](#setup-github-pages-site) section.
+The configuration steps above already get you a prettier and more usable site in my opinion than the barebones one which the _Docsify_ `init` command or their _Quickstart_ guide gives you. This section covers advanced steps - you may skip these and jump straight to the [GitHub Pages](#setup-github-pages-site) section.
 
 #### App configuration
 
@@ -533,18 +537,18 @@ Also of interest:
     - [Awesome plugins](https://docsify.js.org/#/awesome?id=plugins)
 
 
-##### Use the Edit on Github plugin
+##### Use the Edit on GitHub plugin
 
-Load and configure this plugin to add the `Edit on Github` link in the top right of each page (excluding the cover page).
+Load and configure this plugin to add the `Edit on GitHub` link in the top right of each page (excluding the cover page).
 
-- [njleonzhang/docsify-edit-on-github](https://github.com/njleonzhang/docsify-edit-on-github) on Github.
+- [njleonzhang/docsify-edit-on-github](https://github.com/njleonzhang/docsify-edit-on-github) on GitHub.
 
 
 Load this plugin near the end of the `head` tag.
 
 !> **Important:** This will **not** work at the end of the body like most plugins, since the plugin's global variable needs be available when the app is configured.
 
-```javascript
+```html
 <script src="//unpkg.com/docsify-edit-on-github/index.js"></script>
 ```
 
@@ -556,7 +560,7 @@ Configure the plugin - see below.
 Function call:
 
 ```javascript
-EditOnGithubPlugin.create(docBase)
+EditOnGitHubPlugin.create(docBase)
 ```
 
 Here we just use one argument and ignore rest.
@@ -565,7 +569,7 @@ Arguments:
 
 - `docBase`
     - Required.
-    - It should be a full URL to the **document folder** of your Github project.
+    - It should be a full URL to the **document folder** of your GitHub project.
     - Here is the general form - use your own repo details and typically `BRANCH` is `master` and `DIRECTORY` is `docs`.
         ```
         https://github.com/USERNAME/REPONAME/blob/BRANCH/DIRECTORY/'
@@ -574,7 +578,7 @@ Arguments:
         ```javascript
         var docBase = 'https://github.com/MichaelCurrin/docsify-js-tutorial/blob/master/docs/';
 
-        EditOnGithubPlugin.create(docBase);
+        EditOnGitHubPlugin.create(docBase);
         ```
 
 Full example:
@@ -587,7 +591,7 @@ window.$docsify = {
     repo: repo,
 
     plugins: [
-        EditOnGithubPlugin.create(
+        EditOnGitHubPlugin.create(
             repo + '/blob/master/docs/'
         )
     ],
@@ -605,7 +609,7 @@ Then save and view the site.
 Function call:
 
 ```javascript
-EditOnGithubPlugin.create(docBase, docEditBase, title)
+EditOnGitHubPlugin.create(docBase, docEditBase, title)
 ```
 
 Arguments:
@@ -619,7 +623,7 @@ Arguments:
     - Set to override the message. e.g. `'Improve this page'` or `'Edit on GitHub'` or `'📝 Edit this page'`.
     - Example:
         ```javascript
-        EditOnGithubPlugin.create(
+        EditOnGitHubPlugin.create(
            repo,
            null,
            'Improve this page'
@@ -627,13 +631,13 @@ Arguments:
         ```
 
 
-## Setup Github Pages site
+## Set up GitHub Pages site
 
 If you followed the steps above, you'll have a locally running docs site.
 
-Now, commit and push the files to Github.
+Now, commit and push the files to GitHub.
 
-Next, edit your repo's setting on Github. Select the option to serve the `docs` directory of the `master` branch as Github Pages site. When you refresh the settings page, then you will see a link to your site there.
+Next, edit your repo's setting on GitHub. Select the option to serve the `docs` directory of the `master` branch as GitHub Pages site. When you refresh the settings page, then you will see a link to your site there.
 
 Open the link in the browser.
 
@@ -737,7 +741,7 @@ Raw markdown:
 
 !> Do not put two embed items in a sequence without some characters in between, otherwise you will get a JS error rending the page. Putting an empty line between them is **not** sufficient.
 
-!> If you embed a URL of a Github file, remember to use the _Raw_ URL otherwise you will get an error.
+!> If you embed a URL of a GitHub file, remember to use the _Raw_ URL otherwise you will get an error.
 
 
 ### Use DocsifyJS styling
@@ -858,7 +862,7 @@ This approach is ideal for scoring higher on search engines, as the pre-rendered
 
 This command is easy to run locally.
 
-Unfortunately this solution does **not** work on static site solutions like Github Pages or Netlify. The Docsify docs recommend using the `now` command to publish a Node.js app for free to [vercel.com/](https://vercel.com/) (previously [zeit.co](https://zeit.co/)).
+Unfortunately this solution does **not** work on static site solutions like GitHub Pages or Netlify. The Docsify docs recommend using the `now` command to publish a Node.js app for free to [vercel.com/](https://vercel.com/) (previously [zeit.co](https://zeit.co/)).
 
 
 ## Static site vs SPA
@@ -873,10 +877,9 @@ See [Server-Side Rendering](https://docsify.js.org/#/ssr) section of the _Docsif
 
 I don't think it'll includes a sitemap file.
 
-
 ### Why not use a static site generator?
 
-_Docsify_ is a SPA, not a static-site generator.
+_Docsify_ is a SPA, not a static-site generator. Though this should hopefully change when Docsify version 5 comes out.
 
 _Jekyll_ and _Hugo_ are excellent options for static site generators. They can use themes suited to documentation and they can build off of a _docs_ directory. If you want to read more about those, see my [resources](https://github.com/MichaelCurrin/static-sites-generator-resources) project.
 
