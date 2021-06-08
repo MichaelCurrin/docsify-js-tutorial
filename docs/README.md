@@ -6,7 +6,6 @@
 [![forks - docsify-js-tutorial](https://img.shields.io/github/forks/MichaelCurrin/docsify-js-tutorial?style=social)](https://github.com/MichaelCurrin/docsify-js-tutorial)
 
 [![GitHub tag](https://img.shields.io/github/tag/MichaelCurrin/docsify-js-tutorial?color=3271a8)](https://GitHub.com/MichaelCurrin/docsify-js-tutorial/tags/)
-[![License](https://img.shields.io/badge/License-MIT-3271a8)](https://github.com/MichaelCurrin/docsify-js-tutorial/blob/master/README.md#license)
 
 [![Made with Docsify latest](https://img.shields.io/npm/v/docsify?label=docsify&color=3271a8)](https://docsify.js.org/)
 
