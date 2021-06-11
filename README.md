@@ -11,12 +11,12 @@
 ## Preview
 
 <div align="center">
-    <a href="https://michaelcurrin.github.io/docsify-js-tutorial/#/">
+    <a href="https://michaelcurrin.github.io/docsify-js-tutorial/">
         <img src="/sample-1.png" alt="Sample screenshot" title="Sample screenshot" width="400" />
     </a>
     <br>
     <br>
-    <a href="https://michaelcurrin.github.io/docsify-js-tutorial/#/">
+    <a href="https://michaelcurrin.github.io/docsify-js-tutorial/">
         <img src="/sample-2.png" alt="Sample screenshot" title="Sample screenshot" width="600" />
     </a>
 </div>
@@ -79,7 +79,7 @@ My aims for building a docs site were as follows and Docsify meets all of them:
 
 - Add as little code and configuration as possible. Focus on the content, with a bit of styling.
 - Be easy to maintain.
-- Quick to get setup on existing projects.
+- Quick to get set up on existing projects.
 - It should be easy to repeat across many projects, without having to deal to have headaches with each. (Like a lot of boilerplate code, or installation issues, or drift as layouts/features are added to one and not the others.)
 - Have **no** HTML layout files to maintain.
 - Reduce dependencies and keep installation simple.
