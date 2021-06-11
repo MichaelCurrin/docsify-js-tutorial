@@ -33,6 +33,7 @@ This project is for you if you answer _yes_ to any of the following:
 - Never heard of DocsifyJS?
 - Want to add features and style to your DocsifyJS site?
 - Looking for a template which is based on real world use?
+- Can I make a build a docs site without having a build step?
 
 
 ## Set up a _Docsify_ site to run
