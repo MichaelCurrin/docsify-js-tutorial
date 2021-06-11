@@ -9,9 +9,10 @@
 
 [![Made with Docsify latest](https://img.shields.io/npm/v/docsify?label=docsify&color=3271a8)](https://docsify.js.org/)
 
-Convert your **docs** folder into a pretty and modern docs website. Using a JavaScript library called DocsifyJS and some minimal set up. 
 
-?> See [docsify.js.org](https://docsify.js.org/) homepage or te [docsify](https://www.npmjs.com/package/docsify) package on NPM.
+Convert your **docs** folder into a pretty and modern docs website, built around your Markdown content and a theme. Here we'll use a JavaScript library called DocsifyJS and do some minimal set up that is accessible for those without JavaScript experience. 
+
+?> See [docsify.js.org](https://docsify.js.org/) homepage or the [docsify](https://www.npmjs.com/package/docsify) package on NPM.
 
 Unlike other JavaScript-based frameworks, DocsifyJS needs just a few lines of JavaScript as configuration and the rest of your content is mostly Markdown and YAML. It is built on Vue, but you don't need to know anything about Vue to get the benefits.
 
@@ -29,8 +30,8 @@ Code snippets and recommendations are provided here as kind of cheatsheet or coo
 This project is for you if you answer _yes_ to any of the following:
 
 - Are you new to making a docs site?
-- Tired of writing HTML/CSS/JS and just want to write docs using plain markdown?
-- Never heard of DocsifyJS?
+- Tired of writing HTML/CSS/JS and just want to write docs using plain Markdown?
+- What is DocsifyJS?
 - Want to add features and style to your DocsifyJS site?
 - Looking for a template which is based on real world use?
 - Can I make a build a docs site without having a build step?
