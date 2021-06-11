@@ -10,7 +10,7 @@
 [![Made with Docsify latest](https://img.shields.io/npm/v/docsify?label=docsify&color=3271a8)](https://docsify.js.org/)
 
 
-Convert your **docs** folder into a pretty and modern docs website, built around your Markdown content and a theme. Here we'll use a JavaScript library called DocsifyJS and do some minimal set up that is accessible for those without JavaScript experience. 
+Convert your **docs** folder into a pretty and modern docs website, built around your Markdown content and a theme. Here we'll use a JavaScript library called DocsifyJS and do some minimal set up that is accessible for those without JavaScript experience.
 
 ?> See [docsify.js.org](https://docsify.js.org/) homepage or the [docsify](https://www.npmjs.com/package/docsify) package on NPM.
 
@@ -18,7 +18,7 @@ Unlike other JavaScript-based frameworks, DocsifyJS needs just a few lines of Ja
 
 This project's site itself is also running on _DocsifyJS_. :tada:
 
-Start below with the basics, or skip to the later sections with the sidebar to get to menu customization, plugins and styling. 
+Start below with the basics, or skip to the later sections with the sidebar to get to menu customization, plugins and styling.
 
 Code snippets and recommendations are provided here as kind of cheatsheet or cookbook, so you don't have to spend a lot of time pouring over all the possible options and features covered in the docs that you probably don't need to know.
 
@@ -129,7 +129,7 @@ As usual external resource can be linked e.g. `https://example.com`.
 
 #### Rules for internal links
 
-DocsifyJS will render markdown links in your docs as appropriate paths in the DocsifyJS structure.
+DocsifyJS will render Markdown links in your docs as appropriate paths in the DocsifyJS structure.
 
 Apply these rules to the target part of markdown URLs `[Text](target.md#some-id)`.
 
@@ -145,15 +145,47 @@ Apply these rules to the target part of markdown URLs `[Text](target.md#some-id)
 - Do **not** refer to content outside of the `docs` directory.  e.g. `../README.md`.
 - If you use relative links between files in the `docs` directory - make sure to enable this in the app config.
 
+#### Subdirectory links
+
+Warning. In the default mode, if you want to link to `my-dir/README.md`, this will **not** work as expected.
+
+```markdown
+[My text](my-dir/)
+```
+
+It will become equivalent to this.
+
+```markdown
+[My text](/#/my-dir)
+```
+
+Which will be a broken URL. Or weird looking e.g. `/?id=docsify-cli#/vue-integration/`.
+
+If you are linking to a file in a directory like `my-dir
+
+Get around this by using an HTML link.
+
+```html
+<a href="my-dir/">My text</a>
+```
+
+Or by adding a forward slash - which might break your site like on GitHub Pages subpath sites.
+
+```markdown
+[My text](/my-dir/)
+```
+
+If you switch to history [Router Mode](#router-mode), this won't matter.
+
 #### HTML links
 
-_NB. It's best to avoid using HTML tags with hyperlinks and rather use markdown._
+It's best to avoid using HTML tags with hyperlinks and rather use Markdown where possible.
 
-HTML tag hyperlinks will be rendered literally and so will break in the Docsify path structure e.g. `foo.md` or `foo.md#my-project`.
+HTML tag hyperlinks will be rendered literally and so will **break** in the Docsify path structure e.g. `href="foo.md"` is bad but `[](foo.md)` is good.
 
 You can set them up manually, which makes them harder to maintain if your site structure changes. e.g. `href="/#/id=my-project"` or `href="/#/foo.md?id=my-project"`.
 
-Also note that the root prefix is needed for Docsify paths to work, but you'll also need to hardcode your repo name in which is fragile too. e.g. `href="/my-repo/#/id=my-project"`
+Also note that the root prefix is needed for Docsify paths to work, but you'll also need to hard-code your repo name in which is fragile too. e.g. `href="/my-repo/#/id=my-project"`
 
 
 ## Quickstart local server
@@ -545,7 +577,6 @@ Also of interest:
     - [List of Plugins](https://docsify.js.org/#/plugins?id=list-of-plugins)
     - [Awesome plugins](https://docsify.js.org/#/awesome?id=plugins)
 
-
 ##### Use the Edit on GitHub plugin
 
 Load and configure this plugin to add the `Edit on GitHub` link in the top right of each page (excluding the cover page).
@@ -638,6 +669,50 @@ Arguments:
            'Improve this page'
         );
         ```
+
+#### Router mode
+
+See [Router mode](https://docsify.js.org/#/configuration?id=routermode) in the docs.
+
+The default is hash.
+
+```javascript
+window.$docsify = {
+  routerMode: 'hash'
+};
+```
+
+This gives URLs like:
+
+- `/#/about`
+
+The advantage is that navigating between pages does _not_ trigger an entire refresh of the page (and a white screen for a bit)
+
+But, if you want slash URLs without the reload, you can configure Docsify to do this.
+
+This relies on the the browser's HTML5 History API, so won't work in older browsers.
+
+```javascript
+window.$docsify = {
+  routerMode: 'history'
+};
+```
+
+Then your paths will be like:
+
+- `/about`
+
+The JS will push state to the browser to control navigation, avoiding a reload.
+
+?> This can make things weird with the Docsify dev server when saving a file and refreshing but this should be okay on a deployed site.
+
+The caveat is that any bad URLs will not fallback to the app, going server error page. And clicking on an external URL to get to your site will also break.
+
+So you need to accept that and check your links carefully or you need to configure a page routing on Nginx or Netlify for example, to handle your routing properly (see Vue Router docs). GitHub Pages unfortunately does not let you configure that.
+
+When it comes to converting your site to a static site for SEO benefit, this is something that is worth setting.
+
+<!-- (I wish I'd know about this at the point when I tried that the first time) -->
 
 
 ## Set up GitHub Pages site
@@ -790,10 +865,9 @@ Docsify is built on Vue.js. So the community has provided a section of the docs 
 
 I followed that guide to put together a Vue demo and basic Vue-Docsify integration intro.
 
-You still have to add Vue to your external JS assets, but at least the app is initialized for you which saves some code.
+You still have to add Vue to your external JS assets, but at least the app is initialized for you, which saves some code.
 
-<!-- Keep as HTML. Making a markdown link does not work - it turns [](vue-integration/) to [](/#/vue-integration) even with a leading forward slash. -->
-<a href="vue-integration/">Vue Example</a>
+Go to <a href="vue-integration">Vue Example</a> on this site.
 
 That sample has its own files like `_sidebar.yml` and `index.html`, so it is a demo site hosted within this main tutorial site.
 
@@ -808,7 +882,7 @@ See resources:
 - [Docsify CLI](https://docsifyjs.github.io/docsify-cli) project's docs.
 
 
-### Setup
+### Set up
 
 Follow the instructions in [Quickstart local server](#quickstart-local-server).
 
