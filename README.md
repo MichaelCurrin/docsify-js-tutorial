@@ -1,11 +1,11 @@
 # DocsifyJS Tutorial
 > How to build a markdown-based docs site using _DocsifyJS_ and _GH Pages_ 👩‍🏫 🏗 📒 🕸
 
-[![GitHub tag](https://img.shields.io/github/tag/MichaelCurrin/docsify-js-tutorial)](https://GitHub.com/MichaelCurrin/docsify-js-tutorial/tags/)
-[![License](https://img.shields.io/badge/License-MIT-blue)](#license)
+[![GitHub tag](https://img.shields.io/github/tag/MichaelCurrin/docsify-js-tutorial?color=3271a8)](https://GitHub.com/MichaelCurrin/docsify-js-tutorial/tags/)
+[![License](https://img.shields.io/badge/License-MIT-3271a8)](#license)
 
-[![Made with Docsify latest](https://img.shields.io/npm/v/docsify?label=docsify)](https://docsify.js.org/)
-[![Hosted with GH Pages](https://img.shields.io/badge/Hosted_with-GitHub_Pages-blue?logo=github&logoColor=white)](https://pages.github.com/)
+[![Made with Docsify latest](https://img.shields.io/npm/v/docsify?label=docsify&color=3271a8)](https://docsify.js.org/)
+[![Hosted with GH Pages](https://img.shields.io/badge/Hosted_with-GitHub_Pages-3271a8?logo=github&logoColor=white)](https://pages.github.com/)
 
 
 ## Preview
@@ -30,7 +30,7 @@ Follow the online tutorial. Start with the basics or get to the menu customizati
 
 <div align="center">
 
-[![DocsifyJS Tutorial](https://img.shields.io/badge/View-DocsifyJS_Tutorial_site-2ea44f?style=for-the-badge)](https://michaelcurrin.github.io/docsify-js-tutorial/#/)
+[![DocsifyJS Tutorial](https://img.shields.io/badge/View-DocsifyJS_Tutorial_site-2ea44f?style=for-the-badge)](https://michaelcurrin.github.io/docsify-js-tutorial/)
 
 </div>
 
@@ -40,7 +40,7 @@ Want to make a Docsify site? I have a template project you can use. It has enoug
 
 <div align="center">
 
-[![DocsifyJS Template](https://img.shields.io/badge/Generate-DocsifyJS_Template-blue?style=for-the-badge)](https://michaelcurrin.github.io/docsify-js-template/#/)
+[![DocsifyJS Template](https://img.shields.io/badge/Generate-DocsifyJS_Template-3271a8?style=for-the-badge)](https://michaelcurrin.github.io/docsify-js-template/)
 
 </div>
 
@@ -59,7 +59,7 @@ It also assumes you already have a docs directory in a project and you want to t
 
 This project's own site is built on _DocsifyJS_ so serves as a good example. It serves from the `docs` directory. There is no main application to separate from `docs` directory, so serving from that directory is just convenient.
 
-See also the [Nested Example](/nested-example/README.md) section on the repo for understanding links in markdown and the sidebar.
+See also the [Nested Example](/nested-example/README.md) section on the repo for understanding links in Markdown and the sidebar.
 
 
 ## Use a template 🖨️
