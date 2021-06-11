@@ -8,7 +8,7 @@ Add the Vue script as a script tag. Here is an example using Vue and then Docsif
 ```html
 <script>
 window.$docsify = {
-//    ...
+    // ...
 }
 </script>
 
@@ -19,9 +19,9 @@ window.$docsify = {
 
 ## Add Vue elements
 
-Next, add HTML elements which have appropriate Vue.js syntax. 
+Next, add HTML elements which have appropriate Vue.js syntax.
 
-Note that you do not have to setup `Vue()` in any script tag - you only need the HTML.
+Note that you do not have to set up the Vue instance in any script tag - you only need the HTML.
 
 For example, see a demo of `v-for` usage.
 
