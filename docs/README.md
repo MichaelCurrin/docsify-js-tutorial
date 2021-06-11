@@ -11,7 +11,7 @@
 
 Convert your **docs** folder into a pretty and modern docs website. Using a JavaScript library called DocsifyJS and some minimal set up. 
 
-?> [DocsifyJS](https://docsify.js.org/) homepage
+?> See [docsify.js.org](https://docsify.js.org/) homepage or te [docsify](https://www.npmjs.com/package/docsify) package on NPM.
 
 Unlike other JavaScript-based frameworks, DocsifyJS needs just a few lines of JavaScript as configuration and the rest of your content is mostly Markdown and YAML. It is built on Vue, but you don't need to know anything about Vue to get the benefits.
 
