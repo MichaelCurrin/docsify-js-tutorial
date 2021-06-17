@@ -12,7 +12,7 @@
 
 <div align="center">
     <a href="https://michaelcurrin.github.io/docsify-js-tutorial/">
-        <img src="/sample-1.png" alt="Sample screenshot" title="Sample screenshot" width="400" />
+        <img src="/sample-1.png" alt="Sample screenshot" title="Sample screenshot" width="500" />
     </a>
     <br>
     <br>
