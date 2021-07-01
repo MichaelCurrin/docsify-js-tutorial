@@ -964,9 +964,13 @@ I don't think it'll includes a sitemap file.
 
 _Docsify_ is a Single-Page Application library. It is **not** a static-site generator (though, hopefully this will change when Docsify version 5 comes out).
 
-_Jekyll_ and _Hugo_ are excellent options for static site generators. They can use themes suited to documentation and they can build off of a _docs_ directory. See more info in my [Jekyll Resources](https://michaelcurrin.github.io/dev-resources/resources/jekyll/). If you are interested in a Jekyll template that is built around presenting a docs site, see [jekyll-gh-actions-quickstart](https://github.com/MichaelCurrin/jekyll-gh-actions-quickstart).
+If you are into Rust, check out [mdBook](https://rust-lang.github.io/mdBook/) to generate an online book from Markdown. It works great as a docs site generator.
 
-Jekyll and Uho are just tools to build a site. What is appropriate depends on your use-case, how much you need to customized the site and how much effort you want to spend on installing/running/maintaining the project.
+_Jekyll_ and _Hugo_ are excellent options for static site generators, not just for docs sites. They can use themes suited to documentation and they can build off of a _docs_ directory. See more info in my [Jekyll Resources](https://michaelcurrin.github.io/dev-resources/resources/jekyll/). 
+
+If you are interested in a Jekyll template that is built around presenting a docs site specifcally, see [jekyll-gh-actions-quickstart](https://github.com/MichaelCurrin/jekyll-gh-actions-quickstart).
+
+These are just tools to build a site. What is appropriate depends on your use-case, how much you need to customized the site and how much effort you want to spend on installing/running/maintaining the project.
 
 I find _Docsify_ light to add to a project and to use for new projects. So it is a great fit for me.
 
