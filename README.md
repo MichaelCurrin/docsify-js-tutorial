@@ -3,6 +3,7 @@
 
 [![GitHub tag](https://img.shields.io/github/tag/MichaelCurrin/docsify-js-tutorial?color=3271a8)](https://GitHub.com/MichaelCurrin/docsify-js-tutorial/tags/)
 [![License](https://img.shields.io/badge/License-MIT-3271a8)](#license)
+[![contributions - welcome](https://img.shields.io/badge/contributions-welcome-blue)](/CONTRIBUTING.md)
 
 [![Made with Docsify latest](https://img.shields.io/npm/v/docsify?label=docsify&color=3271a8)](https://docsify.js.org/)
 [![Hosted with GH Pages](https://img.shields.io/badge/Hosted_with-GitHub_Pages-3271a8?logo=github&logoColor=white)](https://pages.github.com/)
@@ -96,7 +97,7 @@ _Docsify_ works as a single-page application on this one page - data from your m
 
 ## Contributing
 
-The repo is open for accepting contributions through a Pull Request on a fork.
+See [Contributing](/CONTRIBUTING.md) guidelines.
 
 
 ## License
