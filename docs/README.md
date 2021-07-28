@@ -1,5 +1,5 @@
 # DocsifyJS Tutorial
-> How to build a docs site using _DocsifyJS_ and _GitHub Pages_
+> Build a Markdown-based docs site using _DocsifyJS_ and _GitHub Pages_
 
 [![MichaelCurrin - docsify-js-tutorial](https://img.shields.io/static/v1?label=MichaelCurrin&message=docsify-js-tutorial&color=3271a8&logo=github)](https://github.com/MichaelCurrin/docsify-js-tutorial)
 [![stars - docsify-js-tutorial](https://img.shields.io/github/stars/MichaelCurrin/docsify-js-tutorial?style=social)](https://github.com/MichaelCurrin/docsify-js-tutorial)
