@@ -109,10 +109,10 @@ Main components of a _Docsify_ site:
     - First page that a user sees, after the cover page. This is a content page written in markdown and it could be the only page of your site if you like.
 - **index page**
     - HTML file base of the app.
-    - This includes JS and CSS calls for setting up and styling the _Docsify_ app. Plus JS code which you set to customize the app.
+    - This includes JS and CSS calls for setting up and styling the _Docsify_ app. Plus some JS code which you set to customize the app.
 - **sidebar config**
     - Optional.
-    - Describes the menu layout for the **left sidebar**, using custom ordering and nested structure. _Docsify_ is not aware of directory structure, so this is where you get to define your menu. Alternatively, let _Docsify_ create the menu bar based on the structure of your homepage (`_docs/README.md`) file - this works best if you only have a single content markdown page or a _navbar_ (top of the screen) to switch between sections.
+    - Describes the menu layout for the **left sidebar**, using custom ordering and nested structure. _Docsify_ is not aware of directory structure, so this is where you get to define your menu. Alternatively, let _Docsify_ fill the sidebar for you, based on the structure of your homepage (`docs/README.md`) file - this works best if you only have a single content Markdown page. If you have multiple pages each with their own auto sidebar, you can us the _navbar_ (top of the screen) to switch between them.
 - **navbar config**
     - Optional.
     - Describes the menu layout for the **top right menu**.
