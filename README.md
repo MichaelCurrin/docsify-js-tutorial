@@ -3,7 +3,7 @@
 
 [![GitHub tag](https://img.shields.io/github/tag/MichaelCurrin/docsify-js-tutorial?color=3271a8)](https://GitHub.com/MichaelCurrin/docsify-js-tutorial/tags/)
 [![License](https://img.shields.io/badge/License-MIT-3271a8)](#license)
-[![contributions - welcome](https://img.shields.io/badge/contributions-welcome-blue)](/CONTRIBUTING.md)
+[![contributions - welcome](https://img.shields.io/badge/contributions-welcome-3271a8)](/CONTRIBUTING.md)
 
 [![Made with Docsify latest](https://img.shields.io/npm/v/docsify?label=docsify&color=3271a8)](https://docsify.js.org/)
 [![Hosted with GH Pages](https://img.shields.io/badge/Hosted_with-GitHub_Pages-3271a8?logo=github&logoColor=white)](https://pages.github.com/)
