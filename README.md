@@ -5,8 +5,8 @@
 [![License](https://img.shields.io/badge/License-MIT-3271a8)](#license)
 [![contributions - welcome](https://img.shields.io/badge/contributions-welcome-3271a8)](/CONTRIBUTING.md)
 
-[![Made with Docsify latest](https://img.shields.io/npm/v/docsify?label=docsify&color=3271a8)](https://docsify.js.org/)
-[![Hosted with GH Pages](https://img.shields.io/badge/Hosted_with-GitHub_Pages-3271a8?logo=github&logoColor=white)](https://pages.github.com/)
+[![Made with Docsify latest](https://img.shields.io/npm/v/docsify?label=docsify&color=3271a8)](https://docsify.js.org/ "Go to Docsify homepage")
+[![Hosted with GH Pages](https://img.shields.io/badge/Hosted_with-GitHub_Pages-3271a8?logo=github&logoColor=white)](https://pages.github.com/ "Go to GitHub Pages docs")
 
 
 ## Preview
@@ -18,7 +18,7 @@
     <br>
     <br>
     <a href="https://michaelcurrin.github.io/docsify-js-tutorial/">
-        <img src="/sample-2.png" alt="Sample screenshot" title="Sample screenshot" width="600" />
+        <img src="/sample-2.png" alt="Sample screenshot" title="Sample screenshot" width="500" />
     </a>
 </div>
 
