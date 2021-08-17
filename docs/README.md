@@ -1,16 +1,16 @@
 # DocsifyJS Tutorial
 > Build a Markdown-based docs site using _DocsifyJS_ and _GitHub Pages_
 
-[![MichaelCurrin - docsify-js-tutorial](https://img.shields.io/static/v1?label=MichaelCurrin&message=docsify-js-tutorial&color=3271a8&logo=github)](https://github.com/MichaelCurrin/docsify-js-tutorial)
+[![GitHub tag](https://img.shields.io/github/tag/MichaelCurrin/docsify-js-tutorial?color=3271a8)](https://GitHub.com/MichaelCurrin/docsify-js-tutorial/tags/)
 [![stars - docsify-js-tutorial](https://img.shields.io/github/stars/MichaelCurrin/docsify-js-tutorial?style=social)](https://github.com/MichaelCurrin/docsify-js-tutorial)
 [![forks - docsify-js-tutorial](https://img.shields.io/github/forks/MichaelCurrin/docsify-js-tutorial?style=social)](https://github.com/MichaelCurrin/docsify-js-tutorial)
 
-[![GitHub tag](https://img.shields.io/github/tag/MichaelCurrin/docsify-js-tutorial?color=3271a8)](https://GitHub.com/MichaelCurrin/docsify-js-tutorial/tags/)
-
-[![Made with Docsify latest](https://img.shields.io/npm/v/docsify?label=docsify&color=3271a8)](https://docsify.js.org/)
+[![Made with Docsify latest](https://img.shields.io/npm/v/docsify?label=docsify&color=3271a8)](https://docsify.js.org/ "Go to Docsify homepage")
 
 
-Convert your **docs** folder into a pretty and modern docs website, built around your Markdown content and a theme. Here we'll use a JavaScript library called DocsifyJS and do some minimal set up that is accessible for those without JavaScript experience.
+Convert your **docs** folder into a pretty and modern docs website, built around your Markdown content and a theme. 
+
+Using a JavaScript library called "DocsifyJS", this tutorial shows you how by doing some light set up. This can all be done on the GitHub and is simple enough for those without JavaScript experience and does not require using Node.
 
 ?> See [docsify.js.org](https://docsify.js.org/) homepage or the [docsify](https://www.npmjs.com/package/docsify) package on NPM.
 
@@ -23,6 +23,8 @@ Start below with the basics, or skip to the later sections with the sidebar to g
 Code snippets and recommendations are provided here as kind of cheatsheet or cookbook, so you don't have to spend a lot of time pouring over all the possible options and features covered in the docs that you probably don't need to know.
 
 ?> _DocsifyJS_ is sometimes just called _Docsify_ in this guide. Also known as _Docsify.js_.
+
+?> View source: [![MichaelCurrin - docsify-js-tutorial](https://img.shields.io/static/v1?label=MichaelCurrin&message=docsify-js-tutorial&color=3271a8&logo=github)](https://github.com/MichaelCurrin/docsify-js-tutorial)
 
 
 ## Purpose of this tutorial
