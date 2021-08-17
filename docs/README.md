@@ -73,11 +73,11 @@ I like that once I have the HTML set up that Incan focus on markdown content and
 
 When you use _Docsify_ with its defaults or very simple tweaks, you get a pretty UI with menus, themes, mobile functionality and a cover page. Page loads are seamless in the app shell, as it is a SPA. These are things that take more effort and code changes or additions, if you want to do them with static-site generators. _Docsify_ also had documentation as its main purpose, unlike some other tools.
 
-There are some downsides like Docsify does not have static site support yet (which makes it weak for SEO rankings) and there are only 4 themes, which are just color scheme changes. And the dark one doesn't have good contrast for certain things.
+There are some downsides like _Docsify_ does not have static site support yet (which makes it weak for SEO rankings) and there are only 4 themes, which are just color scheme changes. And the dark one doesn't have good contrast for certain things.
 
 ![icon](_media/docs_brackets.png)
 
-This great [article](https://dev.to/evilmartians/keeping-oss-documentation-with-docsify-lefthook-and-friends-11e5) on dev.to covers a journey from README to Wiki to Jekyll and finally Docsify, if you are interested to compare those.
+This great [article](https://dev.to/evilmartians/keeping-oss-documentation-with-docsify-lefthook-and-friends-11e5) on dev.to covers a journey from README to Wiki to Jekyll and finally _Docsify_, if you are interested to compare those.
 
 
 ## Resources
@@ -185,11 +185,11 @@ If you switch to history [Router Mode](#router-mode), this won't matter.
 
 It's best to avoid using HTML tags with hyperlinks and rather use Markdown where possible.
 
-HTML tag hyperlinks will be rendered literally and so will **break** in the Docsify path structure e.g. `href="foo.md"` is bad but `[](foo.md)` is good.
+HTML tag hyperlinks will be rendered literally and so will **break** in the _Docsify_ path structure e.g. `href="foo.md"` is bad. But `[](foo.md)` is good.
 
 You can set them up manually, which makes them harder to maintain if your site structure changes. e.g. `href="/#/id=my-project"` or `href="/#/foo.md?id=my-project"`.
 
-Also note that the root prefix is needed for Docsify paths to work, but you'll also need to hard-code your repo name in which is fragile too. e.g. `href="/my-repo/#/id=my-project"`
+Also note that the root prefix is needed for _Docsify_ paths to work, but you'll also need to hard-code your repo name in which is fragile too. e.g. `href="/my-repo/#/id=my-project"`
 
 
 ## Quickstart local server
@@ -588,16 +588,15 @@ Load and configure this plugin to add the `Edit on GitHub` link in the top right
 - [njleonzhang/docsify-edit-on-github](https://github.com/njleonzhang/docsify-edit-on-github) on GitHub.
 
 
-Load this plugin near the end of the `head` tag.
-
-!> **Important:** This will **not** work at the end of the body like most plugins, since the plugin's global variable needs be available when the app is configured.
+Load this plugin inside the `head` tag. 
 
 ```html
 <script src="//unpkg.com/docsify-edit-on-github/index.js"></script>
 ```
 
-Configure the plugin - see below.
+Then your configuration set up in the `body` tag will using a vlue set by the script.
 
+Configure the plugin in the `body`. See below.
 
 **Basic usage**
 
@@ -620,7 +619,7 @@ Arguments:
         ```
     - Example based on this repo:
         ```javascript
-        var docBase = 'https://github.com/MichaelCurrin/docsify-js-tutorial/blob/master/docs/';
+        const docBase = 'https://github.com/MichaelCurrin/docsify-js-tutorial/blob/master/docs/';
 
         EditOnGitHubPlugin.create(docBase);
         ```
@@ -628,7 +627,7 @@ Arguments:
 Full example:
 
 ```javascript
-var repo = 'https://github.com/MichaelCurrin/docsify-js-tutorial';
+const repo = 'https://github.com/MichaelCurrin/docsify-js-tutorial';
 
 window.$docsify = {
     name: 'DocsifyJS Tutorial',
@@ -744,10 +743,10 @@ You can embed content such as video, audio, iframes (`.html`), code blocks or ev
 
 #### Embed format
 
-Add the `':include'` parameter in a markdown URL reference. Here is the format:
+Add the `":include"` parameter in a markdown URL reference. Here is the format:
 
 ```markdown
-[filename](url ':include')
+[filename](url ":include")
 ```
 
 The URL could be a local file (e.g. `_media/foo.js`) or a remote URL `https://...`.
@@ -890,10 +889,9 @@ See resources:
 
 Follow the instructions in [Quickstart local server](#quickstart-local-server).
 
+### Docsfiy subcommands
 
-### Commands
-
-#### `docsify init`
+#### init subcommand
 
 > Creates new docs
 
@@ -905,7 +903,7 @@ e.g.
 $ docsify init docs
 ```
 
-#### `docsify serve`
+#### serve subcommand
 
 > Run local server to preview site.
 
@@ -925,7 +923,7 @@ Serves at [localhost:3000/](http://localhost:3000/), or a different port if ther
 
 This uses is the main use for Docsify - an `index.html` page is served, the JS is loaded on the frontend and then markdown pages are requested and converted to HTML as needed. It is a **Single-Page Application**, so will work great from a user perspective but will score low on search engines. Even though the SEO crawlers can handle JavaScript, there is limited "crawl budget" for a JavaScript-based SPA so this means less of your site is crawled or your site is rated poorly. Constrast with the option below.
 
-#### `docsify start`
+#### start subcommand
 
 > Server for SSR
 
