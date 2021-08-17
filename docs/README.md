@@ -615,7 +615,7 @@ Arguments:
     - It should be a full URL to the **document folder** of your GitHub project.
     - Here is the general form - use your own repo details and typically `BRANCH` is `master` and `DIRECTORY` is `docs`.
         ```
-        https://github.com/USERNAME/REPONAME/blob/BRANCH/DIRECTORY/'
+        https://github.com/USERNAME/REPONAME/blob/BRANCH/DIRECTORY/
         ```
     - Example based on this repo:
         ```javascript
