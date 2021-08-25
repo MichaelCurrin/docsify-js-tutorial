@@ -23,8 +23,10 @@
 
     </style>
 
-    <!-- Plugins that are needed before app configuration. -->
     <script src="//unpkg.com/docsify-edit-on-github/index.js"></script>
+    
+    <script defer src="//unpkg.com/docsify/lib/docsify.min.js"></script>
+    <script defer src="//cdn.jsdelivr.net/npm/prismjs/components/prism-markdown.min.js"></script>
 
 </head>
 
@@ -32,30 +34,25 @@
     <div id="app"></div>
 
     <script>
-        var repo = 'https://github.com/MichaelCurrin/docsify-js-tutorial';
+        var repoUrl = "https://github.com/MichaelCurrin/docsify-js-tutorial";
+        var editPath = repoUrl + "/blob/master/docs/";
+        var editMsg = "📝 Edit on GitHub";
 
         window.$docsify = {
-            name: 'DocsifyJS Tutorial',
-            repo,
+            name: "DocsifyJS Tutorial",
+            repo: repoUrl,
+            
             auto2top: true,
             coverpage: true,
             loadSidebar: false,
-            themeColor: '#3271a8',
+            themeColor: "#3271a8",
 
             plugins: [
-                EditOnGithubPlugin.create(
-                    repo + '/blob/master/docs/',
-                    null,
-                    '📝 Edit on GitHub',
-                )
+                EditOnGithubPlugin.create(editPath, null, editMsg)
             ],
         };
 
     </script>
-
-    <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
-
-    <script src="//cdn.jsdelivr.net/npm/prismjs/components/prism-markdown.min.js"></script>
 
 </body>
 
