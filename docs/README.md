@@ -349,11 +349,11 @@ You can delete the cover page and disable it in _index.html_.
 
 You can change the background image for your cover page.
 
-If you don't set a cover background, you'll just get a randomy one on every refresh. It might be a solid color or a gradient.
+If you do not set a cover background, you'll just get a **random** one on every page load - it might be a solid color or a gradient.
 
 The _Docsify_ site explains how to set a background image or color [here](https://docsify.js.org/#/cover?id=custom-background).
 
-Your background image code should come at the _bottom_ of your cover file's code._Docsify_ looks for an image there then uses CSS to place the image behind the content and give it faded grey look.
+Your background image code should come at the **end** of your coverpage file. As _Docsify_ looks for an image there then uses CSS to place the image behind the content and give it a faded grey look.
 
 See code examples below for adding a custom background image:
 
@@ -362,11 +362,15 @@ See code examples below for adding a custom background image:
     ![color](#f0f0f0)
     ```
 - Gradient color.
-    - Choose a gradient used to be supported but does not work anymore, so is not covered here.
-- Load an image file. The text label can be anything.
+    - Choosing a custom gradient was supported but does **not** work anymore, so it is not covered here.
+- Image. The text label can be anything - use some fallback text in case the image is broken.
     ```markdown
-    ![cover background image](_media/cover-bg.jpg)
+    ![Cover background image](_media/cover-bg.jpg)
     ```
+    
+You probably want to set the `themeColor` in the `index.html` to go well with your coverpage. See [Theme color](#6.1-theme-color) below.
+
+e.g. This tutorial has a grey value for cover and blue value for theme color.
 
 #### Cover logo
 
@@ -419,10 +423,10 @@ Note: The _Buble_ theme has sidebar headings which are not distinguished from th
 
 ```html
 <style>
-    .sidebar .sidebar-nav>ul>li {
-        font-weight: 700;
-        margin: 0;
-    }
+  .sidebar .sidebar-nav>ul>li {
+    font-weight: 700;
+    margin: 0;
+  }
 </style>
 ```
 
@@ -432,7 +436,7 @@ You can easily reuse the theme color set early:
 
 ```css
 .myButton {
-    background-color: var(--theme-color);
+  background-color: var(--theme-color);
 }
 ```
 
