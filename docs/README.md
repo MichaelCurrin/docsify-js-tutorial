@@ -738,41 +738,52 @@ To make the most of Docsify, update your content using the next section.
 
 
 ## Write content
-> How to update and add to the content of your doc files so that they work well in Docsify.
+> How to update and add to the content of your doc files so that they work well in Docsify
 
 
 ### Embed
 
-You can embed content such as video, audio, iframes (`.html`), code blocks or even Markdown files.
+You can embed content such as 
+
+- Media - video, audio, iframes (`.html`)
+- Code that appears as a code block
+- Markdown or HTML that gets rendered on the page seamlessly.
 
 #### Embed format
 
 Add the `":include"` parameter in a markdown URL reference. Here is the format:
 
 ```markdown
-[filename](url ":include")
+[LABEL](PATH ":include")
 ```
 
-The URL could be a local file (e.g. `_media/foo.js`) or a remote URL `https://...`.
+If you want to embed as a **code block**, you can use the automatic formatting. But markdown and HTML files need to be marked as a code using `type` parameter if you want them as code rather than HTML.
 
-The remote file could be anywhere:
+```
+":include :type=code"
+```
 
-- On a server
-    - e.g. `assets/js/main.js`
-- Repo reference
-    - Use the **raw** URL so you only reference plain text.
-    - Protocol of `//` is recommended, since `https://` is needed for a remote and `http://` for localhost, to avoid a CORS error.
-    - e.g. `https://raw.githubusercontent.com/MichaelCurrin/docsify-js-tutorial/master/nested-example/_sidebar.md`
-- A gist reference
+The path could be:
+
+- On the static server.
+    e.g. `foo/hello.md`
+
+    ```markdown 
+    [hello.js](/path/to/hello.md ":include")
+    ```
+- URL for a file on a public GitHub repo.
+    - e.g.
+        ```markdown
+        [hello.md](//raw.githubusercontent.com/UserName/repo-name/main/hello.md ":include")
+
+        [\_sidebar.md](//raw.githubusercontent.com/MichaelCurrin/docsify-js-tutorial/master/nested-example/_sidebar.md ":include :type=code")
+        ```
+    - Make sure to use the **raw** URL so you only reference plain text andbnot the entire GitHub UI HTML.
+    - A protocol of `//` is recommended, since `https://` is needed for a remote and `http://` for localhost, to avoid a CORS error.
+- A gist reference.
     - See instructions in this [guide](https://gist.github.com/MichaelCurrin/c2bece08f27c4277001f123898d16a7c).
 
-If you want to embed a code block, you can use the automatic formatting. But markdown and HTML files need to be marked as a code using `type` parameter if you want them as code rather than HTML.
-
-```
-':include :type=code'
-```
-
-See the _Docsify_ [Embed](https://docsify.js.org/#/embed-files) help for forcing types and using fragments.
+See the _Docsify_ [Embed Files](https://docsify.js.org/#/embed-files) help for forcing types and using fragments.
 
 
 #### Embed examples
@@ -791,6 +802,7 @@ Result:
 
 [example.js](_media/example.js ':include' )
 
+If you have a site on GitHub Pages subpath, make sure to avoid leading forward slash.
 
 ##### Markdown as code snippet
 
@@ -806,24 +818,23 @@ Result:
 
 [\_sidebar.md](_coverpage.md ':include :type=code')
 
-
 ##### Markdown as rendered HTML
 
-Render target markdown file as HTML. Leave out the `type` parameter.
+Render target Markdown file as HTML. Leave out the `type` parameter.
 
 Code:
 
 ```markdown
-[example.md](https://docsify.js.org/_media/example.md ':include')
+[example.md](https://docsify.js.org/_media/example.md ":include")
 ```
 
 Result:
 
-[example.md](https://docsify.js.org/_media/example.md ':include')
+[example.md](https://docsify.js.org/_media/example.md ":include")
 
-Raw markdown:
+Raw Markdown at that URL:
 
-[example.md](https://docsify.js.org/_media/example.md ':include :type=code')
+[example.md](https://docsify.js.org/_media/example.md ":include :type=code")
 
 
 #### Warnings
