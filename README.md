@@ -52,7 +52,7 @@ You don't need to fork it - unless you want to contribute changes.
 
 _This repo is one of my most starred and most forked repos - thanks for supporting._
 
-The [Docsify](https://docsify.js.org/#/) site has great quickstart for beginners, but with all the configs and plugin options available if feels more like a dictionary than a recipe for setting up a custom docs site which is not code heavy. So I created this tutorial to take beginners and advanced users through setting up Docsify in ordered steps - noting as well when steps are optional or what the choices are.
+The [Docsify](https://docsify.js.org/#/) site has a great guide for beginners. But with all the configs and plugin options available, the guide feels more like a dictionary than a recipe for setting up a custom docs site that is focused on content and not adding too much code or configuration. So I created this tutorial to take beginners and advanced users through setting up Docsify in ordered steps - noting as well when steps are optional or what choices there are.
 
 This tutorial takes you from basic site setup and content to optional configuration of styling, menus and plugins. It aims to cover common use-cases in a logical sequence, rather than covering everything you could do. You can also jump to a later step if you want to use that as a reference.
 
@@ -82,9 +82,9 @@ My aims for building a docs site were as follows and Docsify meets all of them:
 - Be easy to maintain.
 - Quick to get set up on existing projects.
 - It should be easy to repeat across many projects, without having to deal to have headaches with each. (Like a lot of boilerplate code, or installation issues, or drift as layouts/features are added to one and not the others.)
-- Have **no** HTML layout files to maintain.
+- Have **no** HTML template/layout files to maintain.
 - Reduce dependencies and keep installation simple.
-- Little or no build step needed.
+- Light or no build step needed.
 
 The docs site tool used here is [DocsifyJS](https://docsify.js.org/) which is a frontend JS library written in VueJS. But if you have never used before or never coded in JS before, you'll be guided through. The only JS you need to write in your config values. You also need to edit some HTML values and possibly write a YAML file for your navbar, which again is more configuration than code.
 
