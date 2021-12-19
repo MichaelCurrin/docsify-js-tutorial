@@ -24,9 +24,9 @@ Code snippets and recommendations are provided here as kind of cheatsheet or coo
 
 ?> _DocsifyJS_ is sometimes just called _Docsify_ in this guide. Also known as _Docsify.js_.
 
-View the source for this tutorial, which is built on Docsify:
+View the source for this tutorial site, which is also built using Docsify:
 
-- [![MichaelCurrin - docsify-js-tutorial](https://img.shields.io/static/v1?label=MichaelCurrin&message=docsify-js-tutorial&color=3271a8&logo=github)](https://github.com/MichaelCurrin/docsify-js-tutorial "Go to DocsifyJS Tutorial repo on GitHub")
+[![MichaelCurrin - docsify-js-tutorial](https://img.shields.io/static/v1?label=MichaelCurrin&message=docsify-js-tutorial&color=3271a8&logo=github)](https://github.com/MichaelCurrin/docsify-js-tutorial "Go to DocsifyJS Tutorial repo on GitHub")
 
 
 ## Purpose of this tutorial
