@@ -4,11 +4,11 @@
   DocsifyJS Tutorial
 </h1>
 
-> How to build a markdown-based docs site using DocsifyJS and GH Pages
+> How to build a Markdown-based docs site using DocsifyJS and GH Pages
 
 - :nut_and_bolt: Guide to [DocsifyJS](https://docsify.js.org/) - no JS experience needed
 - :hourglass_flowing_sand: Quickly setup a modern, themed, responsive site
-- :open_file_folder: Content comes from markdown files - works great for existing docs
+- :open_file_folder: Content comes from Markdown files - works great for existing docs
 - :sparkles: No compilation step and no templating syntax to learn
 - :pushpin: No install step. No local dependencies!
 - :cloud: Serve locally and on GitHub Pages / Netlify
